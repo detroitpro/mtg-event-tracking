@@ -47,6 +47,17 @@
         <span class="chip-label">Distance</span>
         <span v-if="maxDistance" class="chip-count">{{ maxDistance }}mi</span>
       </button>
+      
+      <button 
+        class="filter-chip agenda-chip"
+        :class="{ active: showMyAgenda }"
+        @click="$emit('toggle-agenda')"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" :fill="showMyAgenda ? 'currentColor' : 'none'" stroke="currentColor" stroke-width="2">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+        <span class="chip-label">My Agenda</span>
+      </button>
     </div>
     
     <button 
@@ -87,9 +98,13 @@ export default {
     totalEventTypes: {
       type: Number,
       default: 0
+    },
+    showMyAgenda: {
+      type: Boolean,
+      default: false
     }
   },
-  emits: ['open-modal', 'clear-filters'],
+  emits: ['open-modal', 'clear-filters', 'toggle-agenda'],
   setup(props) {
     const hasEventTypeFilter = computed(() => {
       return props.selectedEventTypes.length > 0 && 
@@ -100,7 +115,8 @@ export default {
       return hasEventTypeFilter.value ||
              props.selectedFormats.length > 0 ||
              props.selectedStates.length > 0 ||
-             props.maxDistance !== null;
+             props.maxDistance !== null ||
+             props.showMyAgenda;
     });
 
     return {
@@ -169,6 +185,16 @@ export default {
   background: rgba(139, 92, 246, 0.15);
   border-color: rgba(139, 92, 246, 0.3);
   color: var(--accent-primary-light);
+}
+
+.filter-chip.agenda-chip.active {
+  background: rgba(248, 113, 113, 0.15);
+  border-color: rgba(248, 113, 113, 0.3);
+  color: #f87171;
+}
+
+.filter-chip.agenda-chip svg {
+  flex-shrink: 0;
 }
 
 .chip-icon {

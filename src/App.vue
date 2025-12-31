@@ -36,8 +36,10 @@
           :selected-states="selectedStates"
           :max-distance="maxDistance"
           :total-event-types="availableEventTypes.length"
+          :show-my-agenda="showMyAgenda"
           @open-modal="openFilterModal"
           @clear-filters="clearAllFilters"
+          @toggle-agenda="toggleMyAgenda"
         />
 
         <div class="tab-content">
@@ -146,7 +148,7 @@ import EventList from './components/EventList.vue';
 import FilterModal from './components/FilterModal.vue';
 import { getConfig, updateUserLocation } from './utils/config';
 import { distanceToEvent } from './utils/distance';
-import { getFavoriteEvents, clearAllFavorites } from './utils/favorites';
+import { getFavoriteEvents, clearAllFavorites, isFavorite } from './utils/favorites';
 
 export default {
   name: 'App',
@@ -182,6 +184,7 @@ export default {
     const selectedFormats = ref([]);
     const selectedStates = ref([]);
     const maxDistance = ref(null);
+    const showMyAgenda = ref(false);
 
     // Calculate next 3 weeks from today
     const threeWeeksFromNow = computed(() => {
@@ -248,6 +251,18 @@ export default {
     });
 
     // Filter all future events
+    // Get dates that have at least one favorited event
+    const datesWithFavorites = computed(() => {
+      const _ = favoritesVersion.value; // Dependency for reactivity
+      const dates = new Set();
+      allFutureEvents.value.forEach(event => {
+        if (isFavorite(event.id)) {
+          dates.add(event.date);
+        }
+      });
+      return dates;
+    });
+
     const filteredEvents = computed(() => {
       let filtered = [...allFutureEvents.value];
       
@@ -269,6 +284,11 @@ export default {
           const dist = distanceToEvent(userLocation.value, e, distanceUnit.value);
           return dist !== null && dist <= maxDistance.value;
         });
+      }
+      
+      // Filter to only show events on days with favorites (My Agenda)
+      if (showMyAgenda.value) {
+        filtered = filtered.filter(e => datesWithFavorites.value.has(e.date));
       }
       
       return filtered.sort((a, b) => a.date.localeCompare(b.date));
@@ -305,6 +325,11 @@ export default {
       selectedFormats.value = [];
       selectedStates.value = [];
       maxDistance.value = null;
+      showMyAgenda.value = false;
+    }
+
+    function toggleMyAgenda() {
+      showMyAgenda.value = !showMyAgenda.value;
     }
     
     // Handle favorite toggle from EventCard
@@ -443,6 +468,8 @@ export default {
       selectedFormats,
       selectedStates,
       maxDistance,
+      showMyAgenda,
+      toggleMyAgenda,
       availableEventTypes,
       eventTypeOptions,
       formatOptions,
