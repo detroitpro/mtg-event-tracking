@@ -29,17 +29,39 @@
           :favorites-count="favoriteEvents.length"
         />
 
+        <!-- Shared Agenda Banner -->
+        <div v-if="isSharedView" class="shared-agenda-banner">
+          <div class="shared-banner-content">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="18" cy="5" r="3"/>
+              <circle cx="6" cy="12" r="3"/>
+              <circle cx="18" cy="19" r="3"/>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+            </svg>
+            <span>You're viewing a shared agenda</span>
+          </div>
+          <button class="exit-shared-btn" @click="exitSharedView">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+            Exit Shared View
+          </button>
+        </div>
+
         <FilterBar 
-          v-if="activeTab !== 'favorites'"
+          v-if="activeTab !== 'favorites' && !isSharedView"
           :selected-event-types="selectedEventTypes"
           :selected-formats="selectedFormats"
           :selected-states="selectedStates"
           :max-distance="maxDistance"
           :total-event-types="availableEventTypes.length"
           :show-my-agenda="showMyAgenda"
+          :has-favorites="favoriteEvents.length > 0"
           @open-modal="openFilterModal"
           @clear-filters="clearAllFilters"
           @toggle-agenda="toggleMyAgenda"
+          @share-agenda="shareAgenda"
         />
 
         <div class="tab-content">
@@ -185,6 +207,10 @@ export default {
     const selectedStates = ref([]);
     const maxDistance = ref(null);
     const showMyAgenda = ref(false);
+    
+    // Shared agenda state
+    const isSharedView = ref(false);
+    const sharedEventIds = ref(new Set());
 
     // Calculate next 3 weeks from today
     const threeWeeksFromNow = computed(() => {
@@ -291,6 +317,11 @@ export default {
         filtered = filtered.filter(e => datesWithFavorites.value.has(e.date));
       }
       
+      // Filter for shared view - only show specific events
+      if (isSharedView.value && sharedEventIds.value.size > 0) {
+        filtered = filtered.filter(e => sharedEventIds.value.has(e.id));
+      }
+      
       return filtered.sort((a, b) => a.date.localeCompare(b.date));
     });
 
@@ -330,6 +361,56 @@ export default {
 
     function toggleMyAgenda() {
       showMyAgenda.value = !showMyAgenda.value;
+    }
+
+    // Share agenda - create URL with encoded event IDs
+    function shareAgenda() {
+      const favorites = favoriteEvents.value.map(e => e.id);
+      if (favorites.length === 0) {
+        alert('No events to share. Add some favorites first!');
+        return;
+      }
+      
+      // Encode favorites as base64
+      const encoded = btoa(JSON.stringify(favorites));
+      const shareUrl = `${window.location.origin}${window.location.pathname}?agenda=${encoded}`;
+      
+      // Copy to clipboard
+      navigator.clipboard.writeText(shareUrl).then(() => {
+        alert(`Share link copied to clipboard!\n\nAnyone with this link can see your ${favorites.length} event agenda.`);
+      }).catch(() => {
+        // Fallback for older browsers
+        prompt('Copy this link to share your agenda:', shareUrl);
+      });
+    }
+
+    // Check URL for shared agenda on mount
+    function checkSharedAgenda() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const agendaParam = urlParams.get('agenda');
+      
+      if (agendaParam) {
+        try {
+          const decoded = JSON.parse(atob(agendaParam));
+          if (Array.isArray(decoded) && decoded.length > 0) {
+            sharedEventIds.value = new Set(decoded);
+            isSharedView.value = true;
+            activeTab.value = 'all'; // Show all events tab for shared view
+          }
+        } catch (e) {
+          console.error('Invalid shared agenda URL:', e);
+        }
+      }
+    }
+
+    // Exit shared view and return to normal
+    function exitSharedView() {
+      isSharedView.value = false;
+      sharedEventIds.value = new Set();
+      // Remove the agenda param from URL
+      const url = new URL(window.location.href);
+      url.searchParams.delete('agenda');
+      window.history.replaceState({}, '', url.pathname);
     }
     
     // Handle favorite toggle from EventCard
@@ -437,6 +518,7 @@ export default {
     onMounted(() => {
       loadEvents();
       loadConfig();
+      checkSharedAgenda();
     });
 
     return {
@@ -470,6 +552,9 @@ export default {
       maxDistance,
       showMyAgenda,
       toggleMyAgenda,
+      isSharedView,
+      shareAgenda,
+      exitSharedView,
       availableEventTypes,
       eventTypeOptions,
       formatOptions,
@@ -501,6 +586,52 @@ export default {
 
 .tab-content {
   min-height: 400px;
+}
+
+/* Shared Agenda Banner */
+.shared-agenda-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(16, 185, 129, 0.05));
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: var(--radius-lg);
+  margin-bottom: 1rem;
+}
+
+.shared-banner-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #10b981;
+  font-weight: 500;
+}
+
+.shared-banner-content svg {
+  flex-shrink: 0;
+}
+
+.exit-shared-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.exit-shared-btn:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-strong);
+  color: var(--text-primary);
 }
 
 /* All Events Section */

@@ -58,6 +58,22 @@
         </svg>
         <span class="chip-label">My Agenda</span>
       </button>
+      
+      <button 
+        v-if="hasFavorites"
+        class="filter-chip share-chip"
+        @click="$emit('share-agenda')"
+        title="Share your agenda"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="18" cy="5" r="3"/>
+          <circle cx="6" cy="12" r="3"/>
+          <circle cx="18" cy="19" r="3"/>
+          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+          <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+        </svg>
+        <span class="chip-label">Share</span>
+      </button>
     </div>
     
     <button 
@@ -102,9 +118,13 @@ export default {
     showMyAgenda: {
       type: Boolean,
       default: false
+    },
+    hasFavorites: {
+      type: Boolean,
+      default: false
     }
   },
-  emits: ['open-modal', 'clear-filters', 'toggle-agenda'],
+  emits: ['open-modal', 'clear-filters', 'toggle-agenda', 'share-agenda'],
   setup(props) {
     const hasEventTypeFilter = computed(() => {
       return props.selectedEventTypes.length > 0 && 
@@ -194,6 +214,21 @@ export default {
 }
 
 .filter-chip.agenda-chip svg {
+  flex-shrink: 0;
+}
+
+.filter-chip.share-chip {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+}
+
+.filter-chip.share-chip:hover {
+  background: rgba(16, 185, 129, 0.2);
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+.filter-chip.share-chip svg {
   flex-shrink: 0;
 }
 
