@@ -171,6 +171,7 @@ import FilterModal from './components/FilterModal.vue';
 import { getConfig, updateUserLocation } from './utils/config';
 import { distanceToEvent } from './utils/distance';
 import { getFavoriteEvents, clearAllFavorites, isFavorite } from './utils/favorites';
+import LZString from 'lz-string';
 
 export default {
   name: 'App',
@@ -363,7 +364,7 @@ export default {
       showMyAgenda.value = !showMyAgenda.value;
     }
 
-    // Share agenda - create URL with encoded event IDs
+    // Share agenda - create URL with compressed event IDs
     function shareAgenda() {
       const favorites = favoriteEvents.value.map(e => e.id);
       if (favorites.length === 0) {
@@ -371,9 +372,13 @@ export default {
         return;
       }
       
-      // Encode favorites as base64
-      const encoded = btoa(JSON.stringify(favorites));
-      const shareUrl = `${window.location.origin}${window.location.pathname}?agenda=${encoded}`;
+      // Compress and encode for URL (LZ-string produces ~60-70% smaller output)
+      const compressed = LZString.compressToEncodedURIComponent(JSON.stringify(favorites));
+      const shareUrl = `${window.location.origin}${window.location.pathname}?agenda=${compressed}`;
+      
+      // Show size comparison for debugging (can be removed later)
+      const uncompressed = btoa(JSON.stringify(favorites));
+      console.log(`URL compression: ${uncompressed.length} → ${compressed.length} chars (${Math.round((1 - compressed.length/uncompressed.length) * 100)}% smaller)`);
       
       // Copy to clipboard
       navigator.clipboard.writeText(shareUrl).then(() => {
@@ -391,7 +396,17 @@ export default {
       
       if (agendaParam) {
         try {
-          const decoded = JSON.parse(atob(agendaParam));
+          // Try LZ-string decompression first (new format)
+          let decoded;
+          const decompressed = LZString.decompressFromEncodedURIComponent(agendaParam);
+          
+          if (decompressed) {
+            decoded = JSON.parse(decompressed);
+          } else {
+            // Fallback to base64 for old links
+            decoded = JSON.parse(atob(agendaParam));
+          }
+          
           if (Array.isArray(decoded) && decoded.length > 0) {
             sharedEventIds.value = new Set(decoded);
             isSharedView.value = true;

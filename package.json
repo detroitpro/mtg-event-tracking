@@ -12,6 +12,7 @@
     "enrich:apply": "node apply-enrichment.js"
   },
   "dependencies": {
+    "lz-string": "^1.5.0",
     "vue": "^3.4.0"
   },
   "devDependencies": {
