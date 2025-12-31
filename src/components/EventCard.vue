@@ -91,7 +91,14 @@
         
         <div v-if="event.address" class="detail-item full-width">
           <span class="detail-label">Address</span>
-          <span class="detail-value">{{ event.address }}</span>
+          <a :href="mapsUrl" target="_blank" rel="noopener noreferrer" class="detail-value address-link">
+            {{ event.address }}
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
         </div>
         
         <div v-if="event.notes" class="detail-item full-width">
@@ -242,6 +249,17 @@ export default {
       });
     });
 
+    const mapsUrl = computed(() => {
+      // Prefer coordinates for accuracy, fall back to address string
+      if (props.event.coordinates?.lat && props.event.coordinates?.lng) {
+        return `https://www.google.com/maps/search/?api=1&query=${props.event.coordinates.lat},${props.event.coordinates.lng}`;
+      }
+      if (props.event.address) {
+        return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(props.event.address)}`;
+      }
+      return '#';
+    });
+
     // Calculate distance with caching
     function calculateDistance() {
       if (props.userLocation && props.event.coordinates) {
@@ -292,6 +310,7 @@ export default {
       eventTypeClass,
       typeBadgeClass,
       formattedDate,
+      mapsUrl,
       formatDistance,
       isFarther,
       isFavorited,
@@ -689,6 +708,32 @@ export default {
 .detail-value.notes {
   font-size: 0.8125rem;
   color: var(--text-tertiary);
+}
+
+.address-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  color: var(--accent-primary-light);
+  text-decoration: none;
+  transition: var(--transition-fast);
+  cursor: pointer;
+}
+
+.address-link:hover {
+  color: var(--accent-primary);
+  text-decoration: underline;
+}
+
+.address-link svg {
+  opacity: 0.6;
+  flex-shrink: 0;
+  transition: var(--transition-fast);
+}
+
+.address-link:hover svg {
+  opacity: 1;
+  transform: translate(1px, -1px);
 }
 
 /* ============================================

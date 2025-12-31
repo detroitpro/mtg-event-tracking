@@ -15,8 +15,7 @@
             <span class="logo-icon">⚔️</span>
           </div>
           <div class="brand-text">
-            <h1>MTG Arena</h1>
-            <p class="tagline">Pro Tour Qualification Tracker</p>
+            <h1>Rhystic Gaming: Upcoming Regional Events</h1>
           </div>
         </div>
         

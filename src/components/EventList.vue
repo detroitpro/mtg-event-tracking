@@ -236,6 +236,36 @@ export default {
       return date.getDate();
     }
 
+    function getDaysUntil(dateString) {
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      const eventDate = new Date(dateString);
+      eventDate.setHours(0, 0, 0, 0);
+      const diffTime = eventDate - today;
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+      return diffDays >= 0 ? diffDays : null;
+    }
+
+    function getDaysUntilText(dateString) {
+      const days = getDaysUntil(dateString);
+      if (days === null) return '';
+      if (days === 0) return 'Today';
+      if (days === 1) return 'Tomorrow';
+      if (days <= 7) return `In ${days} days`;
+      if (days <= 30) return `In ${Math.ceil(days / 7)} weeks`;
+      return `In ${Math.ceil(days / 30)} months`;
+    }
+
+    function getDaysUntilClass(dateString) {
+      const days = getDaysUntil(dateString);
+      if (days === null) return '';
+      if (days === 0) return 'today';
+      if (days === 1) return 'tomorrow';
+      if (days <= 7) return 'this-week';
+      if (days <= 30) return 'this-month';
+      return 'later';
+    }
+
     function formatDateCompact(dateString) {
       const date = new Date(dateString);
       return date.toLocaleDateString('en-US', {
@@ -285,6 +315,8 @@ export default {
       getDayName,
       getMonthName,
       getDayNum,
+      getDaysUntilText,
+      getDaysUntilClass,
       formatDateCompact,
       formatDateHeader,
       applySort,
@@ -518,6 +550,46 @@ export default {
   font-size: 0.875rem;
   font-weight: 500;
   color: var(--text-tertiary);
+}
+
+.days-until-badge {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 0.25rem 0.625rem;
+  border-radius: var(--radius-full);
+  margin-left: 0.5rem;
+}
+
+.days-until-badge.today {
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.days-until-badge.tomorrow {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.days-until-badge.this-week {
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.days-until-badge.this-month {
+  background: rgba(139, 92, 246, 0.15);
+  color: var(--accent-primary-light);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.days-until-badge.later {
+  background: var(--bg-elevated);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-default);
 }
 
 .day-actions {
