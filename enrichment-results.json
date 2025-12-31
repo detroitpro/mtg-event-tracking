@@ -1,0 +1,2066 @@
+[
+  {
+    "type": "address",
+    "venueKey": "Amazing Fantasy Books and Comics|Frankfort|IL",
+    "address": "20505 S La Grange Rd, Frankfort, IL 60423",
+    "website": "http://afbooks.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Chupacabra Games|Naperville|IL",
+    "address": "4003 Plainfield-Naperville Road, Suite 113, Naperville, IL 60564",
+    "website": "https://chupacabra-games.square.site",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Tier 1 Games|Kokomo|IN",
+    "address": "2208 E Markland Ave, Kokomo, IN 46901",
+    "website": "https://www.tier-1.games",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Empire Comics|New Albany|IN",
+    "address": "1636 Slate Run Rd, New Albany, IN 47150",
+    "website": "https://www.facebook.com/empirecomics",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Super Hideaway Games|Holland|MI",
+    "address": "1036 Washington Ave, Holland, MI 49423",
+    "website": "https://superhideawaygaming.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Dreamers Vault Games|Roseville|MN",
+    "address": "1143 Larpenteur Ave W, Roseville, MN 55113",
+    "website": "https://www.dreamersvault.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Game Cafe|Independence|MO",
+    "address": "107 W. Lexington Ave, Independence, MO 64050",
+    "website": null,
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "BK Games|St Robert|MO",
+    "address": "743 Missouri Ave, Suite 6, St. Robert, MO 65584",
+    "website": "https://www.facebook.com/bkgamesus",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Paradox Comics-N-Cards|Fargo|ND",
+    "address": "814 Main Ave, Fargo, ND 58103",
+    "website": "https://paradoxcnc.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "The Game Shoppe|Omaha|NE",
+    "address": "4014 N 144th St, Omaha, NE 68116",
+    "website": "https://thegameshoppe.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Freedom Gaming|North Canton|OH",
+    "address": "4400 Portage St NW, North Canton, OH 44720",
+    "website": "https://www.facebook.com/Freedom-Hobby-and-Gaming-126515704058038",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "SpellCrafter's Den|Upper Sandusky|OH",
+    "address": "205 S Sandusky Ave, Upper Sandusky, OH 43351",
+    "website": "https://www.spellcraftersden.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Lookout Games|Spearfish|SD",
+    "address": "1940 North Ave, Ste 9, Spearfish, SD 57783",
+    "website": "https://www.lookoutgamesspear.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "d20 Gaming|Eau Claire|WI",
+    "address": "2158 Eastridge Center, Eau Claire, WI 54701",
+    "website": "https://www.d20ec.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Misty Mountain Games|Madison|WI",
+    "address": "4672 Cottage Grove Rd, Madison, WI 53716",
+    "website": "https://www.mistymountaingames.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Game Universe|Mequon|WI",
+    "address": "10954 N Port Washington Road, Mequon, WI 53092",
+    "website": "https://www.game-universe.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Dragons, Daggers N' Games|Merrill|WI",
+    "address": "718 E 2nd St, Merrill, WI 54452",
+    "website": null,
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Good Game|Waterloo|IA",
+    "address": "307 W 5th Street, Waterloo, IA 50701",
+    "website": "https://www.goodgameia.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Gamers World|Old Orchard Skokie|IL",
+    "address": "4999 Old Orchard Ctr, Suite N42, Skokie, IL 60077",
+    "website": "https://www.gamersworldchicago.net",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Larry's Game Store|Olathe|KS",
+    "address": "113 S Mur-Len Rd, Olathe, KS 66062",
+    "website": "https://www.larrysgamestore.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "2 Bros & a Box|Stillwater|MN",
+    "address": "1305 West Frontage Road, Stillwater, MN 55082",
+    "website": null,
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Cardboard Horde|Sidney|OH",
+    "address": "505 North Vandemark Road, Sidney, OH 45365",
+    "website": "http://cardboardhorde.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Evolution Gaming|Butler|WI",
+    "address": "12714 W Hampton Ave, Suite C, Butler, WI 53007",
+    "website": "https://www.evo-game.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "The Mana Vault MKE|St Francis|WI",
+    "address": "3807 South Packard Avenue, St. Francis, WI 53235",
+    "website": "https://themanavault.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "The Hollow Archive|Cherokee|IA",
+    "address": "101 E Main St, Cherokee, IA 51012",
+    "website": null,
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Dungeon's Gate|Ankeny|IA",
+    "address": "2525 N Ankeny Blvd, Ste. 101, Ankeny, IA 50023",
+    "website": "https://dungeonsgate.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Dark Vassal Gaming|Cedar Falls|IA",
+    "address": "4116 University Ave, Suite 101, Cedar Falls, IA 50613",
+    "website": "https://dvgtcg.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Spellbound Games|Chicago|IL",
+    "address": "1116 N Milwaukee Ave, Chicago, IL 60642",
+    "website": "https://spellboundgameschicago.crystalcommerce.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Impact Gaming Center|Fairview Heights|IL",
+    "address": "49 Ludwig Drive, Fairview Heights, IL 62208",
+    "website": "https://impactgamingcenter.gg",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Moonshot Games|Plainfield|IN",
+    "address": "1620 E Main St, Suite 151, Plainfield, IN 46168",
+    "website": "https://moonshotgamestore.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Galactic Toys|Kentwood|MI",
+    "address": "3120 28th ST SE, Kentwood, MI 49512",
+    "website": "https://galactictoys.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Dreamers Vault Games|St Louis Park|MN",
+    "address": "3015 Utah Avenue South, Saint Louis Park, MN 55426",
+    "website": "https://www.dreamersvault.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Hurley's Heroes|Joplin|MO",
+    "address": "824 S Main St, Ste 101, Joplin, MO 64801",
+    "website": "https://hurleysheroes.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Ken's Comic Man|Poplar Bluff|MO",
+    "address": "421 Oak St, Poplar Bluff, MO 63901",
+    "website": "https://kenscomicman.square.site",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Parallax Computers and Games|Bismarck|ND",
+    "address": "801 E Main Ave, Bismarck, ND 58501",
+    "website": "https://parallaxgames.org",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "JWW Sports Cards & Gaming|Fargo|ND",
+    "address": "3902 13th Ave S. #100, Fargo, ND 58103",
+    "website": "https://jwwcards.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Apex Gaming|Caldwell|OH",
+    "address": "44519 Marietta Rd, Suite B, Caldwell, OH 43724",
+    "website": "https://apexgaming.gg",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Hobby Central|Delaware|OH",
+    "address": "652 W Central Ave #28, Delaware, OH 43015",
+    "website": "https://hobbycentralohio.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Deck Factory Gaming Center|Lima|OH",
+    "address": "1420 Elida Road, Lima, OH 45805",
+    "website": "https://www.deckfactory.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Video Games Galaxy|Newark|OH",
+    "address": "233 S 21st St, Newark, OH 43055",
+    "website": null,
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Shuffler's Den|Willoughby Hills|OH",
+    "address": "34955 Chardon Road, Willoughby Hills, OH 44094",
+    "website": "https://www.shufflersden.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Dragon's Den|Sioux Falls|SD",
+    "address": "7218 West 41st Street, Sioux Falls, SD 57106",
+    "website": "https://www.ddengaming.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Undercity Games|Eau Claire|WI",
+    "address": "930 Galloway Street, Suite 217, Mailbox 46, Eau Claire, WI 54703",
+    "website": "https://www.undercity.games",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Colosseum Games|Kenosha|WI",
+    "address": "5719 75th Street, Kenosha, WI 53142",
+    "website": "https://www.colosseumgamesofwi.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Midwest Jedi|River Falls|WI",
+    "address": "222 N. Main St. Suite C, River Falls, WI 54022",
+    "website": "https://midwestjedi.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "The Decatur Deathmatch|Decatur Convention Center - Decatur|IL",
+    "address": "4191 US 36 West (Wyckles Rd.), Decatur, IL 62522",
+    "website": "https://topdeck.gg/event/the-midwest-mash-cedh-up-to-20k-cash-prizing",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Collective Effort Gaming|Alpena|MI",
+    "address": "2670 US-23 South, Alpena, MI 49707",
+    "website": null,
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "GameUphoria|Washington|MO",
+    "address": "316 Jefferson St, Washington, MO 63090",
+    "website": "https://gameuphoriawashmo.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Remis Arcane Exchange|Muscatine|IA",
+    "address": "1108 Grandview Ave, Muscatine, IA 52761",
+    "website": "https://www.remisae.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "The Castle Games|Columbus|IN",
+    "address": "2191 State St, Columbus, IN 47201",
+    "website": "https://castlegameshoppe.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Next Level Games|Muncie|IN",
+    "address": "418 E McGalliard Road, Muncie, IN 47304",
+    "website": "https://www.nextlevelgamesmuncie.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Battle Bunker|Dickinson|ND",
+    "address": "135 Villard St W, Dickinson, ND 58601",
+    "website": "https://www.battlebunkernd.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Better Plays Gaming|Stow|OH",
+    "address": "4958 Darrow Road, Stow, OH 44224",
+    "website": "https://www.betterplaysgaming.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Izzi's Gym|Sioux Falls|SD",
+    "address": "807 N Lake Ave, Sioux Falls, SD 57104",
+    "website": "https://izzisgym.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Slick Mimic's|Board & Card Games Shoppe Appleton|WI",
+    "address": "792 W Northland Ave, Appleton, WI 54914",
+    "website": "https://www.slickmimics.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "The Dragon's Roost|Marshfield|WI",
+    "address": "107 W 14th St, Marshfield, WI 54449",
+    "website": null,
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Grandmaster Games|Oak Park|IL",
+    "address": "436 S Ridgeland Ave, Oak Park, IL 60302",
+    "website": "http://grandmastergames.net",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Kugelblitz Gaming|Hermann|MO",
+    "address": "407 Market Street, Hermann, MO 65041",
+    "website": "https://kugelblitzgaming.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Boar's Hat Gaming|Elgin|IL",
+    "address": "140 Tyler Creek Plaza, Elgin, IL 60123",
+    "website": "https://boarshatgaming.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Evanston Games and Cafe|Evanston|IL",
+    "address": "1707 Maple Avenue, Evanston, IL 60201",
+    "website": "https://www.evanstongames.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Pastimes|Niles|IL",
+    "address": "239 Golf Mill Center, Niles, IL 60714",
+    "website": "https://pastimesniles.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Arena Hobbies|Derby|KS",
+    "address": "200 N. Baltimore Ave, Suite 900, Derby, KS 67037",
+    "website": null,
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "The Gamers Guild|Hays|KS",
+    "address": "200 E 8th St, Hays, KS 67601",
+    "website": "https://thegamersguildhays.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Gators Games and Hobbies|Leavenworth|KS",
+    "address": "720 Shawnee St, Leavenworth, KS 66048",
+    "website": "https://gatorsfeedsyourneeds.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Sylvan Factory|Ann Arbor|MI",
+    "address": "2459 West Stadium Boulevard, Ann Arbor, MI 48103",
+    "website": "https://sylvanfactory.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "CCGPrime|North Cedar Springs|MI",
+    "address": "4116 17 Mile Rd NE, Cedar Springs, MI 49319",
+    "website": "https://ccgprime.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Gamer's Gauntlet|Clinton Township|MI",
+    "address": "20564 Hall Rd, Clinton Township, MI 48038",
+    "website": "https://www.gamersgauntlet.net",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "The Upkeep Games|Howell|MI",
+    "address": "871 South Latson Road, Howell, MI 48843",
+    "website": "https://www.theupkeepgames.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Dreamers Vault Games|Minneapolis|MN",
+    "address": "4701 Hiawatha Avenue, Minneapolis, MN 55406",
+    "website": "https://www.dreamersvault.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "The Fan Zone|Waite Park|MN",
+    "address": "314 4th Ave NE, Waite Park, MN 56387",
+    "website": "https://www.fanzonemn.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Forge and Fire Gaming|Maryland Heights|MO",
+    "address": "2462 Schuetz Rd, Maryland Heights, MO 63043",
+    "website": "https://forgeandfiregaming.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "JC Hobby|Norfolk|NE",
+    "address": "1110 S 9th St, Norfolk, NE 68701",
+    "website": "https://jchobbyne.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Epic Loot Games|Centerville|OH",
+    "address": "9130 Dayton Lebanon Pike, Centerville, OH 45458",
+    "website": "https://www.epiclootgames.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Recess Games|North Olmsted|OH",
+    "address": "26636 Brookpark Rd Ext, North Olmsted, OH 44070",
+    "website": "https://www.recess.net",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Limited Edition|Cedar Falls|IA",
+    "address": "2225 College St, Cedar Falls, IA 50613",
+    "website": null,
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Now and Then|Mason City|IA",
+    "address": "1531 4th Street Southwest, Mason City, IA 50401",
+    "website": "https://originalnowandthen.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Games King|Sioux City|IA",
+    "address": "823 Gordon Drive, Sioux City, IA 51101",
+    "website": "https://gameskingstore.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Dice Dojo|Chicago|IL",
+    "address": "5550 N Broadway, Chicago, IL 60640",
+    "website": "https://www.chicagolandgames.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Level Up Games|St. Paul|MN",
+    "address": "2493 7th St W, Saint Paul, MN 55116",
+    "website": "https://www.levelupshoponline.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Mayhem Collectibles|Des Moines|IA",
+    "address": "7500 University Ave, Suite D, Des Moines, IA 50325",
+    "website": "https://www.mayhemcomics.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Titan Games|Champaign|IL",
+    "address": "723 S Neil St, Ste 104, Champaign, IL 61820",
+    "website": "https://www.titangames.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "GameStorm|Lemont|IL",
+    "address": "1243 State Street, Lemont, IL 60439",
+    "website": "https://gamestormillinois.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "The Kingdom: Cards and Games|Kokomo|IN",
+    "address": "126 W Walnut St, Kokomo, IN 46901",
+    "website": "https://www.facebook.com/thekingdomkokomo",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Moonshot Games|Noblesville|IN",
+    "address": "50 N 9th St, Noblesville, IN 46060",
+    "website": "https://moonshotgamestore.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "The Castle Games|Seymour|IN",
+    "address": "210 W 2nd Street, Seymour, IN 47274",
+    "website": "https://castlegameshoppe.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Game Nut Entertainment|Lawrence|KS",
+    "address": "2329 Iowa St Suite M, Lawrence, KS 66046",
+    "website": "http://www.imagamenut.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Goblin Games|Manhattan|KS",
+    "address": "515 Fort Riley Blvd, Manhattan, KS 66502",
+    "website": "https://www.goblingamesmhk.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "One Drop Game Shop|Wichita|KS",
+    "address": "2718 N Amidon Ave, Wichita, KS 67204",
+    "website": "https://onedropgameshop.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Perfect Storm Comics and Games|Battle Creek|MI",
+    "address": "669 Capital Ave SW, Battle Creek, MI 49015",
+    "website": "https://perfectstormmtg.net",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "CCGPrime|Ionia|MI",
+    "address": "317 W Main St, Ionia, MI 48846",
+    "website": "https://ccgprime.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "CCGPrime|Central Ionia|MI",
+    "address": "317 West Main Street, Ionia, MI 48846",
+    "website": "https://ccgprime.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Dreamers Vault Games|Burnsville|MN",
+    "address": "14332 Burnhaven Drive, Burnsville, MN 55306",
+    "website": "https://www.dreamersvault.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Spanky's Card Shop|Kansas City|MO",
+    "address": "9914 Holmes Rd STE B, Kansas City, MO 64131",
+    "website": "https://spankyscardshop.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "North Coast Games|Mentor|OH",
+    "address": "7501 Mentor Ave Ste 4, Mentor, OH 44060",
+    "website": "https://www.northcoast.games",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Line Drive Sports Cards|Tiffin|OH",
+    "address": "112 S Washington St, Tiffin, OH 44883",
+    "website": null,
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Game Universe|Brookfield|WI",
+    "address": "19555 W Bluemound Rd Suite 34-36, Brookfield, WI 53045",
+    "website": "https://www.game-universe.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Adventure Games|Oshkosh|WI",
+    "address": "408 N. Main Street, Oshkosh, WI 54901",
+    "website": "https://adventuregamesoshkosh.square.site",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Mythic Forge Gaming|Madison Heights|MI",
+    "address": "26324 John R Rd, Madison Heights, MI 48071",
+    "website": "https://mythicforgegames.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Moxie Card Shop|Des Moines|IA",
+    "address": "1301 E Euclid Ave, Suite C, Des Moines, IA 50316",
+    "website": "https://moxiecardshop.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "The Castle Games|Bloomington Ellettsville|IN",
+    "address": "202 W Temperance St, Ellettsville, IN 47429",
+    "website": "https://castlegameshoppe.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Tier 1 Games|Lafayette|IN",
+    "address": "2200 Elmwood Ave, Ste D7, Lafayette, IN 47904",
+    "website": "https://www.tier-1.games",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "The Arena|Salina|KS",
+    "address": "427 South Broadway Boulevard, Salina, KS 67401",
+    "website": "https://arenaks.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Dreamers Vault Games|Champlin|MN",
+    "address": "11591 Theatre Drive North, Champlin, MN 55316",
+    "website": "https://www.dreamersvault.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Playmakers|Rapid City|SD",
+    "address": "2200 N Maple Ave Suite 208A, Rapid City, SD 57701",
+    "website": "https://playmakersllc.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Asgard Keep|Mount Vernon|IL",
+    "address": "1001 Olin Lane, Mount Vernon, IL 62864",
+    "website": "https://www.asgardkeep.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Level Up Games|Hastings|MN",
+    "address": "120 2nd St E, Hastings, MN 55033",
+    "website": "https://www.levelupshoponline.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Mike and Taylor's Card Shop|Wentzville|MO",
+    "address": "712 W Pearce Blvd, Unit A, Wentzville, MO 63385",
+    "website": "https://www.mikeandtaylors.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Parallax Computers and Gaming|Bismarck|ND",
+    "address": "801 E Main Ave, Bismarck, ND 58501",
+    "website": "https://parallaxgames.org",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Bored Bard Games|Iron Mountain|MI",
+    "address": "224 E Hughitt St, Iron Mountain, MI 49801",
+    "website": "https://www.boredbard.games",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "The Upkeep Games|Canton|MI",
+    "address": "43675 Ford Road, Canton, MI 48187",
+    "website": "https://www.theupkeepgames.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Level Up Games|Minneapolis|MN",
+    "address": "1425 LaSalle Ave, Minneapolis, MN 55403",
+    "website": "https://www.levelupshoponline.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "The Upkeep Games|Ann Arbor|MI",
+    "address": "2121 West Stadium Boulevard, Ann Arbor, MI 48103",
+    "website": "https://www.theupkeepgames.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "The Game Shoppe|Bellevue|NE",
+    "address": "1406 Harlan Dr, Bellevue, NE 68005",
+    "website": "https://thegameshoppe.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Chupacabra Games|Chicago|IL",
+    "address": "4003 Plainfield-Naperville Road, Suite 113, Naperville, IL 60564",
+    "website": "https://www.chupacabra-games.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Moonshot Gaming|Plainfield|IN",
+    "address": "1620 E Main St, Suite 151, Plainfield, IN 46168",
+    "website": "https://moonshotgamestore.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Dreamers Vault Games|South Saint Paul|MN",
+    "address": "207 13th Avenue South, South Saint Paul, MN 55075",
+    "website": "https://www.dreamersvault.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Game Universe|Franklin|WI",
+    "address": "6550 S Lovers Lane Rd, Franklin, WI 53132",
+    "website": "https://gameuniverse.net",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Tea & Tee Card and Hobby|Medford|WI",
+    "address": "162 S Main St, Medford, WI 54451",
+    "website": "https://tea-teecardandhobby.myshopify.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Galaxy Games|Wintersville|OH",
+    "address": "538 Main St, Wintersville, OH 43953",
+    "website": "https://galaxygamesllc.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "Gators Hobby and Games|Leavenworth|KS",
+    "address": "720 Shawnee St, Leavenworth, KS 66048",
+    "website": "https://gatorsfeedsyourneeds.com",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "AFK Games|Holt|MI",
+    "address": "2495 Cedar Street STE 14-B, Holt, MI 48842",
+    "website": "https://afk.games",
+    "coordinates": null
+  },
+  {
+    "type": "address",
+    "venueKey": "RIW Hobbies|Livonia|MI",
+    "address": "29571 Five Mile Rd, Livonia, MI 48154",
+    "website": "https://riwhobbies.com",
+    "coordinates": null
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-game-cafe-independence",
+    "link": "https://allevents.in/independence/magic-the-gathering-dreamhack-rcq-showdown-standard/200029173695557"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-paradox-comics-n-cards-fargo",
+    "link": "https://paradoxcnc.com/events/2026-01-03/"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-d20-gaming-eau claire",
+    "link": "https://www.d20ec.com/calendar-and-events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-game-universe-mequon",
+    "link": "https://allevents.in/mequon/rcq-season-4-round-3/200029410397226"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-04-pastimes-niles",
+    "link": "https://www.eventlink.wizards.com/eventlink/portal/pastimes-rcq-standard-2026-01-04"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-mayhem-collectibles-des moines",
+    "link": "https://www.spicerack.gg/events/2345789"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-bored-bard-games-iron mountain",
+    "link": "https://tcg.ravensburgerplay.com/events/277588"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-02-amazing-fantasy-books-and-comics-frankfort",
+    "link": "https://www.spicerack.gg/events/stores/1007"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-chupacabra-games-naperville",
+    "link": "https://www.chupacabra-games.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-tier-1-games-kokomo",
+    "link": "https://tier1games.com/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-super-hideaway-games-holland",
+    "link": "https://superhideawaygaming.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-dreamers-vault-games-roseville",
+    "link": "https://www.dreamersvault.com/Events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-bk-games-st robert",
+    "link": "https://allevents.in/saint-robert/bk-games-cedh-tournament-9/200029405540954"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-the-game-shoppe-omaha",
+    "link": "https://thegameshoppe.com/category/events/"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-freedom-gaming-north canton",
+    "link": "https://www.ticketleap.events/events/freedomhobbyandgaming"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-spellcrafter-s-den-upper sandusky",
+    "link": "https://www.spellcraftersden.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-lookout-games-spearfish",
+    "link": "https://www.lookoutgamesspear.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-misty-mountain-games-madison",
+    "link": "https://www.mistymountaingames.com/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-battle-bunker-dickinson",
+    "link": "https://www.battlebunkernd.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-better-plays-gaming-stow",
+    "link": "https://www.betterplaysgaming.com/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-izzi-s-gym-sioux falls",
+    "link": "https://izzisgym.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-slick-mimic-s-appleton",
+    "link": "https://www.slickmimics.com/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-04-kugelblitz-gaming-hermann",
+    "link": "https://kugelblitzgaming.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-04-boar-s-hat-gaming-elgin",
+    "link": "https://www.spicerack.gg/events/stores/1085"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-04-evanston-games-and-cafe-evanston",
+    "link": "https://www.evanstongames.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-04-the-gamers-guild-hays",
+    "link": "https://thegamersguildhays.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-04-gators-games-and-hobbies-leavenworth",
+    "link": "https://gatorsfeedsyourneeds.com/collections/tournaments"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-04-sylvan-factory-ann arbor",
+    "link": "https://sylvanfactory.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-04-ccgprime-north cedar springs",
+    "link": "https://ccgprime.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-gamer-s-gauntlet-clinton township",
+    "link": "https://www.gamersgauntlet.net/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-the-upkeep-games-howell",
+    "link": "https://www.theupkeepgames.com/collections/howell-events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-dreamers-vault-games-minneapolis",
+    "link": "https://www.dreamersvault.com/Events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-the-fan-zone-waite park",
+    "link": "https://www.fanzonemn.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-forge-and-fire-gaming-maryland heights",
+    "link": "https://www.spicerack.gg/events/stores/1285"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-jc-hobby-norfolk",
+    "link": "https://jchobby.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-epic-loot-games-centerville",
+    "link": "https://www.epiclootgames.com/calendar"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-recess-games-north olmsted",
+    "link": "https://shop.recess.games/events-tournaments/"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-now-and-then-mason city",
+    "link": "https://originalnowandthen.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-games-king-sioux city",
+    "link": "https://gameskingstore.com/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-dice-dojo-chicago",
+    "link": "https://www.chicagolandgames.com/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-level-up-games-st. paul",
+    "link": "https://www.levelupshoponline.com/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-mayhem-collectibles-des moines",
+    "link": "https://www.mayhemcomics.com/calendar.php"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-titan-games-champaign",
+    "link": "https://www.titangames.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-gamestorm-lemont",
+    "link": "https://www.gamestormgaming.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-the-kingdom-cards-and-games-kokomo",
+    "link": "https://www.facebook.com/thekingdomkokomo"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-moonshot-games-noblesville",
+    "link": "https://moonshotgamestore.com/pages/event-calendar-gallery"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-the-castle-games-seymour",
+    "link": "https://castlegameshoppe.com/products/regional-championship-qualifier-sey-ticket"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-game-nut-entertainment-lawrence",
+    "link": "https://gamenut.tcgplayerpro.com/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-goblin-games-manhattan",
+    "link": "https://www.goblingamesmhk.com/service/events/"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-one-drop-game-shop-wichita",
+    "link": "https://topdeck.gg/https-topdeck-gg-hubs-zrescppebppx9i4uqw1azqb7e272"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-perfect-storm-comics-and-games-battle creek",
+    "link": "https://perfectstormmtg.net"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-ccgprime-ionia",
+    "link": "https://ccgprime.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-dreamers-vault-games-burnsville",
+    "link": "https://www.dreamersvault.com/Events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-spanky-s-card-shop-kansas city",
+    "link": "https://spankyscardshop.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-north-coast-games-mentor",
+    "link": "https://www.northcoast.games"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-game-universe-brookfield",
+    "link": "https://www.game-universe.com/brookfield-calendar"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-adventure-games-oshkosh",
+    "link": "https://adventuregamesoshkosh.square.site"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-mythic-forge-gaming-madison heights",
+    "link": "https://mythicforgegames.com/collections/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-moxie-card-shop-des moines",
+    "link": "https://moxiecardshop.com/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-the-castle-games-bloomington ellettsville",
+    "link": "https://castlegameshoppe.com/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-tier-1-games-lafayette",
+    "link": "https://tier1games.com/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-the-arena-salina",
+    "link": "https://arenaks.com/magic-at-the-arena/"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-dreamers-vault-games-champlin",
+    "link": "https://www.dreamersvault.com/Events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-playmakers-rapid city",
+    "link": "https://allevents.in/rapid-city/playmakers-mtg-us-rcq-2025-26-season-4-round-3-standard-tournament-1-slot/200029392721528"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-asgard-keep-mount vernon",
+    "link": "https://www.asgardkeep.com/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-level-up-games-hastings",
+    "link": "https://www.levelupshoponline.com/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-mike-and-taylor-s-card-shop-wentzville",
+    "link": "https://www.facebook.com/mikeandtaylorscardshop"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-parallax-computers-and-gaming-bismarck",
+    "link": "https://parallaxgames.org"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-the-upkeep-games-canton",
+    "link": "https://www.theupkeepgames.com/pages/canton-events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-the-upkeep-games-ann arbor",
+    "link": "https://www.theupkeepgames.com/pages/ann-arbor-events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-the-game-shoppe-bellevue",
+    "link": "https://thegameshoppe.com/category/events/"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-chupacabra-games-chicago",
+    "link": "https://www.chupacabra-games.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-moonshot-gaming-plainfield",
+    "link": "https://www.spicerack.gg/events/stores/884"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-dreamers-vault-games-south saint paul",
+    "link": "https://www.dreamersvault.com/Events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-game-universe-franklin",
+    "link": "https://www.game-universe.com/news/rcqs4r2-8hybp"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-tea-tee-card-and-hobby-medford",
+    "link": "https://tea-teecardandhobby.myshopify.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-galaxy-games-wintersville",
+    "link": "https://galaxygamesllc.com/collections/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-gators-hobby-and-games-leavenworth",
+    "link": "https://gatorsfeedsyourneeds.com/collections/tournaments"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-afk-games-holt",
+    "link": "https://afk.games"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-riw-hobbies-livonia",
+    "link": "https://riwhobbies.com/events/"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-amazing-fantasy-books-and-comics-frankfort",
+    "link": "http://afbooks.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-chupacabra-games-naperville",
+    "link": "https://www.chupacabra-games.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-tier-1-games-kokomo",
+    "link": "https://tier1games.squarespace.com/kokomo-events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-super-hideaway-games-holland",
+    "link": "https://superhideawaygaming.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-dreamers-vault-games-roseville",
+    "link": "https://www.dreamersvault.com/Events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-game-cafe-independence",
+    "link": "https://allevents.in/independence/magic-the-gathering-dreamhack-rcq-showdown-standard/200029408910813"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-bk-games-st robert",
+    "link": "https://allevents.in/saint-robert/bk-games-cedh-tournament-9/200029405540954"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-paradox-comics-n-cards-fargo",
+    "link": "https://paradoxcnc.com/events/"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-the-game-shoppe-omaha",
+    "link": "https://thegameshoppe.com/category/events/"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-freedom-gaming-north canton",
+    "link": "https://www.ticketleap.events/events/freedomhobbyandgaming"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-spellcrafter-s-den-upper sandusky",
+    "link": "https://www.spellcraftersden.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-lookout-games-spearfish",
+    "link": "https://www.lookoutgamesspear.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-d20-gaming-eau claire",
+    "link": "https://www.d20ec.com/calendar-and-events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-misty-mountain-games-madison",
+    "link": "https://www.mistymountaingames.com/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-battle-bunker-dickinson",
+    "link": "https://www.battlebunkernd.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-better-plays-gaming-stow",
+    "link": "https://www.betterplaysgaming.com/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-izzi-s-gym-sioux falls",
+    "link": "https://www.facebook.com/groups/siouxfallsmtg/"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-slick-mimic-s-appleton",
+    "link": "https://www.slickmimics.com/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-grandmaster-games-oak park",
+    "link": "https://www.spicerack.gg/events/1918470"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-kugelblitz-gaming-hermann",
+    "link": "https://allevents.in/hermann/kugelblitz-magic-the-gathering-mtg-rcq-event/200028611049024"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-boar-s-hat-gaming-elgin",
+    "link": "https://www.spicerack.gg/events/stores/1085"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-evanston-games-and-cafe-evanston",
+    "link": "https://www.evanstongames.com/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-gators-games-and-hobbies-leavenworth",
+    "link": "https://gatorsfeedsyourneeds.com/collections/tournaments"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-sylvan-factory-ann arbor",
+    "link": "https://sylvanfactory.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-ccgprime-north cedar springs",
+    "link": "https://ccgprime.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-gamer-s-gauntlet-clinton township",
+    "link": "https://www.gamersgauntlet.net/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-the-upkeep-games-howell",
+    "link": "https://www.theupkeepgames.com/pages/howell-events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-dreamers-vault-games-minneapolis",
+    "link": "https://www.dreamersvault.com/Events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-forge-and-fire-gaming-maryland heights",
+    "link": "https://www.spicerack.gg/events/stores/1285"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-jc-hobby-norfolk",
+    "link": "https://jchobby.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-epic-loot-games-centerville",
+    "link": "https://www.epiclootgames.com/calendar"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-recess-games-north olmsted",
+    "link": "https://shop.recess.games/events-tournaments/"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-now-and-then-mason city",
+    "link": "https://originalnowandthen.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-games-king-sioux city",
+    "link": "https://gameskingstore.com/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-dice-dojo-chicago",
+    "link": "https://www.chicagolandgames.com/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-level-up-games-st. paul",
+    "link": "https://www.levelupshoponline.com/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-mayhem-collectibles-des moines",
+    "link": "https://www.mayhemcomics.com/calendar.php"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-titan-games-champaign",
+    "link": "https://www.titangames.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-gamestorm-lemont",
+    "link": "https://www.gamestormgaming.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-moonshot-games-noblesville",
+    "link": "https://moonshotgamestore.com/pages/event-calendar-gallery"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-the-castle-games-seymour",
+    "link": "https://castlegameshoppe.com/products/regional-championship-qualifier-sey-ticket"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-game-nut-entertainment-lawrence",
+    "link": "https://gamenut.tcgplayerpro.com/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-goblin-games-manhattan",
+    "link": "https://www.goblingamesmhk.com/service/events/"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-one-drop-game-shop-wichita",
+    "link": "https://topdeck.gg/https-topdeck-gg-hubs-zrescppebppx9i4uqw1azqb7e272"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-perfect-storm-comics-and-games-battle creek",
+    "link": "https://perfectstormmtg.net"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-ccgprime-ionia",
+    "link": "https://ccgprime.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-dreamers-vault-games-burnsville",
+    "link": "https://www.dreamersvault.com/Events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-spanky-s-card-shop-kansas city",
+    "link": "https://spankyscardshop.com/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-north-coast-games-mentor",
+    "link": "https://www.northcoast.games"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-game-universe-brookfield",
+    "link": "https://www.game-universe.com/brookfield-calendar"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-adventure-games-oshkosh",
+    "link": "https://adventuregamesoshkosh.square.site"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-mythic-forge-gaming-madison heights",
+    "link": "https://www.spicerack.gg/events/2584272"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-moxie-card-shop-des moines",
+    "link": "https://moxiecardshop.com/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-the-castle-games-bloomington ellettsville",
+    "link": "https://castlegameshoppe.com/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-tier-1-games-lafayette",
+    "link": "https://tier1games.com/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-dreamers-vault-games-champlin",
+    "link": "https://www.dreamersvault.com/Events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-playmakers-rapid city",
+    "link": "https://playmakersllc.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-asgard-keep-mount vernon",
+    "link": "https://www.asgardkeep.com/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-level-up-games-hastings",
+    "link": "https://www.levelupshoponline.com/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-mike-and-taylor-s-card-shop-wentzville",
+    "link": "https://www.facebook.com/mikeandtaylorscardshop"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-parallax-computers-and-gaming-bismarck",
+    "link": "https://parallaxgames.org"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-the-upkeep-games-canton",
+    "link": "https://www.theupkeepgames.com/pages/canton-events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-the-upkeep-games-ann arbor",
+    "link": "https://www.theupkeepgames.com/pages/ann-arbor-events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-the-game-shoppe-bellevue",
+    "link": "https://thegameshoppe.com/category/events/"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-chupacabra-games-chicago",
+    "link": "https://www.chupacabra-games.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-moonshot-gaming-plainfield",
+    "link": "https://www.spicerack.gg/events/stores/884"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-dreamers-vault-games-south saint paul",
+    "link": "https://www.dreamersvault.com/Events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-game-universe-franklin",
+    "link": "https://www.game-universe.com/news/rcqs4r2-8hybp"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-chupacabra-games-naperville",
+    "link": "https://www.chupacabra-games.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-tier-1-games-kokomo",
+    "link": "https://tier1games.squarespace.com/kokomo-events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-empire-comics-new albany",
+    "link": "https://www.facebook.com/empirecomics"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-super-hideaway-games-holland",
+    "link": "https://superhideawaygaming.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-dreamers-vault-games-roseville",
+    "link": "https://www.dreamersvault.com/Events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-bk-games-st robert",
+    "link": "https://www.facebook.com/bkgamesus"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-the-game-shoppe-omaha",
+    "link": "https://thegameshoppe.com/category/events/"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-freedom-gaming-north canton",
+    "link": "https://www.ticketleap.events/events/freedomhobbyandgaming"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-spellcrafter-s-den-upper sandusky",
+    "link": "https://www.spellcraftersden.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-lookout-games-spearfish",
+    "link": "https://www.lookoutgamesspear.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-misty-mountain-games-madison",
+    "link": "https://www.mistymountaingames.com/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-d20-gaming-eau claire",
+    "link": "https://www.d20ec.com/calendar-and-events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-game-universe-mequon",
+    "link": "https://allevents.in/mequon/rcq-season-4-round-3/200029410397226"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-battle-bunker-dickinson",
+    "link": "https://www.battlebunkernd.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-better-plays-gaming-stow",
+    "link": "https://www.betterplaysgaming.com/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-izzi-s-gym-sioux falls",
+    "link": "https://izzisgym.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-slick-mimic-s-appleton",
+    "link": "https://www.slickmimics.com/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-kugelblitz-gaming-hermann",
+    "link": "https://allevents.in/hermann/kugelblitz-magic-the-gathering-mtg-rcq-event/200028611049024"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-boar-s-hat-gaming-elgin",
+    "link": "https://www.spicerack.gg/events/stores/1085"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-evanston-games-and-cafe-evanston",
+    "link": "https://www.evanstongames.com/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-the-gamers-guild-hays",
+    "link": "https://thegamersguildhays.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-gators-games-and-hobbies-leavenworth",
+    "link": "https://gatorsfeedsyourneeds.com/collections/tournaments"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-sylvan-factory-ann arbor",
+    "link": "https://sylvanfactory.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-ccgprime-north cedar springs",
+    "link": "https://ccgprime.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-gamer-s-gauntlet-clinton township",
+    "link": "https://www.gamersgauntlet.net/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-the-upkeep-games-howell",
+    "link": "https://www.theupkeepgames.com/pages/howell-events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-dreamers-vault-games-minneapolis",
+    "link": "https://www.dreamersvault.com/Events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-forge-and-fire-gaming-maryland heights",
+    "link": "https://www.spicerack.gg/events/2704671"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-jc-hobby-norfolk",
+    "link": "https://jchobby.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-epic-loot-games-centerville",
+    "link": "https://www.epiclootgames.com/calendar"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-recess-games-north olmsted",
+    "link": "https://shop.recess.games/events-tournaments/"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-limited-edition-cedar falls",
+    "link": "https://allevents.in/cedar-falls/limited-editions-regional-championship-qualifier-3-round-9/200027641288653"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-now-and-then-mason city",
+    "link": "https://originalnowandthen.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-games-king-sioux city",
+    "link": "https://gameskingstore.com/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-dice-dojo-chicago",
+    "link": "https://www.chicagolandgames.com/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-level-up-games-st. paul",
+    "link": "https://www.levelupshoponline.com/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-mayhem-collectibles-des moines",
+    "link": "https://www.mayhemcomics.com/calendar.php"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-titan-games-champaign",
+    "link": "https://www.titangames.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-gamestorm-lemont",
+    "link": "https://www.gamestormgaming.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-moonshot-games-noblesville",
+    "link": "https://www.spicerack.gg/events/2825335"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-the-castle-games-seymour",
+    "link": "https://castlegameshoppe.com/products/regional-championship-qualifier-sey-ticket"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-game-nut-entertainment-lawrence",
+    "link": "https://gamenut.tcgplayerpro.com/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-goblin-games-manhattan",
+    "link": "https://www.goblingamesmhk.com/service/events/"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-one-drop-game-shop-wichita",
+    "link": "https://topdeck.gg/https-topdeck-gg-hubs-zrescppebppx9i4uqw1azqb7e272"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-perfect-storm-comics-and-games-battle creek",
+    "link": "https://perfectstormmtg.net"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-ccgprime-ionia",
+    "link": "https://ccgprime.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-dreamers-vault-games-burnsville",
+    "link": "https://www.dreamersvault.com/Events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-spanky-s-card-shop-kansas city",
+    "link": "https://spankyscardshop.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-north-coast-games-mentor",
+    "link": "https://www.northcoast.games"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-game-universe-brookfield",
+    "link": "https://www.game-universe.com/news/rcqs4r2-8hybp"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-mythic-forge-gaming-madison heights",
+    "link": "https://mythicforgegames.com/collections/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-moxie-card-shop-des moines",
+    "link": "https://moxiecardshop.com/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-the-castle-games-bloomington ellettsville",
+    "link": "https://castlegameshoppe.com/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-tier-1-games-lafayette",
+    "link": "https://tier1games.com/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-the-arena-salina",
+    "link": "https://arenaks.com/magic-at-the-arena/"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-dreamers-vault-games-champlin",
+    "link": "https://www.dreamersvault.com/Events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-playmakers-rapid city",
+    "link": "https://playmakersllc.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-asgard-keep-mount vernon",
+    "link": "https://www.asgardkeep.com/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-level-up-games-hastings",
+    "link": "https://www.levelupshoponline.com/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-mike-and-taylor-s-card-shop-wentzville",
+    "link": "https://www.facebook.com/mikeandtaylorscardshop"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-parallax-computers-and-gaming-bismarck",
+    "link": "https://parallaxgames.org"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-the-upkeep-games-canton",
+    "link": "https://www.theupkeepgames.com/pages/canton-events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-the-upkeep-games-ann arbor",
+    "link": "https://www.theupkeepgames.com/pages/ann-arbor-events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-the-game-shoppe-bellevue",
+    "link": "https://thegameshoppe.com/category/events/"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-chupacabra-games-chicago",
+    "link": "https://www.chupacabra-games.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-moonshot-gaming-plainfield",
+    "link": "https://moonshotgamestore.com/pages/event-calendar-plainfield"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-dreamers-vault-games-south saint paul",
+    "link": "https://www.dreamersvault.com/Events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-game-universe-franklin",
+    "link": "https://www.game-universe.com/news/rcqs4r2-8hybp"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-galaxy-games-wintersville",
+    "link": "https://www.spicerack.gg/events/2778359"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-gators-hobby-and-games-leavenworth",
+    "link": "https://gatorsfeedsyourneeds.com/collections/tournaments"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-afk-games-holt",
+    "link": "https://afk.games"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-riw-hobbies-livonia",
+    "link": "https://riwhobbies.com/events/"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-amazing-fantasy-books-and-comics-frankfort",
+    "link": "http://afbooks.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-bored-bard-games-iron mountain",
+    "link": "https://www.boredbard.games/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-03-the-gamers-guild-hays",
+    "link": "https://thegamersguildhays.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-04-pastimes-niles",
+    "link": "http://www.pastimes.net"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-04-bored-bard-games-iron mountain",
+    "link": "https://www.boredbard.games/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-04-the-gamers-guild-hays",
+    "link": "https://thegamersguildhays.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-grandmaster-games-oak park",
+    "link": "https://www.spicerack.gg/events/1918470"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-limited-edition-cedar falls",
+    "link": "https://allevents.in/cedar-falls/limited-editions-regional-championship-qualifier-3-round-9/200027641288653"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-now-and-then-mason city",
+    "link": "https://originalnowandthen.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-05-games-king-sioux city",
+    "link": "https://gameskingstore.com/pages/events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-the-gamers-guild-hays",
+    "link": "https://thegamersguildhays.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-06-now-and-then-mason city",
+    "link": "https://originalnowandthen.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-02-chupacabra-games-naperville",
+    "link": "https://www.chupacabra-games.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-02-tier-1-games-kokomo",
+    "link": "https://tier1games.squarespace.com/kokomo-events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-02-empire-comics-new albany",
+    "link": "https://www.facebook.com/empirecomics"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-02-super-hideaway-games-holland",
+    "link": "https://superhideawaygaming.com"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-02-dreamers-vault-games-roseville",
+    "link": "https://www.dreamersvault.com/Events"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-02-game-cafe-independence",
+    "link": "https://allevents.in/independence/magic-the-gathering-dreamhack-rcq-showdown-standard/200029173695557"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-02-bk-games-st robert",
+    "link": "https://www.facebook.com/bkgamesus"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-02-the-game-shoppe-omaha",
+    "link": "https://thegameshoppe.com/category/events/"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-02-freedom-gaming-north canton",
+    "link": "https://www.ticketleap.events/events/freedomhobbyandgaming"
+  },
+  {
+    "type": "link",
+    "eventId": "2026-01-02-spellcrafter-s-den-upper sandusky",
+    "link": "https://www.spellcraftersden.com"
+  }
+]

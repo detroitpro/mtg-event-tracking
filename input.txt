@@ -1,0 +1,1606 @@
+yarn run v1.22.22
+$ node run-enrichment.js 300
+=== ENRICHMENT INSTRUCTIONS FOR AI ASSISTANT ===
+
+Use Perplexity MCP or Browser MCP tools to search for the following information.
+
+After searching, create a file called 'enrichment-results.json' with the results.
+
+File format:
+[
+  {
+    "type": "address",
+    "venueKey": "Venue Name|City|State",
+    "address": "Full street address with zip code",
+    "website": "https://website.com (optional)",
+    "coordinates": null
+  },
+  {
+    "type": "link",
+    "eventId": "event-id-from-metadata",
+    "link": "https://event-registration-page.com"
+  }
+]
+
+Important:
+- venueKey format: "Venue Name|City|State" (use pipe | separator)
+- eventId matches the 'id' field in events-metadata.json
+- Always set coordinates to null (they'll be auto-calculated)
+- If you can't find an address/website/link, skip that entry
+
+=== QUERIES TO SEARCH ===
+
+VENUES NEEDING ADDRESSES (121):
+
+1. Venue: Tier 1 Games, Kokomo, IN
+   VenueKey: Tier 1 Games|Kokomo|IN
+   Address Query: "What is the full street address of Tier 1 Games in Kokomo, IN? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Tier 1 Games in Kokomo, IN? Do they host Magic: The Gathering tournaments?"
+
+2. Venue: Empire Comics, New Albany, IN
+   VenueKey: Empire Comics|New Albany|IN
+   Address Query: "What is the full street address of Empire Comics in New Albany, IN? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Empire Comics in New Albany, IN? Do they host Magic: The Gathering tournaments?"
+
+3. Venue: Super Hideaway Games, Holland, MI
+   VenueKey: Super Hideaway Games|Holland|MI
+   Address Query: "What is the full street address of Super Hideaway Games in Holland, MI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Super Hideaway Games in Holland, MI? Do they host Magic: The Gathering tournaments?"
+
+4. Venue: Dreamers Vault Games, Roseville, MN
+   VenueKey: Dreamers Vault Games|Roseville|MN
+   Address Query: "What is the full street address of Dreamers Vault Games in Roseville, MN? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Dreamers Vault Games in Roseville, MN? Do they host Magic: The Gathering tournaments?"
+
+5. Venue: Game Cafe, Independence, MO
+   VenueKey: Game Cafe|Independence|MO
+   Address Query: "What is the full street address of Game Cafe in Independence, MO? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Game Cafe in Independence, MO? Do they host Magic: The Gathering tournaments?"
+
+6. Venue: BK Games, St Robert, MO
+   VenueKey: BK Games|St Robert|MO
+   Address Query: "What is the full street address of BK Games in St Robert, MO? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for BK Games in St Robert, MO? Do they host Magic: The Gathering tournaments?"
+
+7. Venue: Paradox Comics-N-Cards, Fargo, ND
+   VenueKey: Paradox Comics-N-Cards|Fargo|ND
+   Address Query: "What is the full street address of Paradox Comics-N-Cards in Fargo, ND? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Paradox Comics-N-Cards in Fargo, ND? Do they host Magic: The Gathering tournaments?"
+
+8. Venue: The Game Shoppe, Omaha, NE
+   VenueKey: The Game Shoppe|Omaha|NE
+   Address Query: "What is the full street address of The Game Shoppe in Omaha, NE? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for The Game Shoppe in Omaha, NE? Do they host Magic: The Gathering tournaments?"
+
+9. Venue: Freedom Gaming, North Canton, OH
+   VenueKey: Freedom Gaming|North Canton|OH
+   Address Query: "What is the full street address of Freedom Gaming in North Canton, OH? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Freedom Gaming in North Canton, OH? Do they host Magic: The Gathering tournaments?"
+
+10. Venue: SpellCrafter's Den, Upper Sandusky, OH
+   VenueKey: SpellCrafter's Den|Upper Sandusky|OH
+   Address Query: "What is the full street address of SpellCrafter's Den in Upper Sandusky, OH? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for SpellCrafter's Den in Upper Sandusky, OH? Do they host Magic: The Gathering tournaments?"
+
+11. Venue: Lookout Games, Spearfish, SD
+   VenueKey: Lookout Games|Spearfish|SD
+   Address Query: "What is the full street address of Lookout Games in Spearfish, SD? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Lookout Games in Spearfish, SD? Do they host Magic: The Gathering tournaments?"
+
+12. Venue: d20 Gaming, Eau Claire, WI
+   VenueKey: d20 Gaming|Eau Claire|WI
+   Address Query: "What is the full street address of d20 Gaming in Eau Claire, WI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for d20 Gaming in Eau Claire, WI? Do they host Magic: The Gathering tournaments?"
+
+13. Venue: Misty Mountain Games, Madison, WI
+   VenueKey: Misty Mountain Games|Madison|WI
+   Address Query: "What is the full street address of Misty Mountain Games in Madison, WI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Misty Mountain Games in Madison, WI? Do they host Magic: The Gathering tournaments?"
+
+14. Venue: Game Universe, Mequon, WI
+   VenueKey: Game Universe|Mequon|WI
+   Address Query: "What is the full street address of Game Universe in Mequon, WI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Game Universe in Mequon, WI? Do they host Magic: The Gathering tournaments?"
+
+15. Venue: Dragons, Daggers N' Games, Merrill, WI
+   VenueKey: Dragons, Daggers N' Games|Merrill|WI
+   Address Query: "What is the full street address of Dragons, Daggers N' Games in Merrill, WI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Dragons, Daggers N' Games in Merrill, WI? Do they host Magic: The Gathering tournaments?"
+
+16. Venue: Good Game, Waterloo, IA
+   VenueKey: Good Game|Waterloo|IA
+   Address Query: "What is the full street address of Good Game in Waterloo, IA? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Good Game in Waterloo, IA? Do they host Magic: The Gathering tournaments?"
+
+17. Venue: Gamers World, Old Orchard Skokie, IL
+   VenueKey: Gamers World|Old Orchard Skokie|IL
+   Address Query: "What is the full street address of Gamers World in Old Orchard Skokie, IL? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Gamers World in Old Orchard Skokie, IL? Do they host Magic: The Gathering tournaments?"
+
+18. Venue: Larry's Game Store, Olathe, KS
+   VenueKey: Larry's Game Store|Olathe|KS
+   Address Query: "What is the full street address of Larry's Game Store in Olathe, KS? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Larry's Game Store in Olathe, KS? Do they host Magic: The Gathering tournaments?"
+
+19. Venue: 2 Bros & a Box, Stillwater, MN
+   VenueKey: 2 Bros & a Box|Stillwater|MN
+   Address Query: "What is the full street address of 2 Bros & a Box in Stillwater, MN? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for 2 Bros & a Box in Stillwater, MN? Do they host Magic: The Gathering tournaments?"
+
+20. Venue: Cardboard Horde, Sidney, OH
+   VenueKey: Cardboard Horde|Sidney|OH
+   Address Query: "What is the full street address of Cardboard Horde in Sidney, OH? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Cardboard Horde in Sidney, OH? Do they host Magic: The Gathering tournaments?"
+
+21. Venue: Evolution Gaming, Butler, WI
+   VenueKey: Evolution Gaming|Butler|WI
+   Address Query: "What is the full street address of Evolution Gaming in Butler, WI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Evolution Gaming in Butler, WI? Do they host Magic: The Gathering tournaments?"
+
+22. Venue: The Mana Vault MKE, St Francis, WI
+   VenueKey: The Mana Vault MKE|St Francis|WI
+   Address Query: "What is the full street address of The Mana Vault MKE in St Francis, WI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for The Mana Vault MKE in St Francis, WI? Do they host Magic: The Gathering tournaments?"
+
+23. Venue: The Hollow Archive, Cherokee, IA
+   VenueKey: The Hollow Archive|Cherokee|IA
+   Address Query: "What is the full street address of The Hollow Archive in Cherokee, IA? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for The Hollow Archive in Cherokee, IA? Do they host Magic: The Gathering tournaments?"
+
+24. Venue: Dungeon's Gate, Ankeny, IA
+   VenueKey: Dungeon's Gate|Ankeny|IA
+   Address Query: "What is the full street address of Dungeon's Gate in Ankeny, IA? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Dungeon's Gate in Ankeny, IA? Do they host Magic: The Gathering tournaments?"
+
+25. Venue: Dark Vassal Gaming, Cedar Falls, IA
+   VenueKey: Dark Vassal Gaming|Cedar Falls|IA
+   Address Query: "What is the full street address of Dark Vassal Gaming in Cedar Falls, IA? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Dark Vassal Gaming in Cedar Falls, IA? Do they host Magic: The Gathering tournaments?"
+
+26. Venue: Spellbound Games, Chicago, IL
+   VenueKey: Spellbound Games|Chicago|IL
+   Address Query: "What is the full street address of Spellbound Games in Chicago, IL? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Spellbound Games in Chicago, IL? Do they host Magic: The Gathering tournaments?"
+
+27. Venue: Impact Gaming Center, Fairview Heights, IL
+   VenueKey: Impact Gaming Center|Fairview Heights|IL
+   Address Query: "What is the full street address of Impact Gaming Center in Fairview Heights, IL? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Impact Gaming Center in Fairview Heights, IL? Do they host Magic: The Gathering tournaments?"
+
+28. Venue: Moonshot Games, Plainfield, IN
+   VenueKey: Moonshot Games|Plainfield|IN
+   Address Query: "What is the full street address of Moonshot Games in Plainfield, IN? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Moonshot Games in Plainfield, IN? Do they host Magic: The Gathering tournaments?"
+
+29. Venue: Galactic Toys, Kentwood, MI
+   VenueKey: Galactic Toys|Kentwood|MI
+   Address Query: "What is the full street address of Galactic Toys in Kentwood, MI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Galactic Toys in Kentwood, MI? Do they host Magic: The Gathering tournaments?"
+
+30. Venue: Dreamers Vault Games, St Louis Park, MN
+   VenueKey: Dreamers Vault Games|St Louis Park|MN
+   Address Query: "What is the full street address of Dreamers Vault Games in St Louis Park, MN? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Dreamers Vault Games in St Louis Park, MN? Do they host Magic: The Gathering tournaments?"
+
+31. Venue: Hurley's Heroes, Joplin, MO
+   VenueKey: Hurley's Heroes|Joplin|MO
+   Address Query: "What is the full street address of Hurley's Heroes in Joplin, MO? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Hurley's Heroes in Joplin, MO? Do they host Magic: The Gathering tournaments?"
+
+32. Venue: Ken's Comic Man, Poplar Bluff, MO
+   VenueKey: Ken's Comic Man|Poplar Bluff|MO
+   Address Query: "What is the full street address of Ken's Comic Man in Poplar Bluff, MO? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Ken's Comic Man in Poplar Bluff, MO? Do they host Magic: The Gathering tournaments?"
+
+33. Venue: Parallax Computers and Games, Bismarck, ND
+   VenueKey: Parallax Computers and Games|Bismarck|ND
+   Address Query: "What is the full street address of Parallax Computers and Games in Bismarck, ND? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Parallax Computers and Games in Bismarck, ND? Do they host Magic: The Gathering tournaments?"
+
+34. Venue: JWW Sports Cards & Gaming, Fargo, ND
+   VenueKey: JWW Sports Cards & Gaming|Fargo|ND
+   Address Query: "What is the full street address of JWW Sports Cards & Gaming in Fargo, ND? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for JWW Sports Cards & Gaming in Fargo, ND? Do they host Magic: The Gathering tournaments?"
+
+35. Venue: Apex Gaming, Caldwell, OH
+   VenueKey: Apex Gaming|Caldwell|OH
+   Address Query: "What is the full street address of Apex Gaming in Caldwell, OH? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Apex Gaming in Caldwell, OH? Do they host Magic: The Gathering tournaments?"
+
+36. Venue: Hobby Central, Delaware, OH
+   VenueKey: Hobby Central|Delaware|OH
+   Address Query: "What is the full street address of Hobby Central in Delaware, OH? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Hobby Central in Delaware, OH? Do they host Magic: The Gathering tournaments?"
+
+37. Venue: Deck Factory Gaming Center, Lima, OH
+   VenueKey: Deck Factory Gaming Center|Lima|OH
+   Address Query: "What is the full street address of Deck Factory Gaming Center in Lima, OH? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Deck Factory Gaming Center in Lima, OH? Do they host Magic: The Gathering tournaments?"
+
+38. Venue: Video Games Galaxy, Newark, OH
+   VenueKey: Video Games Galaxy|Newark|OH
+   Address Query: "What is the full street address of Video Games Galaxy in Newark, OH? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Video Games Galaxy in Newark, OH? Do they host Magic: The Gathering tournaments?"
+
+39. Venue: Shuffler's Den, Willoughby Hills, OH
+   VenueKey: Shuffler's Den|Willoughby Hills|OH
+   Address Query: "What is the full street address of Shuffler's Den in Willoughby Hills, OH? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Shuffler's Den in Willoughby Hills, OH? Do they host Magic: The Gathering tournaments?"
+
+40. Venue: Dragon's Den, Sioux Falls, SD
+   VenueKey: Dragon's Den|Sioux Falls|SD
+   Address Query: "What is the full street address of Dragon's Den in Sioux Falls, SD? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Dragon's Den in Sioux Falls, SD? Do they host Magic: The Gathering tournaments?"
+
+41. Venue: Undercity Games, Eau Claire, WI
+   VenueKey: Undercity Games|Eau Claire|WI
+   Address Query: "What is the full street address of Undercity Games in Eau Claire, WI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Undercity Games in Eau Claire, WI? Do they host Magic: The Gathering tournaments?"
+
+42. Venue: Colosseum Games, Kenosha, WI
+   VenueKey: Colosseum Games|Kenosha|WI
+   Address Query: "What is the full street address of Colosseum Games in Kenosha, WI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Colosseum Games in Kenosha, WI? Do they host Magic: The Gathering tournaments?"
+
+43. Venue: Midwest Jedi, River Falls, WI
+   VenueKey: Midwest Jedi|River Falls|WI
+   Address Query: "What is the full street address of Midwest Jedi in River Falls, WI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Midwest Jedi in River Falls, WI? Do they host Magic: The Gathering tournaments?"
+
+44. Venue: The Decatur Deathmatch, Decatur Convention Center - Decatur, IL
+   VenueKey: The Decatur Deathmatch|Decatur Convention Center - Decatur|IL
+   Address Query: "What is the full street address of The Decatur Deathmatch in Decatur Convention Center - Decatur, IL? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for The Decatur Deathmatch in Decatur Convention Center - Decatur, IL? Do they host Magic: The Gathering tournaments?"
+
+45. Venue: Collective Effort Gaming, Alpena, MI
+   VenueKey: Collective Effort Gaming|Alpena|MI
+   Address Query: "What is the full street address of Collective Effort Gaming in Alpena, MI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Collective Effort Gaming in Alpena, MI? Do they host Magic: The Gathering tournaments?"
+
+46. Venue: GameUphoria, Washington, MO
+   VenueKey: GameUphoria|Washington|MO
+   Address Query: "What is the full street address of GameUphoria in Washington, MO? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for GameUphoria in Washington, MO? Do they host Magic: The Gathering tournaments?"
+
+47. Venue: The Decatur Deathmatch, Decatur Convention Center Decatur, IL
+   VenueKey: The Decatur Deathmatch|Decatur Convention Center Decatur|IL
+   Address Query: "What is the full street address of The Decatur Deathmatch in Decatur Convention Center Decatur, IL? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for The Decatur Deathmatch in Decatur Convention Center Decatur, IL? Do they host Magic: The Gathering tournaments?"
+
+48. Venue: Remis Arcane Exchange, Muscatine, IA
+   VenueKey: Remis Arcane Exchange|Muscatine|IA
+   Address Query: "What is the full street address of Remis Arcane Exchange in Muscatine, IA? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Remis Arcane Exchange in Muscatine, IA? Do they host Magic: The Gathering tournaments?"
+
+49. Venue: The Castle Games, Columbus, IN
+   VenueKey: The Castle Games|Columbus|IN
+   Address Query: "What is the full street address of The Castle Games in Columbus, IN? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for The Castle Games in Columbus, IN? Do they host Magic: The Gathering tournaments?"
+
+50. Venue: Next Level Games, Muncie, IN
+   VenueKey: Next Level Games|Muncie|IN
+   Address Query: "What is the full street address of Next Level Games in Muncie, IN? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Next Level Games in Muncie, IN? Do they host Magic: The Gathering tournaments?"
+
+51. Venue: Battle Bunker, Dickinson, ND
+   VenueKey: Battle Bunker|Dickinson|ND
+   Address Query: "What is the full street address of Battle Bunker in Dickinson, ND? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Battle Bunker in Dickinson, ND? Do they host Magic: The Gathering tournaments?"
+
+52. Venue: Better Plays Gaming, Stow, OH
+   VenueKey: Better Plays Gaming|Stow|OH
+   Address Query: "What is the full street address of Better Plays Gaming in Stow, OH? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Better Plays Gaming in Stow, OH? Do they host Magic: The Gathering tournaments?"
+
+53. Venue: Izzi's Gym, Sioux Falls, SD
+   VenueKey: Izzi's Gym|Sioux Falls|SD
+   Address Query: "What is the full street address of Izzi's Gym in Sioux Falls, SD? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Izzi's Gym in Sioux Falls, SD? Do they host Magic: The Gathering tournaments?"
+
+54. Venue: Slick Mimic's, Board & Card Games Shoppe Appleton, WI
+   VenueKey: Slick Mimic's|Board & Card Games Shoppe Appleton|WI
+   Address Query: "What is the full street address of Slick Mimic's in Board & Card Games Shoppe Appleton, WI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Slick Mimic's in Board & Card Games Shoppe Appleton, WI? Do they host Magic: The Gathering tournaments?"
+
+55. Venue: The Dragon's Roost, Marshfield, WI
+   VenueKey: The Dragon's Roost|Marshfield|WI
+   Address Query: "What is the full street address of The Dragon's Roost in Marshfield, WI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for The Dragon's Roost in Marshfield, WI? Do they host Magic: The Gathering tournaments?"
+
+56. Venue: Grandmaster Games, Oak Park, IL
+   VenueKey: Grandmaster Games|Oak Park|IL
+   Address Query: "What is the full street address of Grandmaster Games in Oak Park, IL? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Grandmaster Games in Oak Park, IL? Do they host Magic: The Gathering tournaments?"
+
+57. Venue: Kugelblitz Gaming, Hermann, MO
+   VenueKey: Kugelblitz Gaming|Hermann|MO
+   Address Query: "What is the full street address of Kugelblitz Gaming in Hermann, MO? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Kugelblitz Gaming in Hermann, MO? Do they host Magic: The Gathering tournaments?"
+
+58. Venue: Boar's Hat Gaming, Elgin, IL
+   VenueKey: Boar's Hat Gaming|Elgin|IL
+   Address Query: "What is the full street address of Boar's Hat Gaming in Elgin, IL? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Boar's Hat Gaming in Elgin, IL? Do they host Magic: The Gathering tournaments?"
+
+59. Venue: Evanston Games and Cafe, Evanston, IL
+   VenueKey: Evanston Games and Cafe|Evanston|IL
+   Address Query: "What is the full street address of Evanston Games and Cafe in Evanston, IL? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Evanston Games and Cafe in Evanston, IL? Do they host Magic: The Gathering tournaments?"
+
+60. Venue: Pastimes, Niles, IL
+   VenueKey: Pastimes|Niles|IL
+   Address Query: "What is the full street address of Pastimes in Niles, IL? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Pastimes in Niles, IL? Do they host Magic: The Gathering tournaments?"
+
+61. Venue: Arena Hobbies, Derby, KS
+   VenueKey: Arena Hobbies|Derby|KS
+   Address Query: "What is the full street address of Arena Hobbies in Derby, KS? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Arena Hobbies in Derby, KS? Do they host Magic: The Gathering tournaments?"
+
+62. Venue: The Gamers Guild, Hays, KS
+   VenueKey: The Gamers Guild|Hays|KS
+   Address Query: "What is the full street address of The Gamers Guild in Hays, KS? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for The Gamers Guild in Hays, KS? Do they host Magic: The Gathering tournaments?"
+
+63. Venue: Gators Games and Hobbies, Leavenworth, KS
+   VenueKey: Gators Games and Hobbies|Leavenworth|KS
+   Address Query: "What is the full street address of Gators Games and Hobbies in Leavenworth, KS? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Gators Games and Hobbies in Leavenworth, KS? Do they host Magic: The Gathering tournaments?"
+
+64. Venue: Sylvan Factory, Ann Arbor, MI
+   VenueKey: Sylvan Factory|Ann Arbor|MI
+   Address Query: "What is the full street address of Sylvan Factory in Ann Arbor, MI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Sylvan Factory in Ann Arbor, MI? Do they host Magic: The Gathering tournaments?"
+
+65. Venue: CCGPrime, North Cedar Springs, MI
+   VenueKey: CCGPrime|North Cedar Springs|MI
+   Address Query: "What is the full street address of CCGPrime in North Cedar Springs, MI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for CCGPrime in North Cedar Springs, MI? Do they host Magic: The Gathering tournaments?"
+
+66. Venue: Gamer's Gauntlet, Clinton Township, MI
+   VenueKey: Gamer's Gauntlet|Clinton Township|MI
+   Address Query: "What is the full street address of Gamer's Gauntlet in Clinton Township, MI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Gamer's Gauntlet in Clinton Township, MI? Do they host Magic: The Gathering tournaments?"
+
+67. Venue: The Upkeep Games, Howell, MI
+   VenueKey: The Upkeep Games|Howell|MI
+   Address Query: "What is the full street address of The Upkeep Games in Howell, MI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for The Upkeep Games in Howell, MI? Do they host Magic: The Gathering tournaments?"
+
+68. Venue: Dreamers Vault Games, Minneapolis, MN
+   VenueKey: Dreamers Vault Games|Minneapolis|MN
+   Address Query: "What is the full street address of Dreamers Vault Games in Minneapolis, MN? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Dreamers Vault Games in Minneapolis, MN? Do they host Magic: The Gathering tournaments?"
+
+69. Venue: The Fan Zone, Waite Park, MN
+   VenueKey: The Fan Zone|Waite Park|MN
+   Address Query: "What is the full street address of The Fan Zone in Waite Park, MN? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for The Fan Zone in Waite Park, MN? Do they host Magic: The Gathering tournaments?"
+
+70. Venue: Forge and Fire Gaming, Maryland Heights, MO
+   VenueKey: Forge and Fire Gaming|Maryland Heights|MO
+   Address Query: "What is the full street address of Forge and Fire Gaming in Maryland Heights, MO? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Forge and Fire Gaming in Maryland Heights, MO? Do they host Magic: The Gathering tournaments?"
+
+71. Venue: JC Hobby, Norfolk, NE
+   VenueKey: JC Hobby|Norfolk|NE
+   Address Query: "What is the full street address of JC Hobby in Norfolk, NE? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for JC Hobby in Norfolk, NE? Do they host Magic: The Gathering tournaments?"
+
+72. Venue: Epic Loot Games, Centerville, OH
+   VenueKey: Epic Loot Games|Centerville|OH
+   Address Query: "What is the full street address of Epic Loot Games in Centerville, OH? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Epic Loot Games in Centerville, OH? Do they host Magic: The Gathering tournaments?"
+
+73. Venue: Recess Games, North Olmsted, OH
+   VenueKey: Recess Games|North Olmsted|OH
+   Address Query: "What is the full street address of Recess Games in North Olmsted, OH? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Recess Games in North Olmsted, OH? Do they host Magic: The Gathering tournaments?"
+
+74. Venue: Limited Edition, Cedar Falls, IA
+   VenueKey: Limited Edition|Cedar Falls|IA
+   Address Query: "What is the full street address of Limited Edition in Cedar Falls, IA? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Limited Edition in Cedar Falls, IA? Do they host Magic: The Gathering tournaments?"
+
+75. Venue: Now and Then, Mason City, IA
+   VenueKey: Now and Then|Mason City|IA
+   Address Query: "What is the full street address of Now and Then in Mason City, IA? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Now and Then in Mason City, IA? Do they host Magic: The Gathering tournaments?"
+
+76. Venue: Games King, Sioux City, IA
+   VenueKey: Games King|Sioux City|IA
+   Address Query: "What is the full street address of Games King in Sioux City, IA? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Games King in Sioux City, IA? Do they host Magic: The Gathering tournaments?"
+
+77. Venue: Dice Dojo, Chicago, IL
+   VenueKey: Dice Dojo|Chicago|IL
+   Address Query: "What is the full street address of Dice Dojo in Chicago, IL? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Dice Dojo in Chicago, IL? Do they host Magic: The Gathering tournaments?"
+
+78. Venue: Level Up Games, St. Paul, MN
+   VenueKey: Level Up Games|St. Paul|MN
+   Address Query: "What is the full street address of Level Up Games in St. Paul, MN? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Level Up Games in St. Paul, MN? Do they host Magic: The Gathering tournaments?"
+
+79. Venue: Mayhem Collectibles, Des Moines, IA
+   VenueKey: Mayhem Collectibles|Des Moines|IA
+   Address Query: "What is the full street address of Mayhem Collectibles in Des Moines, IA? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Mayhem Collectibles in Des Moines, IA? Do they host Magic: The Gathering tournaments?"
+
+80. Venue: Titan Games, Champaign, IL
+   VenueKey: Titan Games|Champaign|IL
+   Address Query: "What is the full street address of Titan Games in Champaign, IL? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Titan Games in Champaign, IL? Do they host Magic: The Gathering tournaments?"
+
+81. Venue: GameStorm, Lemont, IL
+   VenueKey: GameStorm|Lemont|IL
+   Address Query: "What is the full street address of GameStorm in Lemont, IL? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for GameStorm in Lemont, IL? Do they host Magic: The Gathering tournaments?"
+
+82. Venue: The Kingdom: Cards and Games, Kokomo, IN
+   VenueKey: The Kingdom: Cards and Games|Kokomo|IN
+   Address Query: "What is the full street address of The Kingdom: Cards and Games in Kokomo, IN? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for The Kingdom: Cards and Games in Kokomo, IN? Do they host Magic: The Gathering tournaments?"
+
+83. Venue: Moonshot Games, Noblesville, IN
+   VenueKey: Moonshot Games|Noblesville|IN
+   Address Query: "What is the full street address of Moonshot Games in Noblesville, IN? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Moonshot Games in Noblesville, IN? Do they host Magic: The Gathering tournaments?"
+
+84. Venue: The Castle Games, Seymour, IN
+   VenueKey: The Castle Games|Seymour|IN
+   Address Query: "What is the full street address of The Castle Games in Seymour, IN? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for The Castle Games in Seymour, IN? Do they host Magic: The Gathering tournaments?"
+
+85. Venue: Game Nut Entertainment, Lawrence, KS
+   VenueKey: Game Nut Entertainment|Lawrence|KS
+   Address Query: "What is the full street address of Game Nut Entertainment in Lawrence, KS? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Game Nut Entertainment in Lawrence, KS? Do they host Magic: The Gathering tournaments?"
+
+86. Venue: Goblin Games, Manhattan, KS
+   VenueKey: Goblin Games|Manhattan|KS
+   Address Query: "What is the full street address of Goblin Games in Manhattan, KS? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Goblin Games in Manhattan, KS? Do they host Magic: The Gathering tournaments?"
+
+87. Venue: One Drop Game Shop, Wichita, KS
+   VenueKey: One Drop Game Shop|Wichita|KS
+   Address Query: "What is the full street address of One Drop Game Shop in Wichita, KS? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for One Drop Game Shop in Wichita, KS? Do they host Magic: The Gathering tournaments?"
+
+88. Venue: Perfect Storm Comics and Games, Battle Creek, MI
+   VenueKey: Perfect Storm Comics and Games|Battle Creek|MI
+   Address Query: "What is the full street address of Perfect Storm Comics and Games in Battle Creek, MI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Perfect Storm Comics and Games in Battle Creek, MI? Do they host Magic: The Gathering tournaments?"
+
+89. Venue: CCGPrime, Ionia, MI
+   VenueKey: CCGPrime|Ionia|MI
+   Address Query: "What is the full street address of CCGPrime in Ionia, MI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for CCGPrime in Ionia, MI? Do they host Magic: The Gathering tournaments?"
+
+90. Venue: CCGPrime, Central Ionia, MI
+   VenueKey: CCGPrime|Central Ionia|MI
+   Address Query: "What is the full street address of CCGPrime in Central Ionia, MI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for CCGPrime in Central Ionia, MI? Do they host Magic: The Gathering tournaments?"
+
+91. Venue: Dreamers Vault Games, Burnsville, MN
+   VenueKey: Dreamers Vault Games|Burnsville|MN
+   Address Query: "What is the full street address of Dreamers Vault Games in Burnsville, MN? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Dreamers Vault Games in Burnsville, MN? Do they host Magic: The Gathering tournaments?"
+
+92. Venue: Spanky's Card Shop, Kansas City, MO
+   VenueKey: Spanky's Card Shop|Kansas City|MO
+   Address Query: "What is the full street address of Spanky's Card Shop in Kansas City, MO? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Spanky's Card Shop in Kansas City, MO? Do they host Magic: The Gathering tournaments?"
+
+93. Venue: North Coast Games, Mentor, OH
+   VenueKey: North Coast Games|Mentor|OH
+   Address Query: "What is the full street address of North Coast Games in Mentor, OH? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for North Coast Games in Mentor, OH? Do they host Magic: The Gathering tournaments?"
+
+94. Venue: Line Drive Sports Cards, Tiffin, OH
+   VenueKey: Line Drive Sports Cards|Tiffin|OH
+   Address Query: "What is the full street address of Line Drive Sports Cards in Tiffin, OH? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Line Drive Sports Cards in Tiffin, OH? Do they host Magic: The Gathering tournaments?"
+
+95. Venue: Game Universe, Brookfield, WI
+   VenueKey: Game Universe|Brookfield|WI
+   Address Query: "What is the full street address of Game Universe in Brookfield, WI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Game Universe in Brookfield, WI? Do they host Magic: The Gathering tournaments?"
+
+96. Venue: Adventure Games, Oshkosh, WI
+   VenueKey: Adventure Games|Oshkosh|WI
+   Address Query: "What is the full street address of Adventure Games in Oshkosh, WI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Adventure Games in Oshkosh, WI? Do they host Magic: The Gathering tournaments?"
+
+97. Venue: Mythic Forge Gaming, Madison Heights, MI
+   VenueKey: Mythic Forge Gaming|Madison Heights|MI
+   Address Query: "What is the full street address of Mythic Forge Gaming in Madison Heights, MI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Mythic Forge Gaming in Madison Heights, MI? Do they host Magic: The Gathering tournaments?"
+
+98. Venue: Moxie Card Shop, Des Moines, IA
+   VenueKey: Moxie Card Shop|Des Moines|IA
+   Address Query: "What is the full street address of Moxie Card Shop in Des Moines, IA? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Moxie Card Shop in Des Moines, IA? Do they host Magic: The Gathering tournaments?"
+
+99. Venue: The Castle Games, Bloomington Ellettsville, IN
+   VenueKey: The Castle Games|Bloomington Ellettsville|IN
+   Address Query: "What is the full street address of The Castle Games in Bloomington Ellettsville, IN? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for The Castle Games in Bloomington Ellettsville, IN? Do they host Magic: The Gathering tournaments?"
+
+100. Venue: Tier 1 Games, Lafayette, IN
+   VenueKey: Tier 1 Games|Lafayette|IN
+   Address Query: "What is the full street address of Tier 1 Games in Lafayette, IN? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Tier 1 Games in Lafayette, IN? Do they host Magic: The Gathering tournaments?"
+
+101. Venue: The Arena, Salina, KS
+   VenueKey: The Arena|Salina|KS
+   Address Query: "What is the full street address of The Arena in Salina, KS? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for The Arena in Salina, KS? Do they host Magic: The Gathering tournaments?"
+
+102. Venue: Dreamers Vault Games, Champlin, MN
+   VenueKey: Dreamers Vault Games|Champlin|MN
+   Address Query: "What is the full street address of Dreamers Vault Games in Champlin, MN? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Dreamers Vault Games in Champlin, MN? Do they host Magic: The Gathering tournaments?"
+
+103. Venue: Game Universe, Franklin, WI
+   VenueKey: Game Universe|Franklin|WI
+   Address Query: "What is the full street address of Game Universe in Franklin, WI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Game Universe in Franklin, WI? Do they host Magic: The Gathering tournaments?"
+
+104. Venue: Tea & Tee Card and Hobby, Medford, WI
+   VenueKey: Tea & Tee Card and Hobby|Medford|WI
+   Address Query: "What is the full street address of Tea & Tee Card and Hobby in Medford, WI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Tea & Tee Card and Hobby in Medford, WI? Do they host Magic: The Gathering tournaments?"
+
+105. Venue: Galaxy Games, Wintersville, OH
+   VenueKey: Galaxy Games|Wintersville|OH
+   Address Query: "What is the full street address of Galaxy Games in Wintersville, OH? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Galaxy Games in Wintersville, OH? Do they host Magic: The Gathering tournaments?"
+
+106. Venue: Gators Hobby and Games, Leavenworth, KS
+   VenueKey: Gators Hobby and Games|Leavenworth|KS
+   Address Query: "What is the full street address of Gators Hobby and Games in Leavenworth, KS? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Gators Hobby and Games in Leavenworth, KS? Do they host Magic: The Gathering tournaments?"
+
+107. Venue: AFK Games, Holt, MI
+   VenueKey: AFK Games|Holt|MI
+   Address Query: "What is the full street address of AFK Games in Holt, MI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for AFK Games in Holt, MI? Do they host Magic: The Gathering tournaments?"
+
+108. Venue: RIW Hobbies, Livonia, MI
+   VenueKey: RIW Hobbies|Livonia|MI
+   Address Query: "What is the full street address of RIW Hobbies in Livonia, MI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for RIW Hobbies in Livonia, MI? Do they host Magic: The Gathering tournaments?"
+
+109. Venue: Dreamers Vault Games, South Saint Paul, MN
+   VenueKey: Dreamers Vault Games|South Saint Paul|MN
+   Address Query: "What is the full street address of Dreamers Vault Games in South Saint Paul, MN? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Dreamers Vault Games in South Saint Paul, MN? Do they host Magic: The Gathering tournaments?"
+
+110. Venue: Asgard Keep, Mount Vernon, IL
+   VenueKey: Asgard Keep|Mount Vernon|IL
+   Address Query: "What is the full street address of Asgard Keep in Mount Vernon, IL? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Asgard Keep in Mount Vernon, IL? Do they host Magic: The Gathering tournaments?"
+
+111. Venue: Playmakers, Rapid City, SD
+   VenueKey: Playmakers|Rapid City|SD
+   Address Query: "What is the full street address of Playmakers in Rapid City, SD? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Playmakers in Rapid City, SD? Do they host Magic: The Gathering tournaments?"
+
+112. Venue: Level Up Games, Hastings, MN
+   VenueKey: Level Up Games|Hastings|MN
+   Address Query: "What is the full street address of Level Up Games in Hastings, MN? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Level Up Games in Hastings, MN? Do they host Magic: The Gathering tournaments?"
+
+113. Venue: Mike and Taylor's Card Shop, Wentzville, MO
+   VenueKey: Mike and Taylor's Card Shop|Wentzville|MO
+   Address Query: "What is the full street address of Mike and Taylor's Card Shop in Wentzville, MO? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Mike and Taylor's Card Shop in Wentzville, MO? Do they host Magic: The Gathering tournaments?"
+
+114. Venue: Parallax Computers and Gaming, Bismarck, ND
+   VenueKey: Parallax Computers and Gaming|Bismarck|ND
+   Address Query: "What is the full street address of Parallax Computers and Gaming in Bismarck, ND? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Parallax Computers and Gaming in Bismarck, ND? Do they host Magic: The Gathering tournaments?"
+
+115. Venue: Bored Bard Games, Iron Mountain, MI
+   VenueKey: Bored Bard Games|Iron Mountain|MI
+   Address Query: "What is the full street address of Bored Bard Games in Iron Mountain, MI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Bored Bard Games in Iron Mountain, MI? Do they host Magic: The Gathering tournaments?"
+
+116. Venue: The Upkeep Games, Canton, MI
+   VenueKey: The Upkeep Games|Canton|MI
+   Address Query: "What is the full street address of The Upkeep Games in Canton, MI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for The Upkeep Games in Canton, MI? Do they host Magic: The Gathering tournaments?"
+
+117. Venue: Level Up Games, Minneapolis, MN
+   VenueKey: Level Up Games|Minneapolis|MN
+   Address Query: "What is the full street address of Level Up Games in Minneapolis, MN? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Level Up Games in Minneapolis, MN? Do they host Magic: The Gathering tournaments?"
+
+118. Venue: The Upkeep Games, Ann Arbor, MI
+   VenueKey: The Upkeep Games|Ann Arbor|MI
+   Address Query: "What is the full street address of The Upkeep Games in Ann Arbor, MI? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for The Upkeep Games in Ann Arbor, MI? Do they host Magic: The Gathering tournaments?"
+
+119. Venue: The Game Shoppe, Bellevue, NE
+   VenueKey: The Game Shoppe|Bellevue|NE
+   Address Query: "What is the full street address of The Game Shoppe in Bellevue, NE? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for The Game Shoppe in Bellevue, NE? Do they host Magic: The Gathering tournaments?"
+
+120. Venue: Chupacabra Games, Chicago, IL
+   VenueKey: Chupacabra Games|Chicago|IL
+   Address Query: "What is the full street address of Chupacabra Games in Chicago, IL? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Chupacabra Games in Chicago, IL? Do they host Magic: The Gathering tournaments?"
+
+121. Venue: Moonshot Gaming, Plainfield, IN
+   VenueKey: Moonshot Gaming|Plainfield|IN
+   Address Query: "What is the full street address of Moonshot Gaming in Plainfield, IN? Please provide complete address with street, city, state, and zip code."
+   Website Query: "What is the website or Facebook page for Moonshot Gaming in Plainfield, IN? Do they host Magic: The Gathering tournaments?"
+
+EVENTS NEEDING LINKS (240):
+
+1. Event: Amazing Fantasy Books and Comics, Frankfort, IL - 2026-01-02 (Standard)
+   EventId: 2026-01-02-amazing-fantasy-books-and-comics-frankfort
+   Link Query: "Find registration or event page for RCQ tournament at Amazing Fantasy Books and Comics in Frankfort, IL on 2026-01-02 for Standard format Magic: The Gathering"
+
+2. Event: Chupacabra Games, Naperville, IL - 2026-01-03 (Standard)
+   EventId: 2026-01-03-chupacabra-games-naperville
+   Link Query: "Find registration or event page for RCQ tournament at Chupacabra Games in Naperville, IL on 2026-01-03 for Standard format Magic: The Gathering"
+
+3. Event: Tier 1 Games, Kokomo, IN - 2026-01-03 (Standard)
+   EventId: 2026-01-03-tier-1-games-kokomo
+   Link Query: "Find registration or event page for RCQ tournament at Tier 1 Games in Kokomo, IN on 2026-01-03 for Standard format Magic: The Gathering"
+
+4. Event: Empire Comics, New Albany, IN - 2026-01-03 (Limited)
+   EventId: 2026-01-03-empire-comics-new albany
+   Link Query: "Find registration or event page for RCQ tournament at Empire Comics in New Albany, IN on 2026-01-03 for Limited format Magic: The Gathering"
+
+5. Event: Super Hideaway Games, Holland, MI - 2026-01-03 (Standard)
+   EventId: 2026-01-03-super-hideaway-games-holland
+   Link Query: "Find registration or event page for RCQ tournament at Super Hideaway Games in Holland, MI on 2026-01-03 for Standard format Magic: The Gathering"
+
+6. Event: Dreamers Vault Games, Roseville, MN - 2026-01-03 (Standard)
+   EventId: 2026-01-03-dreamers-vault-games-roseville
+   Link Query: "Find registration or event page for RCQ tournament at Dreamers Vault Games in Roseville, MN on 2026-01-03 for Standard format Magic: The Gathering"
+
+7. Event: Game Cafe, Independence, MO - 2026-01-03 (Standard)
+   EventId: 2026-01-03-game-cafe-independence
+   Link Query: "Find registration or event page for RCQ tournament at Game Cafe in Independence, MO on 2026-01-03 for Standard format Magic: The Gathering"
+
+8. Event: BK Games, St Robert, MO - 2026-01-03 (Standard)
+   EventId: 2026-01-03-bk-games-st robert
+   Link Query: "Find registration or event page for RCQ tournament at BK Games in St Robert, MO on 2026-01-03 for Standard format Magic: The Gathering"
+
+9. Event: Paradox Comics-N-Cards, Fargo, ND - 2026-01-03 (TLA Limited)
+   EventId: 2026-01-03-paradox-comics-n-cards-fargo
+   Link Query: "Find registration or event page for RCQ tournament at Paradox Comics-N-Cards in Fargo, ND on 2026-01-03 for TLA Limited format Magic: The Gathering"
+
+10. Event: The Game Shoppe, Omaha, NE - 2026-01-03 (Standard)
+   EventId: 2026-01-03-the-game-shoppe-omaha
+   Link Query: "Find registration or event page for RCQ tournament at The Game Shoppe in Omaha, NE on 2026-01-03 for Standard format Magic: The Gathering"
+
+11. Event: Freedom Gaming, North Canton, OH - 2026-01-03 (Standard)
+   EventId: 2026-01-03-freedom-gaming-north canton
+   Link Query: "Find registration or event page for RCQ tournament at Freedom Gaming in North Canton, OH on 2026-01-03 for Standard format Magic: The Gathering"
+
+12. Event: SpellCrafter's Den, Upper Sandusky, OH - 2026-01-03 (Standard)
+   EventId: 2026-01-03-spellcrafter-s-den-upper sandusky
+   Link Query: "Find registration or event page for RCQ tournament at SpellCrafter's Den in Upper Sandusky, OH on 2026-01-03 for Standard format Magic: The Gathering"
+
+13. Event: Lookout Games, Spearfish, SD - 2026-01-03 (Standard)
+   EventId: 2026-01-03-lookout-games-spearfish
+   Link Query: "Find registration or event page for RCQ tournament at Lookout Games in Spearfish, SD on 2026-01-03 for Standard format Magic: The Gathering"
+
+14. Event: d20 Gaming, Eau Claire, WI - 2026-01-03 (Standard)
+   EventId: 2026-01-03-d20-gaming-eau claire
+   Link Query: "Find registration or event page for RCQ tournament at d20 Gaming in Eau Claire, WI on 2026-01-03 for Standard format Magic: The Gathering"
+
+15. Event: Misty Mountain Games, Madison, WI - 2026-01-03 (Standard)
+   EventId: 2026-01-03-misty-mountain-games-madison
+   Link Query: "Find registration or event page for RCQ tournament at Misty Mountain Games in Madison, WI on 2026-01-03 for Standard format Magic: The Gathering"
+
+16. Event: Game Universe, Mequon, WI - 2026-01-03 (Standard)
+   EventId: 2026-01-03-game-universe-mequon
+   Link Query: "Find registration or event page for RCQ tournament at Game Universe in Mequon, WI on 2026-01-03 for Standard format Magic: The Gathering"
+
+17. Event: Dragons, Daggers N' Games, Merrill, WI - 2026-01-03 (Standard)
+   EventId: 2026-01-03-dragons--daggers-n--games-merrill
+   Link Query: "Find registration or event page for RCQ tournament at Dragons, Daggers N' Games in Merrill, WI on 2026-01-03 for Standard format Magic: The Gathering"
+
+18. Event: Good Game, Waterloo, IA - 2026-01-04 (Standard)
+   EventId: 2026-01-04-good-game-waterloo
+   Link Query: "Find registration or event page for RCQ tournament at Good Game in Waterloo, IA on 2026-01-04 for Standard format Magic: The Gathering"
+
+19. Event: Gamers World, Old Orchard Skokie, IL - 2026-01-04 (Standard)
+   EventId: 2026-01-04-gamers-world-old orchard skokie
+   Link Query: "Find registration or event page for RCQ tournament at Gamers World in Old Orchard Skokie, IL on 2026-01-04 for Standard format Magic: The Gathering"
+
+20. Event: Larry's Game Store, Olathe, KS - 2026-01-04 (Standard)
+   EventId: 2026-01-04-larry-s-game-store-olathe
+   Link Query: "Find registration or event page for RCQ tournament at Larry's Game Store in Olathe, KS on 2026-01-04 for Standard format Magic: The Gathering"
+
+21. Event: 2 Bros & a Box, Stillwater, MN - 2026-01-04 (Standard)
+   EventId: 2026-01-04-2-bros---a-box-stillwater
+   Link Query: "Find registration or event page for RCQ tournament at 2 Bros & a Box in Stillwater, MN on 2026-01-04 for Standard format Magic: The Gathering"
+
+22. Event: Cardboard Horde, Sidney, OH - 2026-01-04 (Standard)
+   EventId: 2026-01-04-cardboard-horde-sidney
+   Link Query: "Find registration or event page for RCQ tournament at Cardboard Horde in Sidney, OH on 2026-01-04 for Standard format Magic: The Gathering"
+
+23. Event: Evolution Gaming, Butler, WI - 2026-01-04 (Standard)
+   EventId: 2026-01-04-evolution-gaming-butler
+   Link Query: "Find registration or event page for RCQ tournament at Evolution Gaming in Butler, WI on 2026-01-04 for Standard format Magic: The Gathering"
+
+24. Event: The Mana Vault MKE, St Francis, WI - 2026-01-04 (Standard)
+   EventId: 2026-01-04-the-mana-vault-mke-st francis
+   Link Query: "Find registration or event page for RCQ tournament at The Mana Vault MKE in St Francis, WI on 2026-01-04 for Standard format Magic: The Gathering"
+
+25. Event: The Hollow Archive, Cherokee, IA - 2026-01-04 (cEDH Land, Go Black Lotus Invitational (judge promos for Top 4; Intuition, FoW, Imperial Seal, Mox Opal))
+   EventId: 2026-01-04-the-hollow-archive-cherokee
+   Link Query: "Find registration or event page for Other tournament at The Hollow Archive in Cherokee, IA on 2026-01-04 for cEDH Land, Go Black Lotus Invitational (judge promos for Top 4; Intuition, FoW, Imperial Seal, Mox Opal) format Magic: The Gathering"
+
+26. Event: Dungeon's Gate, Ankeny, IA - 2026-01-10 (Standard)
+   EventId: 2026-01-10-dungeon-s-gate-ankeny
+   Link Query: "Find registration or event page for RCQ tournament at Dungeon's Gate in Ankeny, IA on 2026-01-10 for Standard format Magic: The Gathering"
+
+27. Event: Dark Vassal Gaming, Cedar Falls, IA - 2026-01-10 (Standard)
+   EventId: 2026-01-10-dark-vassal-gaming-cedar falls
+   Link Query: "Find registration or event page for RCQ tournament at Dark Vassal Gaming in Cedar Falls, IA on 2026-01-10 for Standard format Magic: The Gathering"
+
+28. Event: Spellbound Games, Chicago, IL - 2026-01-10 (TLA Limited)
+   EventId: 2026-01-10-spellbound-games-chicago
+   Link Query: "Find registration or event page for RCQ tournament at Spellbound Games in Chicago, IL on 2026-01-10 for TLA Limited format Magic: The Gathering"
+
+29. Event: Impact Gaming Center, Fairview Heights, IL - 2026-01-10 (TLA Limited)
+   EventId: 2026-01-10-impact-gaming-center-fairview heights
+   Link Query: "Find registration or event page for RCQ tournament at Impact Gaming Center in Fairview Heights, IL on 2026-01-10 for TLA Limited format Magic: The Gathering"
+
+30. Event: Moonshot Games, Plainfield, IN - 2026-01-10 (Standard)
+   EventId: 2026-01-10-moonshot-games-plainfield
+   Link Query: "Find registration or event page for RCQ tournament at Moonshot Games in Plainfield, IN on 2026-01-10 for Standard format Magic: The Gathering"
+
+31. Event: Galactic Toys, Kentwood, MI - 2026-01-10 (Standard)
+   EventId: 2026-01-10-galactic-toys-kentwood
+   Link Query: "Find registration or event page for RCQ tournament at Galactic Toys in Kentwood, MI on 2026-01-10 for Standard format Magic: The Gathering"
+
+32. Event: Dreamers Vault Games, St Louis Park, MN - 2026-01-10 (Standard)
+   EventId: 2026-01-10-dreamers-vault-games-st louis park
+   Link Query: "Find registration or event page for RCQ tournament at Dreamers Vault Games in St Louis Park, MN on 2026-01-10 for Standard format Magic: The Gathering"
+
+33. Event: Hurley's Heroes, Joplin, MO - 2026-01-10 (Standard)
+   EventId: 2026-01-10-hurley-s-heroes-joplin
+   Link Query: "Find registration or event page for RCQ tournament at Hurley's Heroes in Joplin, MO on 2026-01-10 for Standard format Magic: The Gathering"
+
+34. Event: Ken's Comic Man, Poplar Bluff, MO - 2026-01-10 (Standard)
+   EventId: 2026-01-10-ken-s-comic-man-poplar bluff
+   Link Query: "Find registration or event page for RCQ tournament at Ken's Comic Man in Poplar Bluff, MO on 2026-01-10 for Standard format Magic: The Gathering"
+
+35. Event: Parallax Computers and Games, Bismarck, ND - 2026-01-10 (Standard)
+   EventId: 2026-01-10-parallax-computers-and-games-bismarck
+   Link Query: "Find registration or event page for RCQ tournament at Parallax Computers and Games in Bismarck, ND on 2026-01-10 for Standard format Magic: The Gathering"
+
+36. Event: JWW Sports Cards & Gaming, Fargo, ND - 2026-01-10 (Standard)
+   EventId: 2026-01-10-jww-sports-cards---gaming-fargo
+   Link Query: "Find registration or event page for RCQ tournament at JWW Sports Cards & Gaming in Fargo, ND on 2026-01-10 for Standard format Magic: The Gathering"
+
+37. Event: Apex Gaming, Caldwell, OH - 2026-01-10 (Standard)
+   EventId: 2026-01-10-apex-gaming-caldwell
+   Link Query: "Find registration or event page for RCQ tournament at Apex Gaming in Caldwell, OH on 2026-01-10 for Standard format Magic: The Gathering"
+
+38. Event: Hobby Central, Delaware, OH - 2026-01-10 (Standard)
+   EventId: 2026-01-10-hobby-central-delaware
+   Link Query: "Find registration or event page for RCQ tournament at Hobby Central in Delaware, OH on 2026-01-10 for Standard format Magic: The Gathering"
+
+39. Event: Deck Factory Gaming Center, Lima, OH - 2026-01-10 (Standard)
+   EventId: 2026-01-10-deck-factory-gaming-center-lima
+   Link Query: "Find registration or event page for RCQ tournament at Deck Factory Gaming Center in Lima, OH on 2026-01-10 for Standard format Magic: The Gathering"
+
+40. Event: Video Games Galaxy, Newark, OH - 2026-01-10 (Standard)
+   EventId: 2026-01-10-video-games-galaxy-newark
+   Link Query: "Find registration or event page for RCQ tournament at Video Games Galaxy in Newark, OH on 2026-01-10 for Standard format Magic: The Gathering"
+
+41. Event: Shuffler's Den, Willoughby Hills, OH - 2026-01-10 (Standard)
+   EventId: 2026-01-10-shuffler-s-den-willoughby hills
+   Link Query: "Find registration or event page for RCQ tournament at Shuffler's Den in Willoughby Hills, OH on 2026-01-10 for Standard format Magic: The Gathering"
+
+42. Event: Dragon's Den, Sioux Falls, SD - 2026-01-10 (Standard)
+   EventId: 2026-01-10-dragon-s-den-sioux falls
+   Link Query: "Find registration or event page for RCQ tournament at Dragon's Den in Sioux Falls, SD on 2026-01-10 for Standard format Magic: The Gathering"
+
+43. Event: Lookout Games, Spearfish, SD - 2026-01-10 (Standard)
+   EventId: 2026-01-10-lookout-games-spearfish
+   Link Query: "Find registration or event page for RCQ tournament at Lookout Games in Spearfish, SD on 2026-01-10 for Standard format Magic: The Gathering"
+
+44. Event: Undercity Games, Eau Claire, WI - 2026-01-10 (Standard)
+   EventId: 2026-01-10-undercity-games-eau claire
+   Link Query: "Find registration or event page for RCQ tournament at Undercity Games in Eau Claire, WI on 2026-01-10 for Standard format Magic: The Gathering"
+
+45. Event: Colosseum Games, Kenosha, WI - 2026-01-10 (Standard)
+   EventId: 2026-01-10-colosseum-games-kenosha
+   Link Query: "Find registration or event page for RCQ tournament at Colosseum Games in Kenosha, WI on 2026-01-10 for Standard format Magic: The Gathering"
+
+46. Event: Midwest Jedi, River Falls, WI - 2026-01-10 (Standard)
+   EventId: 2026-01-10-midwest-jedi-river falls
+   Link Query: "Find registration or event page for RCQ tournament at Midwest Jedi in River Falls, WI on 2026-01-10 for Standard format Magic: The Gathering"
+
+47. Event: The Decatur Deathmatch, Decatur Convention Center - Decatur, IL - 2026-01-10 (10k (120-200 players) up to 20k (475+))
+   EventId: 2026-01-10-the-decatur-deathmatch-decatur convention center - decatur
+   Link Query: "Find registration or event page for Other tournament at The Decatur Deathmatch in Decatur Convention Center - Decatur, IL on 2026-01-10 for 10k (120-200 players) up to 20k (475+) format Magic: The Gathering"
+
+48. Event: Collective Effort Gaming, Alpena, MI - 2026-01-10 (Win-an-LED (w/16+ players))
+   EventId: 2026-01-10-collective-effort-gaming-alpena
+   Link Query: "Find registration or event page for Other tournament at Collective Effort Gaming in Alpena, MI on 2026-01-10 for Win-an-LED (w/16+ players) format Magic: The Gathering"
+
+49. Event: GameUphoria, Washington, MO - 2026-01-11 (Standard)
+   EventId: 2026-01-11-gameuphoria-washington
+   Link Query: "Find registration or event page for RCQ tournament at GameUphoria in Washington, MO on 2026-01-11 for Standard format Magic: The Gathering"
+
+50. Event: The Decatur Deathmatch, Decatur Convention Center - Decatur, IL - 2026-01-11 (10k (120-200 players) up to 20k (475+))
+   EventId: 2026-01-11-the-decatur-deathmatch-decatur convention center - decatur
+   Link Query: "Find registration or event page for Other tournament at The Decatur Deathmatch in Decatur Convention Center - Decatur, IL on 2026-01-11 for 10k (120-200 players) up to 20k (475+) format Magic: The Gathering"
+
+51. Event: The Decatur Deathmatch, Decatur Convention Center Decatur, IL - 2026-01-11 (Win-a-Cradle)
+   EventId: 2026-01-11-the-decatur-deathmatch-decatur convention center decatur
+   Link Query: "Find registration or event page for Other tournament at The Decatur Deathmatch in Decatur Convention Center Decatur, IL on 2026-01-11 for Win-a-Cradle format Magic: The Gathering"
+
+52. Event: Remis Arcane Exchange, Muscatine, IA - 2026-01-17 (Standard)
+   EventId: 2026-01-17-remis-arcane-exchange-muscatine
+   Link Query: "Find registration or event page for RCQ tournament at Remis Arcane Exchange in Muscatine, IA on 2026-01-17 for Standard format Magic: The Gathering"
+
+53. Event: The Castle Games, Columbus, IN - 2026-01-17 (Standard)
+   EventId: 2026-01-17-the-castle-games-columbus
+   Link Query: "Find registration or event page for RCQ tournament at The Castle Games in Columbus, IN on 2026-01-17 for Standard format Magic: The Gathering"
+
+54. Event: Next Level Games, Muncie, IN - 2026-01-17 (Standard)
+   EventId: 2026-01-17-next-level-games-muncie
+   Link Query: "Find registration or event page for RCQ tournament at Next Level Games in Muncie, IN on 2026-01-17 for Standard format Magic: The Gathering"
+
+55. Event: Battle Bunker, Dickinson, ND - 2026-01-17 (Standard)
+   EventId: 2026-01-17-battle-bunker-dickinson
+   Link Query: "Find registration or event page for RCQ tournament at Battle Bunker in Dickinson, ND on 2026-01-17 for Standard format Magic: The Gathering"
+
+56. Event: Better Plays Gaming, Stow, OH - 2026-01-17 (Standard)
+   EventId: 2026-01-17-better-plays-gaming-stow
+   Link Query: "Find registration or event page for RCQ tournament at Better Plays Gaming in Stow, OH on 2026-01-17 for Standard format Magic: The Gathering"
+
+57. Event: Izzi's Gym, Sioux Falls, SD - 2026-01-17 (Standard)
+   EventId: 2026-01-17-izzi-s-gym-sioux falls
+   Link Query: "Find registration or event page for RCQ tournament at Izzi's Gym in Sioux Falls, SD on 2026-01-17 for Standard format Magic: The Gathering"
+
+58. Event: Slick Mimic's, Board & Card Games Shoppe Appleton, WI - 2026-01-17 (Standard)
+   EventId: 2026-01-17-slick-mimic-s-board & card games shoppe appleton
+   Link Query: "Find registration or event page for RCQ tournament at Slick Mimic's in Board & Card Games Shoppe Appleton, WI on 2026-01-17 for Standard format Magic: The Gathering"
+
+59. Event: The Dragon's Roost, Marshfield, WI - 2026-01-17 (Standard)
+   EventId: 2026-01-17-the-dragon-s-roost-marshfield
+   Link Query: "Find registration or event page for RCQ tournament at The Dragon's Roost in Marshfield, WI on 2026-01-17 for Standard format Magic: The Gathering"
+
+60. Event: Grandmaster Games, Oak Park, IL - 2026-01-18 (Standard)
+   EventId: 2026-01-18-grandmaster-games-oak park
+   Link Query: "Find registration or event page for RCQ tournament at Grandmaster Games in Oak Park, IL on 2026-01-18 for Standard format Magic: The Gathering"
+
+61. Event: Kugelblitz Gaming, Hermann, MO - 2026-01-23 (ECL Limited)
+   EventId: 2026-01-23-kugelblitz-gaming-hermann
+   Link Query: "Find registration or event page for RCQ tournament at Kugelblitz Gaming in Hermann, MO on 2026-01-23 for ECL Limited format Magic: The Gathering"
+
+62. Event: Boar's Hat Gaming, Elgin, IL - 2026-01-24 (Standard)
+   EventId: 2026-01-24-boar-s-hat-gaming-elgin
+   Link Query: "Find registration or event page for RCQ tournament at Boar's Hat Gaming in Elgin, IL on 2026-01-24 for Standard format Magic: The Gathering"
+
+63. Event: Evanston Games and Cafe, Evanston, IL - 2026-01-24 (Standard)
+   EventId: 2026-01-24-evanston-games-and-cafe-evanston
+   Link Query: "Find registration or event page for RCQ tournament at Evanston Games and Cafe in Evanston, IL on 2026-01-24 for Standard format Magic: The Gathering"
+
+64. Event: Pastimes, Niles, IL - 2026-01-24 (ECL Limited)
+   EventId: 2026-01-24-pastimes-niles
+   Link Query: "Find registration or event page for RCQ tournament at Pastimes in Niles, IL on 2026-01-24 for ECL Limited format Magic: The Gathering"
+
+65. Event: Next Level Games, Muncie, IN - 2026-01-24 (Standard)
+   EventId: 2026-01-24-next-level-games-muncie
+   Link Query: "Find registration or event page for RCQ tournament at Next Level Games in Muncie, IN on 2026-01-24 for Standard format Magic: The Gathering"
+
+66. Event: Arena Hobbies, Derby, KS - 2026-01-24 (TLA Limited)
+   EventId: 2026-01-24-arena-hobbies-derby
+   Link Query: "Find registration or event page for RCQ tournament at Arena Hobbies in Derby, KS on 2026-01-24 for TLA Limited format Magic: The Gathering"
+
+67. Event: The Gamers Guild, Hays, KS - 2026-01-24 (ECL Limited)
+   EventId: 2026-01-24-the-gamers-guild-hays
+   Link Query: "Find registration or event page for RCQ tournament at The Gamers Guild in Hays, KS on 2026-01-24 for ECL Limited format Magic: The Gathering"
+
+68. Event: Gators Games and Hobbies, Leavenworth, KS - 2026-01-24 (Standard)
+   EventId: 2026-01-24-gators-games-and-hobbies-leavenworth
+   Link Query: "Find registration or event page for RCQ tournament at Gators Games and Hobbies in Leavenworth, KS on 2026-01-24 for Standard format Magic: The Gathering"
+
+69. Event: Sylvan Factory, Ann Arbor, MI - 2026-01-24 (ECL Limited)
+   EventId: 2026-01-24-sylvan-factory-ann arbor
+   Link Query: "Find registration or event page for RCQ tournament at Sylvan Factory in Ann Arbor, MI on 2026-01-24 for ECL Limited format Magic: The Gathering"
+
+70. Event: CCGPrime, North Cedar Springs, MI - 2026-01-24 (Standard)
+   EventId: 2026-01-24-ccgprime-north cedar springs
+   Link Query: "Find registration or event page for RCQ tournament at CCGPrime in North Cedar Springs, MI on 2026-01-24 for Standard format Magic: The Gathering"
+
+71. Event: Gamer's Gauntlet, Clinton Township, MI - 2026-01-24 (Standard)
+   EventId: 2026-01-24-gamer-s-gauntlet-clinton township
+   Link Query: "Find registration or event page for RCQ tournament at Gamer's Gauntlet in Clinton Township, MI on 2026-01-24 for Standard format Magic: The Gathering"
+
+72. Event: The Upkeep Games, Howell, MI - 2026-01-24 (Standard)
+   EventId: 2026-01-24-the-upkeep-games-howell
+   Link Query: "Find registration or event page for RCQ tournament at The Upkeep Games in Howell, MI on 2026-01-24 for Standard format Magic: The Gathering"
+
+73. Event: Dreamers Vault Games, Minneapolis, MN - 2026-01-24 (Standard)
+   EventId: 2026-01-24-dreamers-vault-games-minneapolis
+   Link Query: "Find registration or event page for RCQ tournament at Dreamers Vault Games in Minneapolis, MN on 2026-01-24 for Standard format Magic: The Gathering"
+
+74. Event: The Fan Zone, Waite Park, MN - 2026-01-24 (ECL Limited)
+   EventId: 2026-01-24-the-fan-zone-waite park
+   Link Query: "Find registration or event page for RCQ tournament at The Fan Zone in Waite Park, MN on 2026-01-24 for ECL Limited format Magic: The Gathering"
+
+75. Event: Hurley's Heroes, Joplin, MO - 2026-01-24 (Standard)
+   EventId: 2026-01-24-hurley-s-heroes-joplin
+   Link Query: "Find registration or event page for RCQ tournament at Hurley's Heroes in Joplin, MO on 2026-01-24 for Standard format Magic: The Gathering"
+
+76. Event: Forge and Fire Gaming, Maryland Heights, MO - 2026-01-24 (ECL Limited)
+   EventId: 2026-01-24-forge-and-fire-gaming-maryland heights
+   Link Query: "Find registration or event page for RCQ tournament at Forge and Fire Gaming in Maryland Heights, MO on 2026-01-24 for ECL Limited format Magic: The Gathering"
+
+77. Event: JC Hobby, Norfolk, NE - 2026-01-24 (Standard)
+   EventId: 2026-01-24-jc-hobby-norfolk
+   Link Query: "Find registration or event page for RCQ tournament at JC Hobby in Norfolk, NE on 2026-01-24 for Standard format Magic: The Gathering"
+
+78. Event: Epic Loot Games, Centerville, OH - 2026-01-24 (Standard)
+   EventId: 2026-01-24-epic-loot-games-centerville
+   Link Query: "Find registration or event page for RCQ tournament at Epic Loot Games in Centerville, OH on 2026-01-24 for Standard format Magic: The Gathering"
+
+79. Event: Recess Games, North Olmsted, OH - 2026-01-24 (Standard)
+   EventId: 2026-01-24-recess-games-north olmsted
+   Link Query: "Find registration or event page for RCQ tournament at Recess Games in North Olmsted, OH on 2026-01-24 for Standard format Magic: The Gathering"
+
+80. Event: Limited Edition, Cedar Falls, IA - 2026-01-25 (Standard)
+   EventId: 2026-01-25-limited-edition-cedar falls
+   Link Query: "Find registration or event page for RCQ tournament at Limited Edition in Cedar Falls, IA on 2026-01-25 for Standard format Magic: The Gathering"
+
+81. Event: Now and Then, Mason City, IA - 2026-01-25 (Standard)
+   EventId: 2026-01-25-now-and-then-mason city
+   Link Query: "Find registration or event page for RCQ tournament at Now and Then in Mason City, IA on 2026-01-25 for Standard format Magic: The Gathering"
+
+82. Event: Games King, Sioux City, IA - 2026-01-25 (Standard)
+   EventId: 2026-01-25-games-king-sioux city
+   Link Query: "Find registration or event page for RCQ tournament at Games King in Sioux City, IA on 2026-01-25 for Standard format Magic: The Gathering"
+
+83. Event: Games King, Sioux City, IA - 2026-01-25 (Standard)
+   EventId: 2026-01-25-games-king-sioux city
+   Link Query: "Find registration or event page for RCQ tournament at Games King in Sioux City, IA on 2026-01-25 for Standard format Magic: The Gathering"
+
+84. Event: Dice Dojo, Chicago, IL - 2026-01-25 (ECL Limited)
+   EventId: 2026-01-25-dice-dojo-chicago
+   Link Query: "Find registration or event page for RCQ tournament at Dice Dojo in Chicago, IL on 2026-01-25 for ECL Limited format Magic: The Gathering"
+
+85. Event: The Gamers Guild, Hays, KS - 2026-01-25 (Standard)
+   EventId: 2026-01-25-the-gamers-guild-hays
+   Link Query: "Find registration or event page for RCQ tournament at The Gamers Guild in Hays, KS on 2026-01-25 for Standard format Magic: The Gathering"
+
+86. Event: Level Up Games, St. Paul, MN - 2026-01-25 (Standard)
+   EventId: 2026-01-25-level-up-games-st. paul
+   Link Query: "Find registration or event page for RCQ tournament at Level Up Games in St. Paul, MN on 2026-01-25 for Standard format Magic: The Gathering"
+
+87. Event: Mayhem Collectibles, Des Moines, IA - 2026-01-30 (Standard)
+   EventId: 2026-01-30-mayhem-collectibles-des moines
+   Link Query: "Find registration or event page for RCQ tournament at Mayhem Collectibles in Des Moines, IA on 2026-01-30 for Standard format Magic: The Gathering"
+
+88. Event: Dark Vassal Gaming, Cedar Falls, IA - 2026-01-31 (Standard)
+   EventId: 2026-01-31-dark-vassal-gaming-cedar falls
+   Link Query: "Find registration or event page for RCQ tournament at Dark Vassal Gaming in Cedar Falls, IA on 2026-01-31 for Standard format Magic: The Gathering"
+
+89. Event: Mayhem Collectibles, Des Moines, IA - 2026-01-31 (Standard)
+   EventId: 2026-01-31-mayhem-collectibles-des moines
+   Link Query: "Find registration or event page for RCQ tournament at Mayhem Collectibles in Des Moines, IA on 2026-01-31 for Standard format Magic: The Gathering"
+
+90. Event: Titan Games, Champaign, IL - 2026-01-31 (Standard)
+   EventId: 2026-01-31-titan-games-champaign
+   Link Query: "Find registration or event page for RCQ tournament at Titan Games in Champaign, IL on 2026-01-31 for Standard format Magic: The Gathering"
+
+91. Event: GameStorm, Lemont, IL - 2026-01-31 (Standard)
+   EventId: 2026-01-31-gamestorm-lemont
+   Link Query: "Find registration or event page for RCQ tournament at GameStorm in Lemont, IL on 2026-01-31 for Standard format Magic: The Gathering"
+
+92. Event: The Kingdom: Cards and Games, Kokomo, IN - 2026-01-31 (Standard)
+   EventId: 2026-01-31-the-kingdom--cards-and-games-kokomo
+   Link Query: "Find registration or event page for RCQ tournament at The Kingdom: Cards and Games in Kokomo, IN on 2026-01-31 for Standard format Magic: The Gathering"
+
+93. Event: Moonshot Games, Noblesville, IN - 2026-01-31 (ECL Limited)
+   EventId: 2026-01-31-moonshot-games-noblesville
+   Link Query: "Find registration or event page for RCQ tournament at Moonshot Games in Noblesville, IN on 2026-01-31 for ECL Limited format Magic: The Gathering"
+
+94. Event: The Castle Games, Seymour, IN - 2026-01-31 (Standard)
+   EventId: 2026-01-31-the-castle-games-seymour
+   Link Query: "Find registration or event page for RCQ tournament at The Castle Games in Seymour, IN on 2026-01-31 for Standard format Magic: The Gathering"
+
+95. Event: Game Nut Entertainment, Lawrence, KS - 2026-01-31 (Standard)
+   EventId: 2026-01-31-game-nut-entertainment-lawrence
+   Link Query: "Find registration or event page for RCQ tournament at Game Nut Entertainment in Lawrence, KS on 2026-01-31 for Standard format Magic: The Gathering"
+
+96. Event: Goblin Games, Manhattan, KS - 2026-01-31 (ECL Limited)
+   EventId: 2026-01-31-goblin-games-manhattan
+   Link Query: "Find registration or event page for RCQ tournament at Goblin Games in Manhattan, KS on 2026-01-31 for ECL Limited format Magic: The Gathering"
+
+97. Event: One Drop Game Shop, Wichita, KS - 2026-01-31 (Standard)
+   EventId: 2026-01-31-one-drop-game-shop-wichita
+   Link Query: "Find registration or event page for RCQ tournament at One Drop Game Shop in Wichita, KS on 2026-01-31 for Standard format Magic: The Gathering"
+
+98. Event: Perfect Storm Comics and Games, Battle Creek, MI - 2026-01-31 (ECL Limited)
+   EventId: 2026-01-31-perfect-storm-comics-and-games-battle creek
+   Link Query: "Find registration or event page for RCQ tournament at Perfect Storm Comics and Games in Battle Creek, MI on 2026-01-31 for ECL Limited format Magic: The Gathering"
+
+99. Event: CCGPrime, Ionia, MI - 2026-01-31 (Standard)
+   EventId: 2026-01-31-ccgprime-ionia
+   Link Query: "Find registration or event page for RCQ tournament at CCGPrime in Ionia, MI on 2026-01-31 for Standard format Magic: The Gathering"
+
+100. Event: CCGPrime, Central Ionia, MI - 2026-01-31 (Standard)
+   EventId: 2026-01-31-ccgprime-central ionia
+   Link Query: "Find registration or event page for RCQ tournament at CCGPrime in Central Ionia, MI on 2026-01-31 for Standard format Magic: The Gathering"
+
+101. Event: Dreamers Vault Games, Burnsville, MN - 2026-01-31 (Standard)
+   EventId: 2026-01-31-dreamers-vault-games-burnsville
+   Link Query: "Find registration or event page for RCQ tournament at Dreamers Vault Games in Burnsville, MN on 2026-01-31 for Standard format Magic: The Gathering"
+
+102. Event: Spanky's Card Shop, Kansas City, MO - 2026-01-31 (Standard)
+   EventId: 2026-01-31-spanky-s-card-shop-kansas city
+   Link Query: "Find registration or event page for RCQ tournament at Spanky's Card Shop in Kansas City, MO on 2026-01-31 for Standard format Magic: The Gathering"
+
+103. Event: Ken's Comic Man, Poplar Bluff, MO - 2026-01-31 (Standard)
+   EventId: 2026-01-31-ken-s-comic-man-poplar bluff
+   Link Query: "Find registration or event page for RCQ tournament at Ken's Comic Man in Poplar Bluff, MO on 2026-01-31 for Standard format Magic: The Gathering"
+
+104. Event: BK Games, St Robert, MO - 2026-01-31 (Standard)
+   EventId: 2026-01-31-bk-games-st robert
+   Link Query: "Find registration or event page for RCQ tournament at BK Games in St Robert, MO on 2026-01-31 for Standard format Magic: The Gathering"
+
+105. Event: North Coast Games, Mentor, OH - 2026-01-31 (Standard)
+   EventId: 2026-01-31-north-coast-games-mentor
+   Link Query: "Find registration or event page for RCQ tournament at North Coast Games in Mentor, OH on 2026-01-31 for Standard format Magic: The Gathering"
+
+106. Event: Freedom Gaming, North Canton, OH - 2026-01-31 (ECL Limited)
+   EventId: 2026-01-31-freedom-gaming-north canton
+   Link Query: "Find registration or event page for RCQ tournament at Freedom Gaming in North Canton, OH on 2026-01-31 for ECL Limited format Magic: The Gathering"
+
+107. Event: Line Drive Sports Cards, Tiffin, OH - 2026-01-31 (Standard)
+   EventId: 2026-01-31-line-drive-sports-cards-tiffin
+   Link Query: "Find registration or event page for RCQ tournament at Line Drive Sports Cards in Tiffin, OH on 2026-01-31 for Standard format Magic: The Gathering"
+
+108. Event: Game Universe, Brookfield, WI - 2026-01-31 (Standard)
+   EventId: 2026-01-31-game-universe-brookfield
+   Link Query: "Find registration or event page for RCQ tournament at Game Universe in Brookfield, WI on 2026-01-31 for Standard format Magic: The Gathering"
+
+109. Event: The Dragon's Roost, Marshfield, WI - 2026-01-31 (Standard)
+   EventId: 2026-01-31-the-dragon-s-roost-marshfield
+   Link Query: "Find registration or event page for RCQ tournament at The Dragon's Roost in Marshfield, WI on 2026-01-31 for Standard format Magic: The Gathering"
+
+110. Event: Adventure Games, Oshkosh, WI - 2026-01-31 (Standard)
+   EventId: 2026-01-31-adventure-games-oshkosh
+   Link Query: "Find registration or event page for RCQ tournament at Adventure Games in Oshkosh, WI on 2026-01-31 for Standard format Magic: The Gathering"
+
+111. Event: Mayhem Collectibles, Des Moines, IA - 2026-01-31 (Modern Cash)
+   EventId: 2026-01-31-mayhem-collectibles-des moines
+   Link Query: "Find registration or event page for Other tournament at Mayhem Collectibles in Des Moines, IA on 2026-01-31 for Modern Cash format Magic: The Gathering"
+
+112. Event: Mayhem Collectibles, Des Moines, IA - 2026-02-01 (Standard)
+   EventId: 2026-02-01-mayhem-collectibles-des moines
+   Link Query: "Find registration or event page for RCQ tournament at Mayhem Collectibles in Des Moines, IA on 2026-02-01 for Standard format Magic: The Gathering"
+
+113. Event: Good Game, Waterloo, IA - 2026-02-01 (Standard)
+   EventId: 2026-02-01-good-game-waterloo
+   Link Query: "Find registration or event page for RCQ tournament at Good Game in Waterloo, IA on 2026-02-01 for Standard format Magic: The Gathering"
+
+114. Event: Goblin Games, Manhattan, KS - 2026-02-01 (ECL Limited)
+   EventId: 2026-02-01-goblin-games-manhattan
+   Link Query: "Find registration or event page for RCQ tournament at Goblin Games in Manhattan, KS on 2026-02-01 for ECL Limited format Magic: The Gathering"
+
+115. Event: Cardboard Horde, Sidney, OH - 2026-02-01 (Standard)
+   EventId: 2026-02-01-cardboard-horde-sidney
+   Link Query: "Find registration or event page for RCQ tournament at Cardboard Horde in Sidney, OH on 2026-02-01 for Standard format Magic: The Gathering"
+
+116. Event: Evolution Gaming, Butler, WI - 2026-02-01 (Standard)
+   EventId: 2026-02-01-evolution-gaming-butler
+   Link Query: "Find registration or event page for RCQ tournament at Evolution Gaming in Butler, WI on 2026-02-01 for Standard format Magic: The Gathering"
+
+117. Event: The Mana Vault MKE, St Francis, WI - 2026-02-01 (ECL Limited)
+   EventId: 2026-02-01-the-mana-vault-mke-st francis
+   Link Query: "Find registration or event page for RCQ tournament at The Mana Vault MKE in St Francis, WI on 2026-02-01 for ECL Limited format Magic: The Gathering"
+
+118. Event: Mayhem Collectibles, Des Moines, IA - 2026-02-01 (Premodern Cash)
+   EventId: 2026-02-01-mayhem-collectibles-des moines
+   Link Query: "Find registration or event page for Other tournament at Mayhem Collectibles in Des Moines, IA on 2026-02-01 for Premodern Cash format Magic: The Gathering"
+
+119. Event: Mythic Forge Gaming, Madison Heights, MI - 2026-02-04 (Standard)
+   EventId: 2026-02-04-mythic-forge-gaming-madison heights
+   Link Query: "Find registration or event page for RCQ tournament at Mythic Forge Gaming in Madison Heights, MI on 2026-02-04 for Standard format Magic: The Gathering"
+
+120. Event: Moxie Card Shop, Des Moines, IA - 2026-02-07 (Standard)
+   EventId: 2026-02-07-moxie-card-shop-des moines
+   Link Query: "Find registration or event page for RCQ tournament at Moxie Card Shop in Des Moines, IA on 2026-02-07 for Standard format Magic: The Gathering"
+
+121. Event: Spellbound Games, Chicago, IL - 2026-02-07 (Standard)
+   EventId: 2026-02-07-spellbound-games-chicago
+   Link Query: "Find registration or event page for RCQ tournament at Spellbound Games in Chicago, IL on 2026-02-07 for Standard format Magic: The Gathering"
+
+122. Event: Chupacabra Games, Naperville, IL - 2026-02-07 (Standard)
+   EventId: 2026-02-07-chupacabra-games-naperville
+   Link Query: "Find registration or event page for RCQ tournament at Chupacabra Games in Naperville, IL on 2026-02-07 for Standard format Magic: The Gathering"
+
+123. Event: The Castle Games, Bloomington Ellettsville, IN - 2026-02-07 (Standard)
+   EventId: 2026-02-07-the-castle-games-bloomington ellettsville
+   Link Query: "Find registration or event page for RCQ tournament at The Castle Games in Bloomington Ellettsville, IN on 2026-02-07 for Standard format Magic: The Gathering"
+
+124. Event: Tier 1 Games, Lafayette, IN - 2026-02-07 (Standard)
+   EventId: 2026-02-07-tier-1-games-lafayette
+   Link Query: "Find registration or event page for RCQ tournament at Tier 1 Games in Lafayette, IN on 2026-02-07 for Standard format Magic: The Gathering"
+
+125. Event: Moonshot Games, Noblesville, IN - 2026-02-07 (Standard)
+   EventId: 2026-02-07-moonshot-games-noblesville
+   Link Query: "Find registration or event page for RCQ tournament at Moonshot Games in Noblesville, IN on 2026-02-07 for Standard format Magic: The Gathering"
+
+126. Event: The Arena, Salina, KS - 2026-02-07 (Standard)
+   EventId: 2026-02-07-the-arena-salina
+   Link Query: "Find registration or event page for RCQ tournament at The Arena in Salina, KS on 2026-02-07 for Standard format Magic: The Gathering"
+
+127. Event: Dreamers Vault Games, Champlin, MN - 2026-02-07 (Standard)
+   EventId: 2026-02-07-dreamers-vault-games-champlin
+   Link Query: "Find registration or event page for RCQ tournament at Dreamers Vault Games in Champlin, MN on 2026-02-07 for Standard format Magic: The Gathering"
+
+128. Event: The Fan Zone, Waite Park, MN - 2026-02-07 (Standard)
+   EventId: 2026-02-07-the-fan-zone-waite park
+   Link Query: "Find registration or event page for RCQ tournament at The Fan Zone in Waite Park, MN on 2026-02-07 for Standard format Magic: The Gathering"
+
+129. Event: Hurley's Heroes, Joplin, MO - 2026-02-07 (Standard)
+   EventId: 2026-02-07-hurley-s-heroes-joplin
+   Link Query: "Find registration or event page for RCQ tournament at Hurley's Heroes in Joplin, MO on 2026-02-07 for Standard format Magic: The Gathering"
+
+130. Event: Spanky's Card Shop, Kansas City, MO - 2026-02-07 (ECL Limited)
+   EventId: 2026-02-07-spanky-s-card-shop-kansas city
+   Link Query: "Find registration or event page for RCQ tournament at Spanky's Card Shop in Kansas City, MO on 2026-02-07 for ECL Limited format Magic: The Gathering"
+
+131. Event: Paradox Comics-N-Cards, Fargo, ND - 2026-02-07 (ECL Limited)
+   EventId: 2026-02-07-paradox-comics-n-cards-fargo
+   Link Query: "Find registration or event page for RCQ tournament at Paradox Comics-N-Cards in Fargo, ND on 2026-02-07 for ECL Limited format Magic: The Gathering"
+
+132. Event: Freedom Gaming, North Canton, OH - 2026-02-07 (ECL Limited)
+   EventId: 2026-02-07-freedom-gaming-north canton
+   Link Query: "Find registration or event page for RCQ tournament at Freedom Gaming in North Canton, OH on 2026-02-07 for ECL Limited format Magic: The Gathering"
+
+133. Event: Shuffler's Den, Willoughby Hills, OH - 2026-02-07 (Standard)
+   EventId: 2026-02-07-shuffler-s-den-willoughby hills
+   Link Query: "Find registration or event page for RCQ tournament at Shuffler's Den in Willoughby Hills, OH on 2026-02-07 for Standard format Magic: The Gathering"
+
+134. Event: Dragon's Den, Sioux Falls, SD - 2026-02-07 (Standard)
+   EventId: 2026-02-07-dragon-s-den-sioux falls
+   Link Query: "Find registration or event page for RCQ tournament at Dragon's Den in Sioux Falls, SD on 2026-02-07 for Standard format Magic: The Gathering"
+
+135. Event: d20 Gaming, Eau Claire, WI - 2026-02-07 (Standard)
+   EventId: 2026-02-07-d20-gaming-eau claire
+   Link Query: "Find registration or event page for RCQ tournament at d20 Gaming in Eau Claire, WI on 2026-02-07 for Standard format Magic: The Gathering"
+
+136. Event: Game Universe, Franklin, WI - 2026-02-07 (Standard)
+   EventId: 2026-02-07-game-universe-franklin
+   Link Query: "Find registration or event page for RCQ tournament at Game Universe in Franklin, WI on 2026-02-07 for Standard format Magic: The Gathering"
+
+137. Event: Tea & Tee Card and Hobby, Medford, WI - 2026-02-07 (Limited)
+   EventId: 2026-02-07-tea---tee-card-and-hobby-medford
+   Link Query: "Find registration or event page for RCQ tournament at Tea & Tee Card and Hobby in Medford, WI on 2026-02-07 for Limited format Magic: The Gathering"
+
+138. Event: Limited Edition, Cedar Falls, IA - 2026-02-08 (Standard)
+   EventId: 2026-02-08-limited-edition-cedar falls
+   Link Query: "Find registration or event page for RCQ tournament at Limited Edition in Cedar Falls, IA on 2026-02-08 for Standard format Magic: The Gathering"
+
+139. Event: Moxie Card Shop, Des Moines, IA - 2026-02-08 (Standard)
+   EventId: 2026-02-08-moxie-card-shop-des moines
+   Link Query: "Find registration or event page for RCQ tournament at Moxie Card Shop in Des Moines, IA on 2026-02-08 for Standard format Magic: The Gathering"
+
+140. Event: 2 Bros & a Box, Stillwater, MN - 2026-02-08 (Standard)
+   EventId: 2026-02-08-2-bros---a-box-stillwater
+   Link Query: "Find registration or event page for RCQ tournament at 2 Bros & a Box in Stillwater, MN on 2026-02-08 for Standard format Magic: The Gathering"
+
+141. Event: Spanky's Card Shop, Kansas City, MO - 2026-02-08 (ECL Limited)
+   EventId: 2026-02-08-spanky-s-card-shop-kansas city
+   Link Query: "Find registration or event page for RCQ tournament at Spanky's Card Shop in Kansas City, MO on 2026-02-08 for ECL Limited format Magic: The Gathering"
+
+142. Event: Paradox Comics-N-Cards, Fargo, ND - 2026-02-08 (Standard)
+   EventId: 2026-02-08-paradox-comics-n-cards-fargo
+   Link Query: "Find registration or event page for RCQ tournament at Paradox Comics-N-Cards in Fargo, ND on 2026-02-08 for Standard format Magic: The Gathering"
+
+143. Event: Galaxy Games, Wintersville, OH - 2026-02-08 (Standard)
+   EventId: 2026-02-08-galaxy-games-wintersville
+   Link Query: "Find registration or event page for RCQ tournament at Galaxy Games in Wintersville, OH on 2026-02-08 for Standard format Magic: The Gathering"
+
+144. Event: Mythic Forge Gaming, Madison Heights, MI - 2026-02-12 (Standard)
+   EventId: 2026-02-12-mythic-forge-gaming-madison heights
+   Link Query: "Find registration or event page for RCQ tournament at Mythic Forge Gaming in Madison Heights, MI on 2026-02-12 for Standard format Magic: The Gathering"
+
+145. Event: Dark Vassal Gaming, Cedar Falls, IA - 2026-02-14 (Standard)
+   EventId: 2026-02-14-dark-vassal-gaming-cedar falls
+   Link Query: "Find registration or event page for RCQ tournament at Dark Vassal Gaming in Cedar Falls, IA on 2026-02-14 for Standard format Magic: The Gathering"
+
+146. Event: The Castle Games, Columbus, IN - 2026-02-14 (Standard)
+   EventId: 2026-02-14-the-castle-games-columbus
+   Link Query: "Find registration or event page for RCQ tournament at The Castle Games in Columbus, IN on 2026-02-14 for Standard format Magic: The Gathering"
+
+147. Event: Moonshot Games, Plainfield, IN - 2026-02-14 (ECL Limited)
+   EventId: 2026-02-14-moonshot-games-plainfield
+   Link Query: "Find registration or event page for RCQ tournament at Moonshot Games in Plainfield, IN on 2026-02-14 for ECL Limited format Magic: The Gathering"
+
+148. Event: Game Nut Entertainment, Lawrence, KS - 2026-02-14 (ECL Limited)
+   EventId: 2026-02-14-game-nut-entertainment-lawrence
+   Link Query: "Find registration or event page for RCQ tournament at Game Nut Entertainment in Lawrence, KS on 2026-02-14 for ECL Limited format Magic: The Gathering"
+
+149. Event: Gators Hobby and Games, Leavenworth, KS - 2026-02-14 (Standard)
+   EventId: 2026-02-14-gators-hobby-and-games-leavenworth
+   Link Query: "Find registration or event page for RCQ tournament at Gators Hobby and Games in Leavenworth, KS on 2026-02-14 for Standard format Magic: The Gathering"
+
+150. Event: CCGPrime, North Cedar Springs, MI - 2026-02-14 (Standard)
+   EventId: 2026-02-14-ccgprime-north cedar springs
+   Link Query: "Find registration or event page for RCQ tournament at CCGPrime in North Cedar Springs, MI on 2026-02-14 for Standard format Magic: The Gathering"
+
+151. Event: AFK Games, Holt, MI - 2026-02-14 (ECL Limited)
+   EventId: 2026-02-14-afk-games-holt
+   Link Query: "Find registration or event page for RCQ tournament at AFK Games in Holt, MI on 2026-02-14 for ECL Limited format Magic: The Gathering"
+
+152. Event: RIW Hobbies, Livonia, MI - 2026-02-14 (Standard)
+   EventId: 2026-02-14-riw-hobbies-livonia
+   Link Query: "Find registration or event page for RCQ tournament at RIW Hobbies in Livonia, MI on 2026-02-14 for Standard format Magic: The Gathering"
+
+153. Event: Dreamers Vault Games, South Saint Paul, MN - 2026-02-14 (Standard)
+   EventId: 2026-02-14-dreamers-vault-games-south saint paul
+   Link Query: "Find registration or event page for RCQ tournament at Dreamers Vault Games in South Saint Paul, MN on 2026-02-14 for Standard format Magic: The Gathering"
+
+154. Event: Forge and Fire Gaming, Maryland Heights, MO - 2026-02-14 (Standard)
+   EventId: 2026-02-14-forge-and-fire-gaming-maryland heights
+   Link Query: "Find registration or event page for RCQ tournament at Forge and Fire Gaming in Maryland Heights, MO on 2026-02-14 for Standard format Magic: The Gathering"
+
+155. Event: Hobby Central, Delaware, OH - 2026-02-14 (ECL Limited)
+   EventId: 2026-02-14-hobby-central-delaware
+   Link Query: "Find registration or event page for RCQ tournament at Hobby Central in Delaware, OH on 2026-02-14 for ECL Limited format Magic: The Gathering"
+
+156. Event: Izzi's Gym, Sioux Falls, SD - 2026-02-14 (Standard)
+   EventId: 2026-02-14-izzi-s-gym-sioux falls
+   Link Query: "Find registration or event page for RCQ tournament at Izzi's Gym in Sioux Falls, SD on 2026-02-14 for Standard format Magic: The Gathering"
+
+157. Event: Misty Mountain Games, Madison, WI - 2026-02-14 (Standard)
+   EventId: 2026-02-14-misty-mountain-games-madison
+   Link Query: "Find registration or event page for RCQ tournament at Misty Mountain Games in Madison, WI on 2026-02-14 for Standard format Magic: The Gathering"
+
+158. Event: The Mana Vault MKE, St Francis, WI - 2026-02-14 (Standard)
+   EventId: 2026-02-14-the-mana-vault-mke-st francis
+   Link Query: "Find registration or event page for RCQ tournament at The Mana Vault MKE in St Francis, WI on 2026-02-14 for Standard format Magic: The Gathering"
+
+159. Event: Asgard Keep, Mount Vernon, IL - 2026-02-15 (Standard)
+   EventId: 2026-02-15-asgard-keep-mount vernon
+   Link Query: "Find registration or event page for RCQ tournament at Asgard Keep in Mount Vernon, IL on 2026-02-15 for Standard format Magic: The Gathering"
+
+160. Event: Goblin Games, Manhattan, KS - 2026-02-15 (Standard)
+   EventId: 2026-02-15-goblin-games-manhattan
+   Link Query: "Find registration or event page for RCQ tournament at Goblin Games in Manhattan, KS on 2026-02-15 for Standard format Magic: The Gathering"
+
+161. Event: GameUphoria, Washington, MO - 2026-02-15 (Standard)
+   EventId: 2026-02-15-gameuphoria-washington
+   Link Query: "Find registration or event page for RCQ tournament at GameUphoria in Washington, MO on 2026-02-15 for Standard format Magic: The Gathering"
+
+162. Event: Playmakers, Rapid City, SD - 2026-02-15 (Standard)
+   EventId: 2026-02-15-playmakers-rapid city
+   Link Query: "Find registration or event page for RCQ tournament at Playmakers in Rapid City, SD on 2026-02-15 for Standard format Magic: The Gathering"
+
+163. Event: Mythic Forge Gaming, Madison Heights, MI - 2026-02-18 (Standard)
+   EventId: 2026-02-18-mythic-forge-gaming-madison heights
+   Link Query: "Find registration or event page for RCQ tournament at Mythic Forge Gaming in Madison Heights, MI on 2026-02-18 for Standard format Magic: The Gathering"
+
+164. Event: Remis Arcane Exchange, Muscatine, IA - 2026-02-21 (Standard)
+   EventId: 2026-02-21-remis-arcane-exchange-muscatine
+   Link Query: "Find registration or event page for RCQ tournament at Remis Arcane Exchange in Muscatine, IA on 2026-02-21 for Standard format Magic: The Gathering"
+
+165. Event: Impact Gaming Center, Fairview Heights, IL - 2026-02-21 (Standard)
+   EventId: 2026-02-21-impact-gaming-center-fairview heights
+   Link Query: "Find registration or event page for RCQ tournament at Impact Gaming Center in Fairview Heights, IL on 2026-02-21 for Standard format Magic: The Gathering"
+
+166. Event: GameStorm, Lemont, IL - 2026-02-21 (Standard)
+   EventId: 2026-02-21-gamestorm-lemont
+   Link Query: "Find registration or event page for RCQ tournament at GameStorm in Lemont, IL on 2026-02-21 for Standard format Magic: The Gathering"
+
+167. Event: Next Level Games, Muncie, IN - 2026-02-21 (Standard)
+   EventId: 2026-02-21-next-level-games-muncie
+   Link Query: "Find registration or event page for RCQ tournament at Next Level Games in Muncie, IN on 2026-02-21 for Standard format Magic: The Gathering"
+
+168. Event: One Drop Game Shop, Wichita, KS - 2026-02-21 (Standard)
+   EventId: 2026-02-21-one-drop-game-shop-wichita
+   Link Query: "Find registration or event page for RCQ tournament at One Drop Game Shop in Wichita, KS on 2026-02-21 for Standard format Magic: The Gathering"
+
+169. Event: CCGPrime, Ionia, MI - 2026-02-21 (Standard)
+   EventId: 2026-02-21-ccgprime-ionia
+   Link Query: "Find registration or event page for RCQ tournament at CCGPrime in Ionia, MI on 2026-02-21 for Standard format Magic: The Gathering"
+
+170. Event: CCGPrime, Central Ionia, MI - 2026-02-21 (Standard)
+   EventId: 2026-02-21-ccgprime-central ionia
+   Link Query: "Find registration or event page for RCQ tournament at CCGPrime in Central Ionia, MI on 2026-02-21 for Standard format Magic: The Gathering"
+
+171. Event: Level Up Games, Hastings, MN - 2026-02-21 (Standard)
+   EventId: 2026-02-21-level-up-games-hastings
+   Link Query: "Find registration or event page for RCQ tournament at Level Up Games in Hastings, MN on 2026-02-21 for Standard format Magic: The Gathering"
+
+172. Event: Dreamers Vault Games, Roseville, MN - 2026-02-21 (Standard)
+   EventId: 2026-02-21-dreamers-vault-games-roseville
+   Link Query: "Find registration or event page for RCQ tournament at Dreamers Vault Games in Roseville, MN on 2026-02-21 for Standard format Magic: The Gathering"
+
+173. Event: Game Cafe, Independence, MO - 2026-02-21 (Standard)
+   EventId: 2026-02-21-game-cafe-independence
+   Link Query: "Find registration or event page for RCQ tournament at Game Cafe in Independence, MO on 2026-02-21 for Standard format Magic: The Gathering"
+
+174. Event: Mike and Taylor's Card Shop, Wentzville, MO - 2026-02-21 (Standard)
+   EventId: 2026-02-21-mike-and-taylor-s-card-shop-wentzville
+   Link Query: "Find registration or event page for RCQ tournament at Mike and Taylor's Card Shop in Wentzville, MO on 2026-02-21 for Standard format Magic: The Gathering"
+
+175. Event: Parallax Computers and Gaming, Bismarck, ND - 2026-02-21 (Standard)
+   EventId: 2026-02-21-parallax-computers-and-gaming-bismarck
+   Link Query: "Find registration or event page for RCQ tournament at Parallax Computers and Gaming in Bismarck, ND on 2026-02-21 for Standard format Magic: The Gathering"
+
+176. Event: Deck Factory Gaming Center, Lima, OH - 2026-02-21 (Standard)
+   EventId: 2026-02-21-deck-factory-gaming-center-lima
+   Link Query: "Find registration or event page for RCQ tournament at Deck Factory Gaming Center in Lima, OH on 2026-02-21 for Standard format Magic: The Gathering"
+
+177. Event: Better Plays Gaming, Stow, OH - 2026-02-21 (Limited)
+   EventId: 2026-02-21-better-plays-gaming-stow
+   Link Query: "Find registration or event page for RCQ tournament at Better Plays Gaming in Stow, OH on 2026-02-21 for Limited format Magic: The Gathering"
+
+178. Event: The Castle Games, Seymour, IN - 2026-02-28 (Standard)
+   EventId: 2026-02-28-the-castle-games-seymour
+   Link Query: "Find registration or event page for RCQ tournament at The Castle Games in Seymour, IN on 2026-02-28 for Standard format Magic: The Gathering"
+
+179. Event: Game Nut Entertainment, Lawrence, KS - 2026-02-28 (Standard)
+   EventId: 2026-02-28-game-nut-entertainment-lawrence
+   Link Query: "Find registration or event page for RCQ tournament at Game Nut Entertainment in Lawrence, KS on 2026-02-28 for Standard format Magic: The Gathering"
+
+180. Event: Bored Bard Games, Iron Mountain, MI - 2026-02-28 (Standard)
+   EventId: 2026-02-28-bored-bard-games-iron mountain
+   Link Query: "Find registration or event page for RCQ tournament at Bored Bard Games in Iron Mountain, MI on 2026-02-28 for Standard format Magic: The Gathering"
+
+181. Event: Dreamers Vault Games, St Louis Park, MN - 2026-02-28 (Standard)
+   EventId: 2026-02-28-dreamers-vault-games-st louis park
+   Link Query: "Find registration or event page for RCQ tournament at Dreamers Vault Games in St Louis Park, MN on 2026-02-28 for Standard format Magic: The Gathering"
+
+182. Event: Ken's Comic Man, Poplar Bluff, MO - 2026-02-28 (Standard)
+   EventId: 2026-02-28-ken-s-comic-man-poplar bluff
+   Link Query: "Find registration or event page for RCQ tournament at Ken's Comic Man in Poplar Bluff, MO on 2026-02-28 for Standard format Magic: The Gathering"
+
+183. Event: Cardboard Horde, Sidney, OH - 2026-02-28 (Standard)
+   EventId: 2026-02-28-cardboard-horde-sidney
+   Link Query: "Find registration or event page for RCQ tournament at Cardboard Horde in Sidney, OH on 2026-02-28 for Standard format Magic: The Gathering"
+
+184. Event: Line Drive Sports Cards, Tiffin, OH - 2026-02-28 (Standard)
+   EventId: 2026-02-28-line-drive-sports-cards-tiffin
+   Link Query: "Find registration or event page for RCQ tournament at Line Drive Sports Cards in Tiffin, OH on 2026-02-28 for Standard format Magic: The Gathering"
+
+185. Event: Limited Edition, Cedar Falls, IA - 2026-03-01 (Standard)
+   EventId: 2026-03-01-limited-edition-cedar falls
+   Link Query: "Find registration or event page for RCQ tournament at Limited Edition in Cedar Falls, IA on 2026-03-01 for Standard format Magic: The Gathering"
+
+186. Event: The Upkeep Games, Canton, MI - 2026-03-01 (Standard)
+   EventId: 2026-03-01-the-upkeep-games-canton
+   Link Query: "Find registration or event page for RCQ tournament at The Upkeep Games in Canton, MI on 2026-03-01 for Standard format Magic: The Gathering"
+
+187. Event: Playmakers, Rapid City, SD - 2026-03-01 (Standard)
+   EventId: 2026-03-01-playmakers-rapid city
+   Link Query: "Find registration or event page for RCQ tournament at Playmakers in Rapid City, SD on 2026-03-01 for Standard format Magic: The Gathering"
+
+188. Event: The Castle Games, Bloomington Ellettsville, IN - 2026-03-07 (Standard)
+   EventId: 2026-03-07-the-castle-games-bloomington ellettsville
+   Link Query: "Find registration or event page for RCQ tournament at The Castle Games in Bloomington Ellettsville, IN on 2026-03-07 for Standard format Magic: The Gathering"
+
+189. Event: Arena Hobbies, Derby, KS - 2026-03-07 (Standard)
+   EventId: 2026-03-07-arena-hobbies-derby
+   Link Query: "Find registration or event page for RCQ tournament at Arena Hobbies in Derby, KS on 2026-03-07 for Standard format Magic: The Gathering"
+
+190. Event: AFK Games, Holt, MI - 2026-03-07 (Standard)
+   EventId: 2026-03-07-afk-games-holt
+   Link Query: "Find registration or event page for RCQ tournament at AFK Games in Holt, MI on 2026-03-07 for Standard format Magic: The Gathering"
+
+191. Event: Gamer's Gauntlet, Clinton Township, MI - 2026-03-07 (Standard)
+   EventId: 2026-03-07-gamer-s-gauntlet-clinton township
+   Link Query: "Find registration or event page for RCQ tournament at Gamer's Gauntlet in Clinton Township, MI on 2026-03-07 for Standard format Magic: The Gathering"
+
+192. Event: Dreamers Vault Games, Minneapolis, MN - 2026-03-07 (Standard)
+   EventId: 2026-03-07-dreamers-vault-games-minneapolis
+   Link Query: "Find registration or event page for RCQ tournament at Dreamers Vault Games in Minneapolis, MN on 2026-03-07 for Standard format Magic: The Gathering"
+
+193. Event: Level Up Games, Minneapolis, MN - 2026-03-07 (Standard)
+   EventId: 2026-03-07-level-up-games-minneapolis
+   Link Query: "Find registration or event page for RCQ tournament at Level Up Games in Minneapolis, MN on 2026-03-07 for Standard format Magic: The Gathering"
+
+194. Event: JC Hobby, Norfolk, NE - 2026-03-07 (Standard)
+   EventId: 2026-03-07-jc-hobby-norfolk
+   Link Query: "Find registration or event page for RCQ tournament at JC Hobby in Norfolk, NE on 2026-03-07 for Standard format Magic: The Gathering"
+
+195. Event: Epic Loot Games, Centerville, OH - 2026-03-07 (Standard)
+   EventId: 2026-03-07-epic-loot-games-centerville
+   Link Query: "Find registration or event page for RCQ tournament at Epic Loot Games in Centerville, OH on 2026-03-07 for Standard format Magic: The Gathering"
+
+196. Event: North Coast Games, Mentor, OH - 2026-03-07 (Standard)
+   EventId: 2026-03-07-north-coast-games-mentor
+   Link Query: "Find registration or event page for RCQ tournament at North Coast Games in Mentor, OH on 2026-03-07 for Standard format Magic: The Gathering"
+
+197. Event: Freedom Gaming, North Canton, OH - 2026-03-07 (Standard)
+   EventId: 2026-03-07-freedom-gaming-north canton
+   Link Query: "Find registration or event page for RCQ tournament at Freedom Gaming in North Canton, OH on 2026-03-07 for Standard format Magic: The Gathering"
+
+198. Event: d20 Gaming, Eau Claire, WI - 2026-03-07 (Standard)
+   EventId: 2026-03-07-d20-gaming-eau claire
+   Link Query: "Find registration or event page for RCQ tournament at d20 Gaming in Eau Claire, WI on 2026-03-07 for Standard format Magic: The Gathering"
+
+199. Event: Misty Mountain Games, Madison, WI - 2026-03-07 (Standard)
+   EventId: 2026-03-07-misty-mountain-games-madison
+   Link Query: "Find registration or event page for RCQ tournament at Misty Mountain Games in Madison, WI on 2026-03-07 for Standard format Magic: The Gathering"
+
+200. Event: The Upkeep Games, Ann Arbor, MI - 2026-03-08 (Standard)
+   EventId: 2026-03-08-the-upkeep-games-ann arbor
+   Link Query: "Find registration or event page for RCQ tournament at The Upkeep Games in Ann Arbor, MI on 2026-03-08 for Standard format Magic: The Gathering"
+
+201. Event: 2 Bros & a Box, Stillwater, MN - 2026-03-08 (Standard)
+   EventId: 2026-03-08-2-bros---a-box-stillwater
+   Link Query: "Find registration or event page for RCQ tournament at 2 Bros & a Box in Stillwater, MN on 2026-03-08 for Standard format Magic: The Gathering"
+
+202. Event: Remis Arcane Exchange, Muscatine, IA - 2026-03-14 (Standard)
+   EventId: 2026-03-14-remis-arcane-exchange-muscatine
+   Link Query: "Find registration or event page for RCQ tournament at Remis Arcane Exchange in Muscatine, IA on 2026-03-14 for Standard format Magic: The Gathering"
+
+203. Event: Evanston Games and Cafe, Evanston, IL - 2026-03-14 (Standard)
+   EventId: 2026-03-14-evanston-games-and-cafe-evanston
+   Link Query: "Find registration or event page for RCQ tournament at Evanston Games and Cafe in Evanston, IL on 2026-03-14 for Standard format Magic: The Gathering"
+
+204. Event: The Castle Games, Columbus, IN - 2026-03-14 (Standard)
+   EventId: 2026-03-14-the-castle-games-columbus
+   Link Query: "Find registration or event page for RCQ tournament at The Castle Games in Columbus, IN on 2026-03-14 for Standard format Magic: The Gathering"
+
+205. Event: The Kingdom: Cards and Games, Kokomo, IN - 2026-03-14 (Standard)
+   EventId: 2026-03-14-the-kingdom--cards-and-games-kokomo
+   Link Query: "Find registration or event page for RCQ tournament at The Kingdom: Cards and Games in Kokomo, IN on 2026-03-14 for Standard format Magic: The Gathering"
+
+206. Event: Tier 1 Games, Lafayette, IN - 2026-03-14 (Standard)
+   EventId: 2026-03-14-tier-1-games-lafayette
+   Link Query: "Find registration or event page for RCQ tournament at Tier 1 Games in Lafayette, IN on 2026-03-14 for Standard format Magic: The Gathering"
+
+207. Event: Moonshot Games, Noblesville, IN - 2026-03-14 (Standard)
+   EventId: 2026-03-14-moonshot-games-noblesville
+   Link Query: "Find registration or event page for RCQ tournament at Moonshot Games in Noblesville, IN on 2026-03-14 for Standard format Magic: The Gathering"
+
+208. Event: One Drop Game Shop, Wichita, KS - 2026-03-14 (Standard)
+   EventId: 2026-03-14-one-drop-game-shop-wichita
+   Link Query: "Find registration or event page for RCQ tournament at One Drop Game Shop in Wichita, KS on 2026-03-14 for Standard format Magic: The Gathering"
+
+209. Event: CCGPrime, North Cedar Springs, MI - 2026-03-14 (Standard)
+   EventId: 2026-03-14-ccgprime-north cedar springs
+   Link Query: "Find registration or event page for RCQ tournament at CCGPrime in North Cedar Springs, MI on 2026-03-14 for Standard format Magic: The Gathering"
+
+210. Event: AFK Games, Holt, MI - 2026-03-14 (Standard)
+   EventId: 2026-03-14-afk-games-holt
+   Link Query: "Find registration or event page for RCQ tournament at AFK Games in Holt, MI on 2026-03-14 for Standard format Magic: The Gathering"
+
+211. Event: RIW Hobbies, Livonia, MI - 2026-03-14 (Standard)
+   EventId: 2026-03-14-riw-hobbies-livonia
+   Link Query: "Find registration or event page for RCQ tournament at RIW Hobbies in Livonia, MI on 2026-03-14 for Standard format Magic: The Gathering"
+
+212. Event: Dreamers Vault Games, Burnsville, MN - 2026-03-14 (Standard)
+   EventId: 2026-03-14-dreamers-vault-games-burnsville
+   Link Query: "Find registration or event page for RCQ tournament at Dreamers Vault Games in Burnsville, MN on 2026-03-14 for Standard format Magic: The Gathering"
+
+213. Event: Level Up Games, Hastings, MN - 2026-03-14 (Standard)
+   EventId: 2026-03-14-level-up-games-hastings
+   Link Query: "Find registration or event page for RCQ tournament at Level Up Games in Hastings, MN on 2026-03-14 for Standard format Magic: The Gathering"
+
+214. Event: Forge and Fire Gaming, Maryland Heights, MO - 2026-03-14 (Standard)
+   EventId: 2026-03-14-forge-and-fire-gaming-maryland heights
+   Link Query: "Find registration or event page for RCQ tournament at Forge and Fire Gaming in Maryland Heights, MO on 2026-03-14 for Standard format Magic: The Gathering"
+
+215. Event: The Game Shoppe, Bellevue, NE - 2026-03-14 (Standard)
+   EventId: 2026-03-14-the-game-shoppe-bellevue
+   Link Query: "Find registration or event page for RCQ tournament at The Game Shoppe in Bellevue, NE on 2026-03-14 for Standard format Magic: The Gathering"
+
+216. Event: Deck Factory Gaming Center, Lima, OH - 2026-03-14 (Standard)
+   EventId: 2026-03-14-deck-factory-gaming-center-lima
+   Link Query: "Find registration or event page for RCQ tournament at Deck Factory Gaming Center in Lima, OH on 2026-03-14 for Standard format Magic: The Gathering"
+
+217. Event: Line Drive Sports Cards, Tiffin, OH - 2026-03-14 (Standard)
+   EventId: 2026-03-14-line-drive-sports-cards-tiffin
+   Link Query: "Find registration or event page for RCQ tournament at Line Drive Sports Cards in Tiffin, OH on 2026-03-14 for Standard format Magic: The Gathering"
+
+218. Event: Galaxy Games, Wintersville, OH - 2026-03-14 (Standard)
+   EventId: 2026-03-14-galaxy-games-wintersville
+   Link Query: "Find registration or event page for RCQ tournament at Galaxy Games in Wintersville, OH on 2026-03-14 for Standard format Magic: The Gathering"
+
+219. Event: Lookout Games, Spearfish, SD - 2026-03-14 (Standard)
+   EventId: 2026-03-14-lookout-games-spearfish
+   Link Query: "Find registration or event page for RCQ tournament at Lookout Games in Spearfish, SD on 2026-03-14 for Standard format Magic: The Gathering"
+
+220. Event: Dreamers Vault Games, South Saint Paul, MN - 2026-03-15 (Standard)
+   EventId: 2026-03-15-dreamers-vault-games-south saint paul
+   Link Query: "Find registration or event page for RCQ tournament at Dreamers Vault Games in South Saint Paul, MN on 2026-03-15 for Standard format Magic: The Gathering"
+
+221. Event: Playmakers, Rapid City, SD - 2026-03-15 (Standard)
+   EventId: 2026-03-15-playmakers-rapid city
+   Link Query: "Find registration or event page for RCQ tournament at Playmakers in Rapid City, SD on 2026-03-15 for Standard format Magic: The Gathering"
+
+222. Event: Kugelblitz Gaming, Hermann, MO - 2026-03-20 (Limited)
+   EventId: 2026-03-20-kugelblitz-gaming-hermann
+   Link Query: "Find registration or event page for RCQ tournament at Kugelblitz Gaming in Hermann, MO on 2026-03-20 for Limited format Magic: The Gathering"
+
+223. Event: Chupacabra Games, Chicago, IL - 2026-03-21 (Limited)
+   EventId: 2026-03-21-chupacabra-games-chicago
+   Link Query: "Find registration or event page for RCQ tournament at Chupacabra Games in Chicago, IL on 2026-03-21 for Limited format Magic: The Gathering"
+
+224. Event: Next Level Games, Muncie, IN - 2026-03-21 (Standard)
+   EventId: 2026-03-21-next-level-games-muncie
+   Link Query: "Find registration or event page for RCQ tournament at Next Level Games in Muncie, IN on 2026-03-21 for Standard format Magic: The Gathering"
+
+225. Event: Moonshot Gaming, Plainfield, IN - 2026-03-21 (Standard)
+   EventId: 2026-03-21-moonshot-gaming-plainfield
+   Link Query: "Find registration or event page for RCQ tournament at Moonshot Gaming in Plainfield, IN on 2026-03-21 for Standard format Magic: The Gathering"
+
+226. Event: CCGPrime, Ionia, MI - 2026-03-21 (Standard)
+   EventId: 2026-03-21-ccgprime-ionia
+   Link Query: "Find registration or event page for RCQ tournament at CCGPrime in Ionia, MI on 2026-03-21 for Standard format Magic: The Gathering"
+
+227. Event: CCGPrime, Central Ionia, MI - 2026-03-21 (Standard)
+   EventId: 2026-03-21-ccgprime-central ionia
+   Link Query: "Find registration or event page for RCQ tournament at CCGPrime in Central Ionia, MI on 2026-03-21 for Standard format Magic: The Gathering"
+
+228. Event: Dreamers Vault Games, Champlin, MN - 2026-03-21 (Standard)
+   EventId: 2026-03-21-dreamers-vault-games-champlin
+   Link Query: "Find registration or event page for RCQ tournament at Dreamers Vault Games in Champlin, MN on 2026-03-21 for Standard format Magic: The Gathering"
+
+229. Event: Game Cafe, Independence, MO - 2026-03-21 (Standard)
+   EventId: 2026-03-21-game-cafe-independence
+   Link Query: "Find registration or event page for RCQ tournament at Game Cafe in Independence, MO on 2026-03-21 for Standard format Magic: The Gathering"
+
+230. Event: Better Plays Gaming, Stow, OH - 2026-03-21 (Standard)
+   EventId: 2026-03-21-better-plays-gaming-stow
+   Link Query: "Find registration or event page for RCQ tournament at Better Plays Gaming in Stow, OH on 2026-03-21 for Standard format Magic: The Gathering"
+
+231. Event: Galaxy Games, Wintersville, OH - 2026-03-21 (Standard)
+   EventId: 2026-03-21-galaxy-games-wintersville
+   Link Query: "Find registration or event page for RCQ tournament at Galaxy Games in Wintersville, OH on 2026-03-21 for Standard format Magic: The Gathering"
+
+232. Event: Dragon's Den, Sioux Falls, SD - 2026-03-21 (Standard)
+   EventId: 2026-03-21-dragon-s-den-sioux falls
+   Link Query: "Find registration or event page for RCQ tournament at Dragon's Den in Sioux Falls, SD on 2026-03-21 for Standard format Magic: The Gathering"
+
+233. Event: Izzi's Gym, Sioux Falls, SD - 2026-03-21 (Standard)
+   EventId: 2026-03-21-izzi-s-gym-sioux falls
+   Link Query: "Find registration or event page for RCQ tournament at Izzi's Gym in Sioux Falls, SD on 2026-03-21 for Standard format Magic: The Gathering"
+
+234. Event: Undercity Games, Eau Claire, WI - 2026-03-21 (Standard)
+   EventId: 2026-03-21-undercity-games-eau claire
+   Link Query: "Find registration or event page for RCQ tournament at Undercity Games in Eau Claire, WI on 2026-03-21 for Standard format Magic: The Gathering"
+
+235. Event: Adventure Games, Oshkosh, WI - 2026-03-21 (Standard)
+   EventId: 2026-03-21-adventure-games-oshkosh
+   Link Query: "Find registration or event page for RCQ tournament at Adventure Games in Oshkosh, WI on 2026-03-21 for Standard format Magic: The Gathering"
+
+236. Event: Games King, Sioux City, IA - 2026-03-22 (Standard)
+   EventId: 2026-03-22-games-king-sioux city
+   Link Query: "Find registration or event page for RCQ tournament at Games King in Sioux City, IA on 2026-03-22 for Standard format Magic: The Gathering"
+
+237. Event: Dice Dojo, Chicago, IL - 2026-03-22 (Standard)
+   EventId: 2026-03-22-dice-dojo-chicago
+   Link Query: "Find registration or event page for RCQ tournament at Dice Dojo in Chicago, IL on 2026-03-22 for Standard format Magic: The Gathering"
+
+238. Event: Larry's Game Store, Olathe, KS - 2026-03-22 (Standard)
+   EventId: 2026-03-22-larry-s-game-store-olathe
+   Link Query: "Find registration or event page for RCQ tournament at Larry's Game Store in Olathe, KS on 2026-03-22 for Standard format Magic: The Gathering"
+
+239. Event: Dreamers Vault Games, Roseville, MN - 2026-03-22 (Standard)
+   EventId: 2026-03-22-dreamers-vault-games-roseville
+   Link Query: "Find registration or event page for RCQ tournament at Dreamers Vault Games in Roseville, MN on 2026-03-22 for Standard format Magic: The Gathering"
+
+240. Event: Level Up Games, St. Paul, MN - 2026-03-22 (Standard)
+   EventId: 2026-03-22-level-up-games-st. paul
+   Link Query: "Find registration or event page for RCQ tournament at Level Up Games in St. Paul, MN on 2026-03-22 for Standard format Magic: The Gathering"
+
+
+=== AFTER SEARCHING ===
+Once you've created enrichment-results.json, run:
+yarn enrich:apply enrichment-results.json
+Done in 0.06s.

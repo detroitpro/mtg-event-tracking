@@ -1,0 +1,21 @@
+{
+  "name": "mtg-event-planner",
+  "version": "1.0.0",
+  "description": "MTG Pro Tour Event Planner",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "extract": "node extract-events.js",
+    "enrich:prepare": "node run-enrichment.js",
+    "enrich:apply": "node apply-enrichment.js"
+  },
+  "dependencies": {
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "vite": "^5.0.0"
+  }
+}
