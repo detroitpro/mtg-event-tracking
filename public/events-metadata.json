@@ -245,7 +245,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "1940 North Ave, Ste 9, Spearfish, SD 57783",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 44.5041811,
+        "lng": -103.8584034
+      },
       "website": "https://www.lookoutgamesspear.com",
       "eventLink": "https://www.lookoutgamesspear.com"
     },
@@ -261,7 +264,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "2158 Eastridge Center, Eau Claire, WI 54701",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 44.811349,
+        "lng": -91.4984941
+      },
       "website": "https://www.d20ec.com",
       "eventLink": "https://www.d20ec.com/calendar-and-events"
     },
@@ -353,7 +359,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "4999 Old Orchard Ctr, Suite N42, Skokie, IL 60077",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 42.0556376,
+        "lng": -87.7449341
+      },
       "website": "https://www.gamersworldchicago.net",
       "eventLink": "https://www.gamersworldchicago.net"
     },
@@ -483,7 +492,10 @@
       "notes": "2-slot",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "2525 N Ankeny Blvd, Ste. 101, Ankeny, IA 50023",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 41.7320796,
+        "lng": -93.605092
+      },
       "website": "https://dungeonsgate.com",
       "eventLink": "https://dungeonsgate.com"
     },
@@ -613,7 +625,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "824 S Main St, Ste 101, Joplin, MO 64801",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 37.0819165,
+        "lng": -94.5138301
+      },
       "website": "https://hurleysheroes.com",
       "eventLink": "https://hurleysheroes.com"
     },
@@ -667,7 +682,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "3902 13th Ave S. #100, Fargo, ND 58103",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 46.858667,
+        "lng": -96.8463114
+      },
       "website": "https://jwwcards.com",
       "eventLink": "https://jwwcards.com"
     },
@@ -683,7 +701,10 @@
       "notes": "2-slot",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "44519 Marietta Rd, Suite B, Caldwell, OH 43724",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 39.7443441,
+        "lng": -81.5169577
+      },
       "website": "https://apexgaming.gg",
       "eventLink": "https://apexgaming.gg"
     },
@@ -699,7 +720,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "652 W Central Ave #28, Delaware, OH 43015",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 40.3074827,
+        "lng": -83.091012
+      },
       "website": "https://hobbycentralohio.com",
       "eventLink": "https://hobbycentralohio.com"
     },
@@ -791,7 +815,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "1940 North Ave, Ste 9, Spearfish, SD 57783",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 44.5041811,
+        "lng": -103.8584034
+      },
       "website": "https://www.lookoutgamesspear.com",
       "eventLink": "https://www.lookoutgamesspear.com"
     },
@@ -807,7 +834,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "930 Galloway Street, Suite 217, Mailbox 46, Eau Claire, WI 54703",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 44.8150198,
+        "lng": -91.4896157
+      },
       "website": "https://www.undercity.games",
       "eventLink": "https://www.undercity.games"
     },
@@ -842,7 +872,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "222 N. Main St. Suite C, River Falls, WI 54022",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 44.8598666,
+        "lng": -92.6252319
+      },
       "website": "https://midwestjedi.com",
       "eventLink": "https://midwestjedi.com"
     },
@@ -1324,7 +1357,10 @@
       "notes": "2-slot",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "871 South Latson Road, Howell, MI 48843",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 42.6072552,
+        "lng": -83.9293952
+      },
       "website": "https://www.theupkeepgames.com",
       "eventLink": "https://www.theupkeepgames.com"
     },
@@ -1378,7 +1414,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "824 S Main St, Ste 101, Joplin, MO 64801",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 37.0819165,
+        "lng": -94.5138301
+      },
       "website": "https://hurleysheroes.com",
       "eventLink": "https://hurleysheroes.com"
     },
@@ -1451,7 +1490,10 @@
       "notes": "2-slot",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "26636 Brookpark Rd Ext, North Olmsted, OH 44070",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 41.4156025,
+        "lng": -81.9234726
+      },
       "website": "https://www.recess.net",
       "eventLink": "https://www.recess.net"
     },
@@ -1600,7 +1642,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "7500 University Ave, Suite D, Des Moines, IA 50325",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 41.6004078,
+        "lng": -93.6962208
+      },
       "website": "https://www.mayhemcomics.com",
       "eventLink": "https://www.mayhemcomics.com"
     },
@@ -1635,7 +1680,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "7500 University Ave, Suite D, Des Moines, IA 50325",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 41.6004078,
+        "lng": -93.6962208
+      },
       "website": "https://www.mayhemcomics.com",
       "eventLink": "https://www.mayhemcomics.com"
     },
@@ -1651,7 +1699,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "723 S Neil St, Ste 104, Champaign, IL 61820",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 40.1070936,
+        "lng": -88.243905
+      },
       "website": "https://www.titangames.com",
       "eventLink": "https://www.titangames.com"
     },
@@ -1743,7 +1794,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "2329 Iowa St Suite M, Lawrence, KS 66046",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 38.9411669,
+        "lng": -95.2620393
+      },
       "website": "http://www.imagamenut.com",
       "eventLink": "http://www.imagamenut.com"
     },
@@ -1873,7 +1927,10 @@
       "notes": "2-slot",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "9914 Holmes Rd STE B, Kansas City, MO 64131",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 38.9474611,
+        "lng": -94.5824785
+      },
       "website": "https://spankyscardshop.com",
       "eventLink": "https://spankyscardshop.com"
     },
@@ -1927,7 +1984,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "7501 Mentor Ave Ste 4, Mentor, OH 44060",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 41.6614029,
+        "lng": -81.3595556
+      },
       "website": "https://www.northcoast.games",
       "eventLink": "https://www.northcoast.games"
     },
@@ -1981,7 +2041,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "19555 W Bluemound Rd Suite 34-36, Brookfield, WI 53045",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 43.0351441,
+        "lng": -88.1541968
+      },
       "website": "https://www.game-universe.com",
       "eventLink": "https://www.game-universe.com"
     },
@@ -2051,7 +2114,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "7500 University Ave, Suite D, Des Moines, IA 50325",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 41.6004078,
+        "lng": -93.6962208
+      },
       "website": "https://www.mayhemcomics.com",
       "eventLink": "https://www.mayhemcomics.com"
     },
@@ -2197,7 +2263,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "1301 E Euclid Ave, Suite C, Des Moines, IA 50316",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 41.627633,
+        "lng": -93.603482
+      },
       "website": "https://moxiecardshop.com",
       "eventLink": "https://moxiecardshop.com"
     },
@@ -2270,7 +2339,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "2200 Elmwood Ave, Ste D7, Lafayette, IN 47904",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 40.4299749,
+        "lng": -86.872638
+      },
       "website": "https://www.tier-1.games",
       "eventLink": "https://www.tier-1.games"
     },
@@ -2362,7 +2434,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "824 S Main St, Ste 101, Joplin, MO 64801",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 37.0819165,
+        "lng": -94.5138301
+      },
       "website": "https://hurleysheroes.com",
       "eventLink": "https://hurleysheroes.com"
     },
@@ -2378,7 +2453,10 @@
       "notes": "2-slot",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "9914 Holmes Rd STE B, Kansas City, MO 64131",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 38.9474611,
+        "lng": -94.5824785
+      },
       "website": "https://spankyscardshop.com",
       "eventLink": "https://spankyscardshop.com"
     },
@@ -2470,7 +2548,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "2158 Eastridge Center, Eau Claire, WI 54701",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 44.811349,
+        "lng": -91.4984941
+      },
       "website": "https://www.d20ec.com",
       "eventLink": "https://www.d20ec.com"
     },
@@ -2543,7 +2624,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "1301 E Euclid Ave, Suite C, Des Moines, IA 50316",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 41.627633,
+        "lng": -93.603482
+      },
       "website": "https://moxiecardshop.com",
       "eventLink": "https://moxiecardshop.com"
     },
@@ -2578,7 +2662,10 @@
       "notes": "2-slot",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "9914 Holmes Rd STE B, Kansas City, MO 64131",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 38.9474611,
+        "lng": -94.5824785
+      },
       "website": "https://spankyscardshop.com",
       "eventLink": "https://spankyscardshop.com"
     },
@@ -2708,7 +2795,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "2329 Iowa St Suite M, Lawrence, KS 66046",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 38.9411669,
+        "lng": -95.2620393
+      },
       "website": "http://www.imagamenut.com",
       "eventLink": "http://www.imagamenut.com"
     },
@@ -2762,7 +2852,10 @@
       "notes": "2-slot",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "2495 Cedar Street STE 14-B, Holt, MI 48842",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 42.6542961,
+        "lng": -84.5342209
+      },
       "website": "https://afk.games",
       "eventLink": "https://afk.games"
     },
@@ -2778,7 +2871,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "29571 Five Mile Rd, Livonia, MI 48154",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 42.36837,
+        "lng": -83.3527097
+      },
       "website": "https://riwhobbies.com",
       "eventLink": "https://riwhobbies.com"
     },
@@ -2832,7 +2928,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "652 W Central Ave #28, Delaware, OH 43015",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 40.3074827,
+        "lng": -83.091012
+      },
       "website": "https://hobbycentralohio.com",
       "eventLink": "https://hobbycentralohio.com"
     },
@@ -2905,7 +3004,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "1001 Olin Lane, Mount Vernon, IL 62864",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 38.3172715,
+        "lng": -88.9031201
+      },
       "website": "https://www.asgardkeep.com",
       "eventLink": "https://www.asgardkeep.com"
     },
@@ -2959,7 +3061,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "2200 N Maple Ave Suite 208A, Rapid City, SD 57701",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 44.1075949,
+        "lng": -103.2142461
+      },
       "website": "https://playmakersllc.com",
       "eventLink": "https://playmakersllc.com"
     },
@@ -3184,7 +3289,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "712 W Pearce Blvd, Unit A, Wentzville, MO 63385",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 38.8100314,
+        "lng": -90.8630656
+      },
       "website": "https://www.mikeandtaylors.com",
       "eventLink": "https://www.mikeandtaylors.com"
     },
@@ -3276,7 +3384,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "2329 Iowa St Suite M, Lawrence, KS 66046",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 38.9411669,
+        "lng": -95.2620393
+      },
       "website": "http://www.imagamenut.com",
       "eventLink": "http://www.imagamenut.com"
     },
@@ -3425,7 +3536,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "2200 N Maple Ave Suite 208A, Rapid City, SD 57701",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 44.1075949,
+        "lng": -103.2142461
+      },
       "website": "https://playmakersllc.com",
       "eventLink": "https://playmakersllc.com"
     },
@@ -3479,7 +3593,10 @@
       "notes": "2-slot",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "2495 Cedar Street STE 14-B, Holt, MI 48842",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 42.6542961,
+        "lng": -84.5342209
+      },
       "website": "https://afk.games",
       "eventLink": "https://afk.games"
     },
@@ -3590,7 +3707,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "7501 Mentor Ave Ste 4, Mentor, OH 44060",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 41.6614029,
+        "lng": -81.3595556
+      },
       "website": "https://www.northcoast.games",
       "eventLink": "https://www.northcoast.games"
     },
@@ -3625,7 +3745,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "2158 Eastridge Center, Eau Claire, WI 54701",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 44.811349,
+        "lng": -91.4984941
+      },
       "website": "https://www.d20ec.com",
       "eventLink": "https://www.d20ec.com"
     },
@@ -3774,7 +3897,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "2200 Elmwood Ave, Ste D7, Lafayette, IN 47904",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 40.4299749,
+        "lng": -86.872638
+      },
       "website": "https://www.tier-1.games",
       "eventLink": "https://www.tier-1.games"
     },
@@ -3847,7 +3973,10 @@
       "notes": "2-slot",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "2495 Cedar Street STE 14-B, Holt, MI 48842",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 42.6542961,
+        "lng": -84.5342209
+      },
       "website": "https://afk.games",
       "eventLink": "https://afk.games"
     },
@@ -3863,7 +3992,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "29571 Five Mile Rd, Livonia, MI 48154",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 42.36837,
+        "lng": -83.3527097
+      },
       "website": "https://riwhobbies.com",
       "eventLink": "https://riwhobbies.com"
     },
@@ -4012,7 +4144,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "1940 North Ave, Ste 9, Spearfish, SD 57783",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 44.5041811,
+        "lng": -103.8584034
+      },
       "website": "https://www.lookoutgamesspear.com",
       "eventLink": "https://www.lookoutgamesspear.com"
     },
@@ -4047,7 +4182,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "2200 N Maple Ave Suite 208A, Rapid City, SD 57701",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 44.1075949,
+        "lng": -103.2142461
+      },
       "website": "https://playmakersllc.com",
       "eventLink": "https://playmakersllc.com"
     },
@@ -4291,7 +4429,10 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "930 Galloway Street, Suite 217, Mailbox 46, Eau Claire, WI 54703",
-      "coordinates": null,
+      "coordinates": {
+        "lat": 44.8150198,
+        "lng": -91.4896157
+      },
       "website": "https://www.undercity.games",
       "eventLink": "https://www.undercity.games"
     },
