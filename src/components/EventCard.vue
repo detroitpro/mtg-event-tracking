@@ -29,14 +29,10 @@
       </svg>
     </button>
     
-    <!-- Prominent Date Banner -->
-    <div class="date-banner" :class="dateBannerClass">
-      <div class="date-main">
-        <span class="date-month">{{ monthName }}</span>
-        <span class="date-day">{{ dayOfMonth }}</span>
-        <span class="date-weekday">({{ weekdayName }})</span>
-      </div>
-      <div v-if="event.time" class="date-meta">
+    <!-- Card Header Banner -->
+    <div class="card-banner" :class="dateBannerClass">
+      <h3 class="venue-title">{{ event.venue }}</h3>
+      <div v-if="event.time" class="banner-meta">
         <span class="event-time">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="10"/>
@@ -72,17 +68,6 @@
 
     <!-- Card Body -->
     <div class="card-body">
-      <div class="venue-info">
-        <h3 class="venue-name">{{ event.venue }}</h3>
-        <p class="venue-location">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-            <circle cx="12" cy="10" r="3"/>
-          </svg>
-          {{ event.city }}, {{ event.state }}
-        </p>
-      </div>
-
       <div class="details-grid">
         <div class="detail-item">
           <span class="detail-label">Format</span>
@@ -428,7 +413,7 @@ export default {
 /* ============================================
    Prominent Date Banner
    ============================================ */
-.date-banner {
+.card-banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -438,53 +423,33 @@ export default {
   border-bottom: 1px solid var(--border-subtle);
 }
 
-.date-banner.date-today {
+.card-banner.date-today {
   background: linear-gradient(135deg, rgba(245, 158, 11, 0.25), rgba(245, 158, 11, 0.1));
 }
 
-.date-banner.date-tomorrow {
+.card-banner.date-tomorrow {
   background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(16, 185, 129, 0.08));
 }
 
-.date-banner.date-soon {
+.card-banner.date-soon {
   background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(59, 130, 246, 0.05));
 }
 
-.date-main {
-  display: flex;
-  align-items: baseline;
-  gap: 0.5rem;
-}
-
-.date-month {
+.venue-title {
   font-family: 'Outfit', sans-serif;
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--accent-primary-light);
-  text-transform: uppercase;
-}
-
-.date-day {
-  font-family: 'Outfit', sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
   color: var(--text-primary);
-  line-height: 1;
+  margin: 0;
+  line-height: 1.3;
 }
 
-.date-weekday {
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--text-secondary);
-  text-transform: uppercase;
-}
-
-.date-meta {
+.banner-meta {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.375rem;
+  align-items: center;
+  gap: 0.75rem;
 }
+
 
 .event-time {
   display: flex;
@@ -633,35 +598,6 @@ export default {
   gap: 1rem;
 }
 
-.venue-info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.375rem;
-}
-
-.venue-name {
-  font-family: 'Outfit', sans-serif;
-  font-size: 1.0625rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  margin: 0;
-  line-height: 1.3;
-}
-
-.venue-location {
-  display: flex;
-  align-items: center;
-  gap: 0.375rem;
-  font-size: 0.875rem;
-  color: var(--text-secondary);
-  margin: 0;
-}
-
-.venue-location svg {
-  color: var(--text-muted);
-  flex-shrink: 0;
-}
-
 /* ============================================
    Details Grid
    ============================================ */
@@ -792,14 +728,14 @@ export default {
    Responsive Design
    ============================================ */
 @media (max-width: 640px) {
-  .date-banner {
+  .card-banner {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.75rem;
     padding-right: 3.5rem;
   }
   
-  .date-meta {
+  .banner-meta {
     flex-direction: row;
     align-items: center;
     width: 100%;

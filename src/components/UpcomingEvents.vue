@@ -66,6 +66,9 @@
             <span class="days-until-badge" :class="getDaysUntilClass(date)">{{ getDaysUntilText(date) }}</span>
           </div>
           <div class="timeline-meta">
+            <svg v-if="hasGroupFavorite(dayGroup)" class="group-favorite-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
             <span class="event-count-badge">{{ dayGroup.length }} event{{ dayGroup.length !== 1 ? 's' : '' }}</span>
             <button class="expand-btn" :class="{ collapsed: collapsedDays[date] }">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -112,6 +115,7 @@
 import { ref, computed, watch } from 'vue';
 import EventCard from './EventCard.vue';
 import { distanceToEvent } from '../utils/distance';
+import { isFavorite } from '../utils/favorites';
 
 export default {
   name: 'UpcomingEvents',
@@ -286,10 +290,16 @@ export default {
       });
     }
 
+    // Check if any event in a group is favorited
+    function hasGroupFavorite(events) {
+      return events.some(event => isFavorite(event.id));
+    }
+
     return {
       collapsedDays,
       groupedEvents,
       distanceSortedEvents,
+      hasGroupFavorite,
       allCollapsed,
       getDayName,
       getMonthName,
@@ -572,6 +582,11 @@ export default {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+}
+
+.group-favorite-icon {
+  color: #f87171;
+  flex-shrink: 0;
 }
 
 .event-count-badge {
