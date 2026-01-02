@@ -1,8 +1,9 @@
 {
   "metadata": {
     "version": "1.0",
-    "lastUpdated": "2025-12-31T16:57:25.778Z",
-    "totalEvents": 240
+    "lastUpdated": "2026-01-02T15:17:42.899Z",
+    "totalEvents": 240,
+    "source": "events.txt (merged)"
   },
   "events": [
     {
@@ -25,10 +26,10 @@
       "eventLink": "https://www.spicerack.gg/events/stores/1007"
     },
     {
-      "id": "2026-01-03-chupacabra-games-naperville",
+      "id": "2026-01-03-chupacabra-games-naperville-10pm",
       "type": "RCQ",
       "date": "2026-01-03",
-      "time": "10am",
+      "time": "10pm",
       "venue": "Chupacabra Games",
       "city": "Naperville",
       "state": "IL",
@@ -63,7 +64,7 @@
       "eventLink": "https://tier1games.squarespace.com/kokomo-events"
     },
     {
-      "id": "2026-01-03-empire-comics-new albany",
+      "id": "2026-01-03-empire-comics-new-albany",
       "type": "RCQ",
       "date": "2026-01-03",
       "time": null,
@@ -139,7 +140,7 @@
       "eventLink": "https://allevents.in/independence/magic-the-gathering-dreamhack-rcq-showdown-standard/200029173695557"
     },
     {
-      "id": "2026-01-03-bk-games-st robert",
+      "id": "2026-01-03-bk-games-st-robert",
       "type": "RCQ",
       "date": "2026-01-03",
       "time": null,
@@ -196,7 +197,7 @@
       "eventLink": "https://thegameshoppe.com/category/events/"
     },
     {
-      "id": "2026-01-03-freedom-gaming-north canton",
+      "id": "2026-01-03-freedom-gaming-north-canton",
       "type": "RCQ",
       "date": "2026-01-03",
       "time": null,
@@ -215,7 +216,7 @@
       "eventLink": "https://www.ticketleap.events/events/freedomhobbyandgaming"
     },
     {
-      "id": "2026-01-03-spellcrafter-s-den-upper sandusky",
+      "id": "2026-01-03-spellcrafter-s-den-upper-sandusky",
       "type": "RCQ",
       "date": "2026-01-03",
       "time": null,
@@ -253,7 +254,7 @@
       "eventLink": "https://www.lookoutgamesspear.com"
     },
     {
-      "id": "2026-01-03-d20-gaming-eau claire",
+      "id": "2026-01-03-d20-gaming-eau-claire",
       "type": "RCQ",
       "date": "2026-01-03",
       "time": null,
@@ -310,7 +311,7 @@
       "eventLink": "https://allevents.in/mequon/rcq-season-4-round-3/200029410397226"
     },
     {
-      "id": "2026-01-03-dragons--daggers-n--games-merrill",
+      "id": "2026-01-03-dragons-daggers-n-games-merrill",
       "type": "RCQ",
       "date": "2026-01-03",
       "time": null,
@@ -348,7 +349,7 @@
       "eventLink": "https://www.goodgameia.com"
     },
     {
-      "id": "2026-01-04-gamers-world-old orchard skokie",
+      "id": "2026-01-04-gamers-world-old-orchard-skokie",
       "type": "RCQ",
       "date": "2026-01-04",
       "time": null,
@@ -358,13 +359,10 @@
       "format": "Standard",
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
-      "address": "4999 Old Orchard Ctr, Suite N42, Skokie, IL 60077",
-      "coordinates": {
-        "lat": 42.0556376,
-        "lng": -87.7449341
-      },
-      "website": "https://www.gamersworldchicago.net",
-      "eventLink": "https://www.gamersworldchicago.net"
+      "address": null,
+      "coordinates": null,
+      "website": null,
+      "eventLink": null
     },
     {
       "id": "2026-01-04-larry-s-game-store-olathe",
@@ -386,7 +384,7 @@
       "eventLink": "https://www.larrysgamestore.com"
     },
     {
-      "id": "2026-01-04-2-bros---a-box-stillwater",
+      "id": "2026-01-04-2-bros-a-box-stillwater",
       "type": "RCQ",
       "date": "2026-01-04",
       "time": null,
@@ -443,7 +441,7 @@
       "eventLink": "https://www.evo-game.com"
     },
     {
-      "id": "2026-01-04-the-mana-vault-mke-st francis",
+      "id": "2026-01-04-the-mana-vault-mke-st-francis",
       "type": "RCQ",
       "date": "2026-01-04",
       "time": null,
@@ -500,7 +498,7 @@
       "eventLink": "https://dungeonsgate.com"
     },
     {
-      "id": "2026-01-10-dark-vassal-gaming-cedar falls",
+      "id": "2026-01-10-dark-vassal-gaming-cedar-falls",
       "type": "RCQ",
       "date": "2026-01-10",
       "time": null,
@@ -538,7 +536,7 @@
       "eventLink": "https://spellboundgameschicago.crystalcommerce.com"
     },
     {
-      "id": "2026-01-10-impact-gaming-center-fairview heights",
+      "id": "2026-01-10-impact-gaming-center-fairview-heights",
       "type": "RCQ",
       "date": "2026-01-10",
       "time": null,
@@ -595,7 +593,7 @@
       "eventLink": "https://galactictoys.com"
     },
     {
-      "id": "2026-01-10-dreamers-vault-games-st louis park",
+      "id": "2026-01-10-dreamers-vault-games-st-louis-park",
       "type": "RCQ",
       "date": "2026-01-10",
       "time": null,
@@ -633,7 +631,7 @@
       "eventLink": "https://hurleysheroes.com"
     },
     {
-      "id": "2026-01-10-ken-s-comic-man-poplar bluff",
+      "id": "2026-01-10-ken-s-comic-man-poplar-bluff",
       "type": "RCQ",
       "date": "2026-01-10",
       "time": null,
@@ -671,7 +669,7 @@
       "eventLink": "https://parallaxgames.org"
     },
     {
-      "id": "2026-01-10-jww-sports-cards---gaming-fargo",
+      "id": "2026-01-10-jww-sports-cards-gaming-fargo",
       "type": "RCQ",
       "date": "2026-01-10",
       "time": null,
@@ -766,7 +764,7 @@
       "eventLink": null
     },
     {
-      "id": "2026-01-10-shuffler-s-den-willoughby hills",
+      "id": "2026-01-10-shuffler-s-den-willoughby-hills",
       "type": "RCQ",
       "date": "2026-01-10",
       "time": null,
@@ -785,7 +783,7 @@
       "eventLink": "https://www.shufflersden.com"
     },
     {
-      "id": "2026-01-10-dragon-s-den-sioux falls",
+      "id": "2026-01-10-dragon-s-den-sioux-falls",
       "type": "RCQ",
       "date": "2026-01-10",
       "time": null,
@@ -823,7 +821,7 @@
       "eventLink": "https://www.lookoutgamesspear.com"
     },
     {
-      "id": "2026-01-10-undercity-games-eau claire",
+      "id": "2026-01-10-undercity-games-eau-claire",
       "type": "RCQ",
       "date": "2026-01-10",
       "time": null,
@@ -861,7 +859,7 @@
       "eventLink": "https://www.colosseumgamesofwi.com"
     },
     {
-      "id": "2026-01-10-midwest-jedi-river falls",
+      "id": "2026-01-10-midwest-jedi-river-falls",
       "type": "RCQ",
       "date": "2026-01-10",
       "time": null,
@@ -880,20 +878,20 @@
       "eventLink": "https://midwestjedi.com"
     },
     {
-      "id": "2026-01-10-the-decatur-deathmatch-decatur convention center - decatur",
+      "id": "2026-01-10-the-decatur-deathmatch-decatur-convention-center-decatur",
       "type": "Other",
       "date": "2026-01-10",
       "time": null,
       "venue": "The Decatur Deathmatch",
-      "city": "Decatur Convention Center - Decatur",
+      "city": "Decatur Convention Center Decatur",
       "state": "IL",
       "format": "10k (120-200 players) up to 20k (475+)",
       "notes": "CEDH",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
-      "address": "4191 US 36 West (Wyckles Rd.), Decatur, IL 62522",
+      "address": null,
       "coordinates": null,
-      "website": "https://topdeck.gg/event/the-midwest-mash-cedh-up-to-20k-cash-prizing",
-      "eventLink": "https://topdeck.gg/event/the-midwest-mash-cedh-up-to-20k-cash-prizing"
+      "website": null,
+      "eventLink": null
     },
     {
       "id": "2026-01-10-collective-effort-gaming-alpena",
@@ -915,6 +913,25 @@
       "eventLink": null
     },
     {
+      "id": "2026-01-10-moms-basement-games-howell",
+      "type": "Other",
+      "date": "2026-01-10",
+      "time": "12pm",
+      "venue": "Moms Basement Games",
+      "city": "Howell",
+      "state": "MI",
+      "format": "cEDH",
+      "notes": "Mox Diamond Event - $40 entry, 100% Proxy Friendly",
+      "qualificationPath": null,
+      "address": "1129 E Grand River Ave, Howell, MI",
+      "coordinates": {
+        "lat": 42.6024454,
+        "lng": -83.9165362
+      },
+      "website": null,
+      "eventLink": "mailto:mbghowell@gmail.com"
+    },
+    {
       "id": "2026-01-11-gameuphoria-washington",
       "type": "RCQ",
       "date": "2026-01-11",
@@ -934,23 +951,7 @@
       "eventLink": "https://gameuphoriawashmo.com"
     },
     {
-      "id": "2026-01-11-the-decatur-deathmatch-decatur convention center - decatur",
-      "type": "Other",
-      "date": "2026-01-11",
-      "time": null,
-      "venue": "The Decatur Deathmatch",
-      "city": "Decatur Convention Center - Decatur",
-      "state": "IL",
-      "format": "10k (120-200 players) up to 20k (475+)",
-      "notes": "CEDH",
-      "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
-      "address": "4191 US 36 West (Wyckles Rd.), Decatur, IL 62522",
-      "coordinates": null,
-      "website": "https://topdeck.gg/event/the-midwest-mash-cedh-up-to-20k-cash-prizing",
-      "eventLink": "https://topdeck.gg/event/the-midwest-mash-cedh-up-to-20k-cash-prizing"
-    },
-    {
-      "id": "2026-01-11-the-decatur-deathmatch-decatur convention center decatur",
+      "id": "2026-01-11-the-decatur-deathmatch-decatur-convention-center-decatur",
       "type": "Other",
       "date": "2026-01-11",
       "time": null,
@@ -1061,7 +1062,7 @@
       "eventLink": "https://www.betterplaysgaming.com"
     },
     {
-      "id": "2026-01-17-izzi-s-gym-sioux falls",
+      "id": "2026-01-17-izzi-s-gym-sioux-falls",
       "type": "RCQ",
       "date": "2026-01-17",
       "time": null,
@@ -1080,7 +1081,7 @@
       "eventLink": "https://izzisgym.com"
     },
     {
-      "id": "2026-01-17-slick-mimic-s-board & card games shoppe appleton",
+      "id": "2026-01-17-slick-mimic-s-board--card-games-shoppe-appleton",
       "type": "RCQ",
       "date": "2026-01-17",
       "time": null,
@@ -1090,13 +1091,10 @@
       "format": "Standard",
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
-      "address": "792 W Northland Ave, Appleton, WI 54914",
-      "coordinates": {
-        "lat": 44.2874228,
-        "lng": -88.4181675
-      },
-      "website": "https://www.slickmimics.com",
-      "eventLink": "https://www.slickmimics.com"
+      "address": null,
+      "coordinates": null,
+      "website": null,
+      "eventLink": null
     },
     {
       "id": "2026-01-17-the-dragon-s-roost-marshfield",
@@ -1118,7 +1116,7 @@
       "eventLink": null
     },
     {
-      "id": "2026-01-18-grandmaster-games-oak park",
+      "id": "2026-01-18-grandmaster-games-oak-park",
       "type": "RCQ",
       "date": "2026-01-18",
       "time": null,
@@ -1289,7 +1287,7 @@
       "eventLink": "https://gatorsfeedsyourneeds.com"
     },
     {
-      "id": "2026-01-24-sylvan-factory-ann arbor",
+      "id": "2026-01-24-sylvan-factory-ann-arbor",
       "type": "RCQ",
       "date": "2026-01-24",
       "time": null,
@@ -1308,7 +1306,7 @@
       "eventLink": "https://sylvanfactory.com"
     },
     {
-      "id": "2026-01-24-ccgprime-north cedar springs",
+      "id": "2026-01-24-ccgprime-north-cedar-springs",
       "type": "RCQ",
       "date": "2026-01-24",
       "time": null,
@@ -1318,16 +1316,13 @@
       "format": "Standard",
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
-      "address": "4116 17 Mile Rd NE, Cedar Springs, MI 49319",
-      "coordinates": {
-        "lat": 43.219787,
-        "lng": -85.567768
-      },
-      "website": "https://ccgprime.com",
-      "eventLink": "https://ccgprime.com"
+      "address": null,
+      "coordinates": null,
+      "website": null,
+      "eventLink": null
     },
     {
-      "id": "2026-01-24-gamer-s-gauntlet-clinton township",
+      "id": "2026-01-24-gamer-s-gauntlet-clinton-township",
       "type": "RCQ",
       "date": "2026-01-24",
       "time": null,
@@ -1384,7 +1379,7 @@
       "eventLink": "https://www.dreamersvault.com"
     },
     {
-      "id": "2026-01-24-the-fan-zone-waite park",
+      "id": "2026-01-24-the-fan-zone-waite-park",
       "type": "RCQ",
       "date": "2026-01-24",
       "time": null,
@@ -1422,7 +1417,7 @@
       "eventLink": "https://hurleysheroes.com"
     },
     {
-      "id": "2026-01-24-forge-and-fire-gaming-maryland heights",
+      "id": "2026-01-24-forge-and-fire-gaming-maryland-heights",
       "type": "RCQ",
       "date": "2026-01-24",
       "time": null,
@@ -1479,7 +1474,7 @@
       "eventLink": "https://www.epiclootgames.com"
     },
     {
-      "id": "2026-01-24-recess-games-north olmsted",
+      "id": "2026-01-24-recess-games-north-olmsted",
       "type": "RCQ",
       "date": "2026-01-24",
       "time": null,
@@ -1498,7 +1493,7 @@
       "eventLink": "https://www.recess.net"
     },
     {
-      "id": "2026-01-25-limited-edition-cedar falls",
+      "id": "2026-01-25-limited-edition-cedar-falls",
       "type": "RCQ",
       "date": "2026-01-25",
       "time": null,
@@ -1517,7 +1512,7 @@
       "eventLink": null
     },
     {
-      "id": "2026-01-25-now-and-then-mason city",
+      "id": "2026-01-25-now-and-then-mason-city",
       "type": "RCQ",
       "date": "2026-01-25",
       "time": null,
@@ -1536,7 +1531,7 @@
       "eventLink": "https://originalnowandthen.com"
     },
     {
-      "id": "2026-01-25-games-king-sioux city",
+      "id": "2026-01-25-games-king-sioux-city-10am",
       "type": "RCQ",
       "date": "2026-01-25",
       "time": "10am",
@@ -1555,7 +1550,7 @@
       "eventLink": "https://gameskingstore.com"
     },
     {
-      "id": "2026-01-25-games-king-sioux city",
+      "id": "2026-01-25-games-king-sioux-city-4pm",
       "type": "RCQ",
       "date": "2026-01-25",
       "time": "4pm",
@@ -1612,7 +1607,7 @@
       "eventLink": "https://thegamersguildhays.com"
     },
     {
-      "id": "2026-01-25-level-up-games-st. paul",
+      "id": "2026-01-25-level-up-games-st-paul",
       "type": "RCQ",
       "date": "2026-01-25",
       "time": null,
@@ -1631,7 +1626,7 @@
       "eventLink": "https://www.levelupshoponline.com"
     },
     {
-      "id": "2026-01-30-mayhem-collectibles-des moines",
+      "id": "2026-01-30-mayhem-collectibles-des-moines-630pm",
       "type": "RCQ",
       "date": "2026-01-30",
       "time": "6:30pm",
@@ -1650,7 +1645,7 @@
       "eventLink": "https://www.mayhemcomics.com"
     },
     {
-      "id": "2026-01-31-dark-vassal-gaming-cedar falls",
+      "id": "2026-01-31-dark-vassal-gaming-cedar-falls",
       "type": "RCQ",
       "date": "2026-01-31",
       "time": null,
@@ -1669,7 +1664,7 @@
       "eventLink": "https://dvgtcg.com"
     },
     {
-      "id": "2026-01-31-mayhem-collectibles-des moines",
+      "id": "2026-01-31-mayhem-collectibles-des-moines",
       "type": "RCQ",
       "date": "2026-01-31",
       "time": null,
@@ -1680,10 +1675,7 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "7500 University Ave, Suite D, Des Moines, IA 50325",
-      "coordinates": {
-        "lat": 41.6004078,
-        "lng": -93.6962208
-      },
+      "coordinates": null,
       "website": "https://www.mayhemcomics.com",
       "eventLink": "https://www.mayhemcomics.com"
     },
@@ -1726,7 +1718,7 @@
       "eventLink": "https://gamestormillinois.com"
     },
     {
-      "id": "2026-01-31-the-kingdom--cards-and-games-kokomo",
+      "id": "2026-01-31-the-kingdom-cards-and-games-kokomo",
       "type": "RCQ",
       "date": "2026-01-31",
       "time": null,
@@ -1840,7 +1832,7 @@
       "eventLink": "https://onedropgameshop.com"
     },
     {
-      "id": "2026-01-31-perfect-storm-comics-and-games-battle creek",
+      "id": "2026-01-31-perfect-storm-comics-and-games-battle-creek",
       "type": "RCQ",
       "date": "2026-01-31",
       "time": null,
@@ -1859,7 +1851,7 @@
       "eventLink": "https://perfectstormmtg.net"
     },
     {
-      "id": "2026-01-31-ccgprime-ionia",
+      "id": "2026-01-31-ccgprime-ionia-1pm",
       "type": "RCQ",
       "date": "2026-01-31",
       "time": "1pm",
@@ -1878,7 +1870,7 @@
       "eventLink": "https://ccgprime.com"
     },
     {
-      "id": "2026-01-31-ccgprime-central ionia",
+      "id": "2026-01-31-ccgprime-central-ionia-5pm",
       "type": "RCQ",
       "date": "2026-01-31",
       "time": "5pm",
@@ -1888,13 +1880,10 @@
       "format": "Standard",
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
-      "address": "317 West Main Street, Ionia, MI 48846",
-      "coordinates": {
-        "lat": 42.9823499,
-        "lng": -85.0669237
-      },
-      "website": "https://ccgprime.com",
-      "eventLink": "https://ccgprime.com"
+      "address": null,
+      "coordinates": null,
+      "website": null,
+      "eventLink": null
     },
     {
       "id": "2026-01-31-dreamers-vault-games-burnsville",
@@ -1916,7 +1905,7 @@
       "eventLink": "https://www.dreamersvault.com"
     },
     {
-      "id": "2026-01-31-spanky-s-card-shop-kansas city",
+      "id": "2026-01-31-spanky-s-card-shop-kansas-city",
       "type": "RCQ",
       "date": "2026-01-31",
       "time": null,
@@ -1935,7 +1924,7 @@
       "eventLink": "https://spankyscardshop.com"
     },
     {
-      "id": "2026-01-31-ken-s-comic-man-poplar bluff",
+      "id": "2026-01-31-ken-s-comic-man-poplar-bluff",
       "type": "RCQ",
       "date": "2026-01-31",
       "time": null,
@@ -1954,7 +1943,7 @@
       "eventLink": "https://kenscomicman.square.site"
     },
     {
-      "id": "2026-01-31-bk-games-st robert",
+      "id": "2026-01-31-bk-games-st-robert",
       "type": "RCQ",
       "date": "2026-01-31",
       "time": null,
@@ -1992,7 +1981,7 @@
       "eventLink": "https://www.northcoast.games"
     },
     {
-      "id": "2026-01-31-freedom-gaming-north canton",
+      "id": "2026-01-31-freedom-gaming-north-canton",
       "type": "RCQ",
       "date": "2026-01-31",
       "time": null,
@@ -2087,7 +2076,7 @@
       "eventLink": "https://adventuregamesoshkosh.square.site"
     },
     {
-      "id": "2026-01-31-mayhem-collectibles-des moines",
+      "id": "2026-01-31-mayhem-collectibles-des-moines-1pm",
       "type": "Other",
       "date": "2026-01-31",
       "time": "1pm",
@@ -2103,7 +2092,7 @@
       "eventLink": "https://www.mayhemcomics.com"
     },
     {
-      "id": "2026-02-01-mayhem-collectibles-des moines",
+      "id": "2026-02-01-mayhem-collectibles-des-moines",
       "type": "RCQ",
       "date": "2026-02-01",
       "time": null,
@@ -2114,10 +2103,7 @@
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
       "address": "7500 University Ave, Suite D, Des Moines, IA 50325",
-      "coordinates": {
-        "lat": 41.6004078,
-        "lng": -93.6962208
-      },
+      "coordinates": null,
       "website": "https://www.mayhemcomics.com",
       "eventLink": "https://www.mayhemcomics.com"
     },
@@ -2198,7 +2184,7 @@
       "eventLink": "https://www.evo-game.com"
     },
     {
-      "id": "2026-02-01-the-mana-vault-mke-st francis",
+      "id": "2026-02-01-the-mana-vault-mke-st-francis",
       "type": "RCQ",
       "date": "2026-02-01",
       "time": null,
@@ -2217,7 +2203,7 @@
       "eventLink": "https://themanavault.com"
     },
     {
-      "id": "2026-02-01-mayhem-collectibles-des moines",
+      "id": "2026-02-01-mayhem-collectibles-des-moines-1pm",
       "type": "Other",
       "date": "2026-02-01",
       "time": "1pm",
@@ -2233,7 +2219,7 @@
       "eventLink": "https://www.mayhemcomics.com"
     },
     {
-      "id": "2026-02-04-mythic-forge-gaming-madison heights",
+      "id": "2026-02-04-mythic-forge-gaming-madison-heights",
       "type": "RCQ",
       "date": "2026-02-04",
       "time": null,
@@ -2252,7 +2238,7 @@
       "eventLink": "https://mythicforgegames.com"
     },
     {
-      "id": "2026-02-07-moxie-card-shop-des moines",
+      "id": "2026-02-07-moxie-card-shop-des-moines",
       "type": "RCQ",
       "date": "2026-02-07",
       "time": null,
@@ -2290,10 +2276,10 @@
       "eventLink": "https://spellboundgameschicago.crystalcommerce.com"
     },
     {
-      "id": "2026-02-07-chupacabra-games-naperville",
+      "id": "2026-02-07-chupacabra-games-naperville-10pm",
       "type": "RCQ",
       "date": "2026-02-07",
-      "time": "10am",
+      "time": "10pm",
       "venue": "Chupacabra Games",
       "city": "Naperville",
       "state": "IL",
@@ -2309,7 +2295,7 @@
       "eventLink": "https://chupacabra-games.square.site"
     },
     {
-      "id": "2026-02-07-the-castle-games-bloomington ellettsville",
+      "id": "2026-02-07-the-castle-games-bloomington-ellettsville",
       "type": "RCQ",
       "date": "2026-02-07",
       "time": null,
@@ -2319,13 +2305,10 @@
       "format": "Standard",
       "notes": "2-slot",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
-      "address": "202 W Temperance St, Ellettsville, IN 47429",
-      "coordinates": {
-        "lat": 39.232208,
-        "lng": -86.6221632
-      },
-      "website": "https://castlegameshoppe.com",
-      "eventLink": "https://castlegameshoppe.com"
+      "address": null,
+      "coordinates": null,
+      "website": null,
+      "eventLink": null
     },
     {
       "id": "2026-02-07-tier-1-games-lafayette",
@@ -2404,7 +2387,7 @@
       "eventLink": "https://www.dreamersvault.com"
     },
     {
-      "id": "2026-02-07-the-fan-zone-waite park",
+      "id": "2026-02-07-the-fan-zone-waite-park",
       "type": "RCQ",
       "date": "2026-02-07",
       "time": null,
@@ -2442,7 +2425,7 @@
       "eventLink": "https://hurleysheroes.com"
     },
     {
-      "id": "2026-02-07-spanky-s-card-shop-kansas city",
+      "id": "2026-02-07-spanky-s-card-shop-kansas-city",
       "type": "RCQ",
       "date": "2026-02-07",
       "time": null,
@@ -2480,7 +2463,7 @@
       "eventLink": "https://paradoxcnc.com"
     },
     {
-      "id": "2026-02-07-freedom-gaming-north canton",
+      "id": "2026-02-07-freedom-gaming-north-canton",
       "type": "RCQ",
       "date": "2026-02-07",
       "time": null,
@@ -2499,7 +2482,7 @@
       "eventLink": "https://www.facebook.com/Freedom-Hobby-and-Gaming-126515704058038"
     },
     {
-      "id": "2026-02-07-shuffler-s-den-willoughby hills",
+      "id": "2026-02-07-shuffler-s-den-willoughby-hills",
       "type": "RCQ",
       "date": "2026-02-07",
       "time": null,
@@ -2518,7 +2501,7 @@
       "eventLink": "https://www.shufflersden.com"
     },
     {
-      "id": "2026-02-07-dragon-s-den-sioux falls",
+      "id": "2026-02-07-dragon-s-den-sioux-falls",
       "type": "RCQ",
       "date": "2026-02-07",
       "time": null,
@@ -2537,7 +2520,7 @@
       "eventLink": "https://www.ddengaming.com"
     },
     {
-      "id": "2026-02-07-d20-gaming-eau claire",
+      "id": "2026-02-07-d20-gaming-eau-claire",
       "type": "RCQ",
       "date": "2026-02-07",
       "time": null,
@@ -2575,7 +2558,7 @@
       "eventLink": "https://gameuniverse.net"
     },
     {
-      "id": "2026-02-07-tea---tee-card-and-hobby-medford",
+      "id": "2026-02-07-tea-tee-card-and-hobby-medford",
       "type": "RCQ",
       "date": "2026-02-07",
       "time": null,
@@ -2594,7 +2577,7 @@
       "eventLink": "https://tea-teecardandhobby.myshopify.com"
     },
     {
-      "id": "2026-02-08-limited-edition-cedar falls",
+      "id": "2026-02-08-limited-edition-cedar-falls",
       "type": "RCQ",
       "date": "2026-02-08",
       "time": null,
@@ -2613,7 +2596,7 @@
       "eventLink": null
     },
     {
-      "id": "2026-02-08-moxie-card-shop-des moines",
+      "id": "2026-02-08-moxie-card-shop-des-moines",
       "type": "RCQ",
       "date": "2026-02-08",
       "time": null,
@@ -2632,7 +2615,7 @@
       "eventLink": "https://moxiecardshop.com"
     },
     {
-      "id": "2026-02-08-2-bros---a-box-stillwater",
+      "id": "2026-02-08-2-bros-a-box-stillwater",
       "type": "RCQ",
       "date": "2026-02-08",
       "time": null,
@@ -2651,7 +2634,7 @@
       "eventLink": null
     },
     {
-      "id": "2026-02-08-spanky-s-card-shop-kansas city",
+      "id": "2026-02-08-spanky-s-card-shop-kansas-city",
       "type": "RCQ",
       "date": "2026-02-08",
       "time": null,
@@ -2708,7 +2691,7 @@
       "eventLink": "https://galaxygamesllc.com"
     },
     {
-      "id": "2026-02-12-mythic-forge-gaming-madison heights",
+      "id": "2026-02-12-mythic-forge-gaming-madison-heights",
       "type": "RCQ",
       "date": "2026-02-12",
       "time": null,
@@ -2727,7 +2710,7 @@
       "eventLink": "https://mythicforgegames.com"
     },
     {
-      "id": "2026-02-14-dark-vassal-gaming-cedar falls",
+      "id": "2026-02-14-dark-vassal-gaming-cedar-falls",
       "type": "RCQ",
       "date": "2026-02-14",
       "time": null,
@@ -2822,7 +2805,7 @@
       "eventLink": "https://gatorsfeedsyourneeds.com"
     },
     {
-      "id": "2026-02-14-ccgprime-north cedar springs",
+      "id": "2026-02-14-ccgprime-north-cedar-springs",
       "type": "RCQ",
       "date": "2026-02-14",
       "time": null,
@@ -2832,13 +2815,10 @@
       "format": "Standard",
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
-      "address": "4116 17 Mile Rd NE, Cedar Springs, MI 49319",
-      "coordinates": {
-        "lat": 43.219787,
-        "lng": -85.567768
-      },
-      "website": "https://ccgprime.com",
-      "eventLink": "https://ccgprime.com"
+      "address": null,
+      "coordinates": null,
+      "website": null,
+      "eventLink": null
     },
     {
       "id": "2026-02-14-afk-games-holt",
@@ -2879,7 +2859,7 @@
       "eventLink": "https://riwhobbies.com"
     },
     {
-      "id": "2026-02-14-dreamers-vault-games-south saint paul",
+      "id": "2026-02-14-dreamers-vault-games-south-saint-paul",
       "type": "RCQ",
       "date": "2026-02-14",
       "time": null,
@@ -2898,7 +2878,7 @@
       "eventLink": "https://www.dreamersvault.com"
     },
     {
-      "id": "2026-02-14-forge-and-fire-gaming-maryland heights",
+      "id": "2026-02-14-forge-and-fire-gaming-maryland-heights",
       "type": "RCQ",
       "date": "2026-02-14",
       "time": null,
@@ -2936,7 +2916,7 @@
       "eventLink": "https://hobbycentralohio.com"
     },
     {
-      "id": "2026-02-14-izzi-s-gym-sioux falls",
+      "id": "2026-02-14-izzi-s-gym-sioux-falls",
       "type": "RCQ",
       "date": "2026-02-14",
       "time": null,
@@ -2974,7 +2954,7 @@
       "eventLink": "https://www.mistymountaingames.com"
     },
     {
-      "id": "2026-02-14-the-mana-vault-mke-st francis",
+      "id": "2026-02-14-the-mana-vault-mke-st-francis",
       "type": "RCQ",
       "date": "2026-02-14",
       "time": null,
@@ -2993,7 +2973,7 @@
       "eventLink": "https://themanavault.com"
     },
     {
-      "id": "2026-02-15-asgard-keep-mount vernon",
+      "id": "2026-02-15-asgard-keep-mount-vernon",
       "type": "RCQ",
       "date": "2026-02-15",
       "time": null,
@@ -3050,7 +3030,7 @@
       "eventLink": "https://gameuphoriawashmo.com"
     },
     {
-      "id": "2026-02-15-playmakers-rapid city",
+      "id": "2026-02-15-playmakers-rapid-city",
       "type": "RCQ",
       "date": "2026-02-15",
       "time": null,
@@ -3069,7 +3049,7 @@
       "eventLink": "https://playmakersllc.com"
     },
     {
-      "id": "2026-02-18-mythic-forge-gaming-madison heights",
+      "id": "2026-02-18-mythic-forge-gaming-madison-heights",
       "type": "RCQ",
       "date": "2026-02-18",
       "time": null,
@@ -3107,7 +3087,7 @@
       "eventLink": "https://www.remisae.com"
     },
     {
-      "id": "2026-02-21-impact-gaming-center-fairview heights",
+      "id": "2026-02-21-impact-gaming-center-fairview-heights",
       "type": "RCQ",
       "date": "2026-02-21",
       "time": null,
@@ -3183,7 +3163,7 @@
       "eventLink": "https://onedropgameshop.com"
     },
     {
-      "id": "2026-02-21-ccgprime-ionia",
+      "id": "2026-02-21-ccgprime-ionia-1pm",
       "type": "RCQ",
       "date": "2026-02-21",
       "time": "1pm",
@@ -3202,7 +3182,7 @@
       "eventLink": "https://ccgprime.com"
     },
     {
-      "id": "2026-02-21-ccgprime-central ionia",
+      "id": "2026-02-21-ccgprime-central-ionia-5pm",
       "type": "RCQ",
       "date": "2026-02-21",
       "time": "5pm",
@@ -3212,13 +3192,10 @@
       "format": "Standard",
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
-      "address": "317 West Main Street, Ionia, MI 48846",
-      "coordinates": {
-        "lat": 42.9823499,
-        "lng": -85.0669237
-      },
-      "website": "https://ccgprime.com",
-      "eventLink": "https://ccgprime.com"
+      "address": null,
+      "coordinates": null,
+      "website": null,
+      "eventLink": null
     },
     {
       "id": "2026-02-21-level-up-games-hastings",
@@ -3392,7 +3369,7 @@
       "eventLink": "http://www.imagamenut.com"
     },
     {
-      "id": "2026-02-28-bored-bard-games-iron mountain",
+      "id": "2026-02-28-bored-bard-games-iron-mountain",
       "type": "RCQ",
       "date": "2026-02-28",
       "time": null,
@@ -3411,7 +3388,7 @@
       "eventLink": "https://www.boredbard.games"
     },
     {
-      "id": "2026-02-28-dreamers-vault-games-st louis park",
+      "id": "2026-02-28-dreamers-vault-games-st-louis-park",
       "type": "RCQ",
       "date": "2026-02-28",
       "time": null,
@@ -3430,7 +3407,7 @@
       "eventLink": "https://www.dreamersvault.com"
     },
     {
-      "id": "2026-02-28-ken-s-comic-man-poplar bluff",
+      "id": "2026-02-28-ken-s-comic-man-poplar-bluff",
       "type": "RCQ",
       "date": "2026-02-28",
       "time": null,
@@ -3487,7 +3464,7 @@
       "eventLink": null
     },
     {
-      "id": "2026-03-01-limited-edition-cedar falls",
+      "id": "2026-03-01-limited-edition-cedar-falls",
       "type": "RCQ",
       "date": "2026-03-01",
       "time": null,
@@ -3525,7 +3502,7 @@
       "eventLink": "https://www.theupkeepgames.com"
     },
     {
-      "id": "2026-03-01-playmakers-rapid city",
+      "id": "2026-03-01-playmakers-rapid-city",
       "type": "RCQ",
       "date": "2026-03-01",
       "time": null,
@@ -3544,7 +3521,7 @@
       "eventLink": "https://playmakersllc.com"
     },
     {
-      "id": "2026-03-07-the-castle-games-bloomington ellettsville",
+      "id": "2026-03-07-the-castle-games-bloomington-ellettsville",
       "type": "RCQ",
       "date": "2026-03-07",
       "time": null,
@@ -3554,13 +3531,10 @@
       "format": "Standard",
       "notes": "2-slot",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
-      "address": "202 W Temperance St, Ellettsville, IN 47429",
-      "coordinates": {
-        "lat": 39.232208,
-        "lng": -86.6221632
-      },
-      "website": "https://castlegameshoppe.com",
-      "eventLink": "https://castlegameshoppe.com"
+      "address": null,
+      "coordinates": null,
+      "website": null,
+      "eventLink": null
     },
     {
       "id": "2026-03-07-arena-hobbies-derby",
@@ -3601,7 +3575,7 @@
       "eventLink": "https://afk.games"
     },
     {
-      "id": "2026-03-07-gamer-s-gauntlet-clinton township",
+      "id": "2026-03-07-gamer-s-gauntlet-clinton-township",
       "type": "RCQ",
       "date": "2026-03-07",
       "time": null,
@@ -3715,7 +3689,7 @@
       "eventLink": "https://www.northcoast.games"
     },
     {
-      "id": "2026-03-07-freedom-gaming-north canton",
+      "id": "2026-03-07-freedom-gaming-north-canton",
       "type": "RCQ",
       "date": "2026-03-07",
       "time": null,
@@ -3734,7 +3708,7 @@
       "eventLink": "https://www.facebook.com/Freedom-Hobby-and-Gaming-126515704058038"
     },
     {
-      "id": "2026-03-07-d20-gaming-eau claire",
+      "id": "2026-03-07-d20-gaming-eau-claire",
       "type": "RCQ",
       "date": "2026-03-07",
       "time": null,
@@ -3772,7 +3746,7 @@
       "eventLink": "https://www.mistymountaingames.com"
     },
     {
-      "id": "2026-03-08-the-upkeep-games-ann arbor",
+      "id": "2026-03-08-the-upkeep-games-ann-arbor",
       "type": "RCQ",
       "date": "2026-03-08",
       "time": null,
@@ -3791,7 +3765,7 @@
       "eventLink": "https://www.theupkeepgames.com"
     },
     {
-      "id": "2026-03-08-2-bros---a-box-stillwater",
+      "id": "2026-03-08-2-bros-a-box-stillwater",
       "type": "RCQ",
       "date": "2026-03-08",
       "time": null,
@@ -3867,7 +3841,7 @@
       "eventLink": "https://castlegameshoppe.com"
     },
     {
-      "id": "2026-03-14-the-kingdom--cards-and-games-kokomo",
+      "id": "2026-03-14-the-kingdom-cards-and-games-kokomo",
       "type": "RCQ",
       "date": "2026-03-14",
       "time": null,
@@ -3943,7 +3917,7 @@
       "eventLink": "https://onedropgameshop.com"
     },
     {
-      "id": "2026-03-14-ccgprime-north cedar springs",
+      "id": "2026-03-14-ccgprime-north-cedar-springs",
       "type": "RCQ",
       "date": "2026-03-14",
       "time": null,
@@ -3953,13 +3927,10 @@
       "format": "Standard",
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
-      "address": "4116 17 Mile Rd NE, Cedar Springs, MI 49319",
-      "coordinates": {
-        "lat": 43.219787,
-        "lng": -85.567768
-      },
-      "website": "https://ccgprime.com",
-      "eventLink": "https://ccgprime.com"
+      "address": null,
+      "coordinates": null,
+      "website": null,
+      "eventLink": null
     },
     {
       "id": "2026-03-14-afk-games-holt",
@@ -4038,7 +4009,7 @@
       "eventLink": "https://www.levelupshoponline.com"
     },
     {
-      "id": "2026-03-14-forge-and-fire-gaming-maryland heights",
+      "id": "2026-03-14-forge-and-fire-gaming-maryland-heights",
       "type": "RCQ",
       "date": "2026-03-14",
       "time": null,
@@ -4152,7 +4123,7 @@
       "eventLink": "https://www.lookoutgamesspear.com"
     },
     {
-      "id": "2026-03-15-dreamers-vault-games-south saint paul",
+      "id": "2026-03-15-dreamers-vault-games-south-saint-paul",
       "type": "RCQ",
       "date": "2026-03-15",
       "time": null,
@@ -4171,7 +4142,7 @@
       "eventLink": "https://www.dreamersvault.com"
     },
     {
-      "id": "2026-03-15-playmakers-rapid city",
+      "id": "2026-03-15-playmakers-rapid-city",
       "type": "RCQ",
       "date": "2026-03-15",
       "time": null,
@@ -4209,10 +4180,10 @@
       "eventLink": "https://kugelblitzgaming.com"
     },
     {
-      "id": "2026-03-21-chupacabra-games-chicago",
+      "id": "2026-03-21-chupacabra-games-chicago-10pm",
       "type": "RCQ",
       "date": "2026-03-21",
-      "time": "10am",
+      "time": "10pm",
       "venue": "Chupacabra Games",
       "city": "Chicago",
       "state": "IL",
@@ -4266,7 +4237,7 @@
       "eventLink": "https://moonshotgamestore.com"
     },
     {
-      "id": "2026-03-21-ccgprime-ionia",
+      "id": "2026-03-21-ccgprime-ionia-1pm",
       "type": "RCQ",
       "date": "2026-03-21",
       "time": "1pm",
@@ -4285,7 +4256,7 @@
       "eventLink": "https://ccgprime.com"
     },
     {
-      "id": "2026-03-21-ccgprime-central ionia",
+      "id": "2026-03-21-ccgprime-central-ionia-5pm",
       "type": "RCQ",
       "date": "2026-03-21",
       "time": "5pm",
@@ -4295,13 +4266,10 @@
       "format": "Standard",
       "notes": "",
       "qualificationPath": "either US Regional Championship at SCG CON Cincinnati or Washington, DC or both with two qualifications, then Pro Tour Amsterdam",
-      "address": "317 West Main Street, Ionia, MI 48846",
-      "coordinates": {
-        "lat": 42.9823499,
-        "lng": -85.0669237
-      },
-      "website": "https://ccgprime.com",
-      "eventLink": "https://ccgprime.com"
+      "address": null,
+      "coordinates": null,
+      "website": null,
+      "eventLink": null
     },
     {
       "id": "2026-03-21-dreamers-vault-games-champlin",
@@ -4380,7 +4348,7 @@
       "eventLink": "https://galaxygamesllc.com"
     },
     {
-      "id": "2026-03-21-dragon-s-den-sioux falls",
+      "id": "2026-03-21-dragon-s-den-sioux-falls",
       "type": "RCQ",
       "date": "2026-03-21",
       "time": null,
@@ -4399,7 +4367,7 @@
       "eventLink": "https://www.ddengaming.com"
     },
     {
-      "id": "2026-03-21-izzi-s-gym-sioux falls",
+      "id": "2026-03-21-izzi-s-gym-sioux-falls",
       "type": "RCQ",
       "date": "2026-03-21",
       "time": null,
@@ -4418,7 +4386,7 @@
       "eventLink": "https://izzisgym.com"
     },
     {
-      "id": "2026-03-21-undercity-games-eau claire",
+      "id": "2026-03-21-undercity-games-eau-claire",
       "type": "RCQ",
       "date": "2026-03-21",
       "time": null,
@@ -4456,7 +4424,7 @@
       "eventLink": "https://adventuregamesoshkosh.square.site"
     },
     {
-      "id": "2026-03-22-games-king-sioux city",
+      "id": "2026-03-22-games-king-sioux-city",
       "type": "RCQ",
       "date": "2026-03-22",
       "time": null,
@@ -4532,7 +4500,7 @@
       "eventLink": "https://www.dreamersvault.com"
     },
     {
-      "id": "2026-03-22-level-up-games-st. paul",
+      "id": "2026-03-22-level-up-games-st-paul",
       "type": "RCQ",
       "date": "2026-03-22",
       "time": null,

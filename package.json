@@ -1,15 +1,16 @@
 {
   "name": "mtg-event-planner",
   "version": "1.0.0",
-  "description": "MTG Pro Tour Event Planner",
+  "description": "MTG Pro Tour Event Planner - Track competitive Magic: The Gathering events in the Midwest",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "extract": "node extract-events.js",
-    "enrich:prepare": "node run-enrichment.js",
-    "enrich:apply": "node apply-enrichment.js"
+    "extract": "node enrichment/extract.js",
+    "enrich:prepare": "node enrichment/prepare.js",
+    "enrich:apply": "node enrichment/apply.js",
+    "enrich:geocode": "node enrichment/geocode.js"
   },
   "dependencies": {
     "lz-string": "^1.5.0",

@@ -1,146 +1,263 @@
 # MTG Event Planner
 
-A web application to help plan and track Magic: The Gathering Pro Tour qualification events, including RCQ (Regional Championship Qualifiers), RC (Regional Championships), and Magic Spotlight Series events.
+A web application to help competitive Magic: The Gathering players plan and track Pro Tour qualification events in the Midwest US region.
+
+![Vue.js](https://img.shields.io/badge/Vue.js-3.4-4FC08D?logo=vuedotjs)
+![Vite](https://img.shields.io/badge/Vite-5.0-646CFF?logo=vite)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ## Features
 
-- **Event Filtering**: Filter events by type (RCQ, RC, Magic Spotlight), format (Standard, Limited, etc.), date range, location, and distance
-- **Distance Calculation**: Calculate distances from your location to each event venue
-- **Geocoding**: Automatically look up venue addresses using OpenStreetMap
-- **Event Details**: View event information including qualification paths, formats, and notes
-- **Responsive Design**: Works on desktop and mobile devices
+### Event Discovery
+- **Multi-format Support**: Track RCQ (Regional Championship Qualifiers), RC (Regional Championships), Magic Spotlight Series, and SCG CON events
+- **Format Filtering**: Filter by Standard, Limited, Modern, Pioneer, and other formats
+- **State Filtering**: Focus on events in specific states
+- **Date-based Grouping**: Events organized by date with collapsible groups
 
-## Setup
+### Location-based Features
+- **Distance Calculation**: See how far each event is from your location
+- **Distance Filtering**: Show only events within your travel radius
+- **Geocoding**: Automatic address-to-coordinates conversion
+- **Maps Integration**: Click addresses to open in Google Maps
 
-1. Install dependencies:
+### Personal Planning
+- **Favorites System**: Mark events you plan to attend
+- **My Agenda Filter**: View only dates with favorited events
+- **Share Agenda**: Generate shareable URLs of your event plans (LZ-compressed for compact URLs)
+- **Tab Navigation**: Switch between Upcoming, All Events, and Favorites views
+
+### User Experience
+- **Dark Theme**: Glassmorphic UI with animated background
+- **Responsive Design**: Works on desktop and mobile
+- **Local Storage**: Preferences and favorites persist across sessions
+- **Distance Caching**: Avoid redundant calculations
+
+## Quick Start
+
 ```bash
+# Install dependencies
 yarn install
-```
 
-2. Extract events from `events.txt`:
-```bash
-yarn extract
-```
-
-This will parse `events.txt` and generate `events-metadata.json` in the public folder.
-
-3. (Optional) Enrich events with addresses and links:
-```bash
-# See ENRICHMENT.md for detailed instructions
-yarn enrich:prepare 10  # Generate queries for 10 venues
-# Use MCP tools to search, then:
-yarn enrich:apply enrichment-results.json
-```
-
-4. Start the development server:
-```bash
+# Start development server
 yarn dev
 ```
 
-The application will open in your browser at `http://localhost:3000`.
+The app opens at `http://localhost:5173`
 
-## Usage
+## Commands
 
-1. **Set Your Location**: When you first open the app, enter your city and state to enable distance calculations.
+### Development
+```bash
+yarn dev          # Start dev server
+yarn build        # Build for production
+yarn preview      # Preview production build
+```
 
-2. **Filter Events**: Use the filter panel to:
-   - Select event types (RCQ, RC, Magic Spotlight, etc.)
-   - Filter by format (Standard, Limited, Modern, etc.)
-   - Set date ranges
-   - Filter by location (state or city)
-   - Set maximum distance from your location
+### Using Make (recommended)
+```bash
+make help         # Show all available commands
+make dev          # Start dev server
+make build        # Build for production
+make status       # Show enrichment status
+```
 
-3. **View Events**: Browse filtered events in the event list. Each event card shows:
-   - Date and time
-   - Venue name and location
-   - Distance from your location (if coordinates are available)
-   - Format and event type
-   - Qualification path information
-
-4. **Get Addresses**: Click "Get Address" on any event card to automatically look up the venue address using geocoding.
-
-5. **Sort Events**: Use the sort dropdown to sort events by date, distance, or venue name.
+### Enrichment (see [enrichment/README.md](enrichment/README.md))
+```bash
+make extract           # Parse events.txt → events-metadata.json
+make enrich-prepare    # Generate search queries
+make enrich-apply      # Apply enrichment results
+make enrich-geocode    # Geocode addresses
+make deploy-public     # Copy metadata to public/
+```
 
 ## Project Structure
 
 ```
 mtg-comp/
-├── events.txt                 # Source event data
-├── extract-events.js          # Parser script
-├── events-metadata.json       # Parsed event data
-├── run-enrichment.js          # Generate enrichment queries
-├── apply-enrichment.js        # Apply enrichment results
-├── index.html                 # Main HTML file
-├── package.json              # Dependencies
-├── vite.config.js            # Vite configuration
+├── events.txt              # Raw event data (source of truth)
+├── Makefile               # Command shortcuts
+├── package.json
+├── vite.config.js
+│
+├── enrichment/            # Event enrichment scripts
+│   ├── extract.js         # Parse events.txt
+│   ├── prepare.js         # Generate search queries
+│   ├── apply.js           # Apply enrichment results
+│   ├── geocode.js         # Batch geocoding
+│   ├── results.json       # Enrichment results (you create this)
+│   ├── .cache.json        # Auto-generated cache
+│   └── README.md          # Enrichment documentation
+│
 ├── public/
-│   └── events-metadata.json  # Event data (served to app)
-└── src/
-    ├── main.js               # Vue app entry point
-    ├── App.vue               # Root component
-    ├── components/
-    │   ├── LocationConfig.vue    # User location setup
-    │   ├── EventFilters.vue      # Filter controls
-    │   ├── EventList.vue         # Event listing
-    │   └── EventCard.vue         # Individual event display
-    ├── utils/
-    │   ├── geocoding.js       # Address lookup utilities
-    │   ├── distance.js       # Distance calculation
-    │   └── config.js         # Configuration management
-    └── styles/
-        └── main.css          # Global styles
+│   └── events-metadata.json  # THE event database (single source of truth)
+│
+├── src/
+│   ├── main.js            # Vue app entry
+│   ├── App.vue            # Root component
+│   ├── components/
+│   │   ├── AmbientBackground.vue   # Animated background
+│   │   ├── AppHeader.vue           # Header with branding
+│   │   ├── DistanceModal.vue       # Distance filter modal
+│   │   ├── EventCard.vue           # Individual event display
+│   │   ├── EventList.vue           # Event listing with groups
+│   │   ├── FavoritesSection.vue    # Favorites tab content
+│   │   ├── FilterBar.vue           # Filter chips bar
+│   │   ├── FilterModal.vue         # Filter selection modal
+│   │   ├── LocationConfig.vue      # User location setup
+│   │   ├── StatsBar.vue            # Event count display
+│   │   ├── TabNav.vue              # Tab navigation
+│   │   └── UpcomingEvents.vue      # Upcoming events tab
+│   ├── utils/
+│   │   ├── config.js        # User configuration
+│   │   ├── distance.js      # Distance calculation
+│   │   ├── distanceCache.js # Distance caching
+│   │   ├── favorites.js     # Favorites management
+│   │   └── geocoding.js     # Geocoding utilities
+│   └── styles/
+│       └── main.css         # Global styles
+│
+└── dist/                   # Production build output
 ```
 
-## Updating Events
+## Data Flow
 
-When `events.txt` is updated:
-
-1. Run the extract script again:
-```bash
-yarn extract
+```
+events.txt (manual input)
+       │
+       ▼ (make extract)
+public/events-metadata.json ◄──────────────┐
+       │                                    │
+       ├───────────────────────┐            │
+       ▼                       ▼            │
+  prepare.js              Vue App          │
+       │                                    │
+       ▼                                    │
+Search with AI/Web                         │
+       │                                    │
+       ▼                                    │
+enrichment/results.json                    │
+       │                                    │
+       ▼ (make enrich-apply)               │
+public/events-metadata.json                │
+       │                                    │
+       ▼ (make enrich-geocode)             │
+public/events-metadata.json ───────────────┘
 ```
 
-2. The web app will automatically load the updated data on refresh.
+**Note:** All scripts work directly with `public/events-metadata.json` - no copying needed.
 
-## Enriching Events
+## Event Data Format
 
-To add addresses and links to events, see [ENRICHMENT.md](ENRICHMENT.md) for detailed instructions.
+Events in `events-metadata.json`:
 
-Quick start:
-```bash
-# 1. Generate queries
-yarn enrich:prepare 10
-
-# 2. Use MCP tools (Perplexity/Browser) to search for addresses and links
-
-# 3. Create enrichment-results.json with your findings
-
-# 4. Apply the enrichment
-yarn enrich:apply enrichment-results.json
+```json
+{
+  "id": "2026-01-03-venue-name-city",
+  "type": "RCQ",
+  "date": "2026-01-03",
+  "time": "10pm",
+  "venue": "Store Name",
+  "city": "City",
+  "state": "IL",
+  "format": "Standard",
+  "notes": "2-slot",
+  "qualificationPath": "US Regional Championship...",
+  "address": "123 Main St, City, IL 12345",
+  "coordinates": { "lat": 41.123, "lng": -87.456 },
+  "website": "https://store-website.com",
+  "eventLink": "https://event-registration.com"
+}
 ```
 
-## Geocoding
+## Enrichment Workflow
 
-The app uses OpenStreetMap Nominatim API for geocoding (free, no API key required). Rate limits apply:
-- 1 request per second
-- Results are cached to avoid repeated lookups
+1. **Generate Queries**
+   ```bash
+   make enrich-prepare
+   ```
+   This outputs search queries for venues/events missing data.
+
+2. **Search for Information**
+   Use AI tools (Perplexity MCP) or manual web search to find:
+   - Venue addresses
+   - Store websites
+   - Event registration links
+
+3. **Create Results File**
+   Create `enrichment-results.json` with found data.
+
+4. **Apply Results**
+   ```bash
+   make enrich-apply
+   ```
+   This updates the metadata and auto-geocodes addresses.
+
+5. **Deploy**
+   ```bash
+   make deploy-public
+   make build
+   ```
+
+See [enrichment/README.md](enrichment/README.md) for detailed instructions.
+
+## Configuration
+
+User settings stored in localStorage:
+- `mtg-event-config`: Location, distance unit
+- `mtg-favorites`: Favorited event IDs
+- `mtg-distance-cache`: Cached distance calculations
 
 ## Technologies
 
 - **Vue 3**: Frontend framework
 - **Vite**: Build tool and dev server
-- **OpenStreetMap Nominatim**: Geocoding service
-- **LocalStorage**: User configuration storage
-- **Perplexity MCP**: Web search for enrichment
+- **LZ-String**: URL compression for share links
+- **OpenStreetMap Nominatim**: Geocoding (free, rate-limited)
+- **LocalStorage**: Client-side persistence
 
 ## Browser Support
 
-Modern browsers that support:
-- ES6+ JavaScript
+Modern browsers with support for:
+- ES2020+ JavaScript
+- CSS Variables and Grid
 - Fetch API
 - LocalStorage
-- CSS Grid and Flexbox
+
+## Development Tips
+
+### Adding New Events
+1. Edit `events.txt` with new event data
+2. Run `make extract`
+3. Run enrichment cycle if needed
+4. Run `make deploy-public`
+
+### Updating Components
+- Components are in `src/components/`
+- Styles use CSS variables defined in `src/styles/main.css`
+- App state is managed in `App.vue`
+
+### Debugging Distance Issues
+1. Check if event has `coordinates`
+2. Check if user location is set
+3. Check browser console for geocoding errors
+
+## Deployment
+
+### Static Hosting (GitHub Pages, Netlify, etc.)
+```bash
+make build
+# Deploy contents of dist/ folder
+```
+
+### Railway (as mentioned in context)
+The app is a static site - deploy the `dist/` folder.
 
 ## License
 
 MIT
+
+---
+
+For enrichment documentation, see [enrichment/README.md](enrichment/README.md)
+
+For developer handoff, see [DEVELOPER_GUIDE.md](DEVELOPER_GUIDE.md)

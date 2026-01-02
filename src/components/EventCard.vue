@@ -128,6 +128,7 @@ import { ref, computed, onMounted, watch } from 'vue';
 import { distanceToEvent, formatDistance } from '../utils/distance';
 import { getOrCalculateDistance } from '../utils/distanceCache';
 import { isFavorite, toggleFavorite } from '../utils/favorites';
+import { parseLocalDate, getDaysUntil } from '../utils/dates';
 
 export default {
   name: 'EventCard',
@@ -174,8 +175,8 @@ export default {
       return props.isUpcoming && !props.isClosest && props.userLocation;
     });
 
-    // Date parsing for prominent display
-    const eventDate = computed(() => new Date(props.event.date));
+    // Date parsing for prominent display - use parseLocalDate to avoid timezone issues
+    const eventDate = computed(() => parseLocalDate(props.event.date));
     
     const weekdayName = computed(() => {
       return eventDate.value.toLocaleDateString('en-US', { weekday: 'short' });
@@ -189,15 +190,10 @@ export default {
       return eventDate.value.toLocaleDateString('en-US', { month: 'short' });
     });
     
-    // Days until event
+    // Days until event - use utility to avoid timezone bugs
     const daysUntil = computed(() => {
-      const today = new Date();
-      today.setHours(0, 0, 0, 0);
-      const event = new Date(props.event.date);
-      event.setHours(0, 0, 0, 0);
-      const diffTime = event - today;
-      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-      return diffDays >= 0 ? diffDays : null;
+      const days = getDaysUntil(props.event.date);
+      return days >= 0 ? days : null;
     });
     
     const daysUntilText = computed(() => {
@@ -226,7 +222,7 @@ export default {
     });
 
     const formattedDate = computed(() => {
-      const date = new Date(props.event.date);
+      const date = parseLocalDate(props.event.date);
       return date.toLocaleDateString('en-US', { 
         month: 'short', 
         day: 'numeric',

@@ -95,6 +95,7 @@ import { ref, computed, watch } from 'vue';
 import EventCard from './EventCard.vue';
 import { distanceToEvent } from '../utils/distance';
 import { isFavorite } from '../utils/favorites';
+import { parseLocalDate, getDaysUntil as getDaysUntilUtil } from '../utils/dates';
 
 export default {
   name: 'EventList',
@@ -225,29 +226,25 @@ export default {
       initializeCollapsedState();
     }, { immediate: true });
 
+    // Use parseLocalDate to avoid timezone issues (YYYY-MM-DD parsed as UTC otherwise)
     function getDayName(dateString) {
-      const date = new Date(dateString);
+      const date = parseLocalDate(dateString);
       return date.toLocaleDateString('en-US', { weekday: 'short' }).toUpperCase();
     }
 
     function getMonthName(dateString) {
-      const date = new Date(dateString);
+      const date = parseLocalDate(dateString);
       return date.toLocaleDateString('en-US', { month: 'short' }).toUpperCase();
     }
 
     function getDayNum(dateString) {
-      const date = new Date(dateString);
+      const date = parseLocalDate(dateString);
       return date.getDate();
     }
 
     function getDaysUntil(dateString) {
-      const today = new Date();
-      today.setHours(0, 0, 0, 0);
-      const eventDate = new Date(dateString);
-      eventDate.setHours(0, 0, 0, 0);
-      const diffTime = eventDate - today;
-      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-      return diffDays >= 0 ? diffDays : null;
+      const days = getDaysUntilUtil(dateString);
+      return days >= 0 ? days : null;
     }
 
     function getDaysUntilText(dateString) {
@@ -271,7 +268,7 @@ export default {
     }
 
     function formatDateCompact(dateString) {
-      const date = new Date(dateString);
+      const date = parseLocalDate(dateString);
       return date.toLocaleDateString('en-US', {
         month: 'short',
         day: 'numeric'
@@ -279,8 +276,9 @@ export default {
     }
 
     function formatDateHeader(dateString) {
-      const date = new Date(dateString);
+      const date = parseLocalDate(dateString);
       const today = new Date();
+      today.setHours(0, 0, 0, 0);
       const tomorrow = new Date(today);
       tomorrow.setDate(tomorrow.getDate() + 1);
       
